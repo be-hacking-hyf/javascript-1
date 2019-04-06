@@ -58,7 +58,7 @@ _HTML+CSS_
 * css
     * quizzes: [after hours](https://www.afterhoursprogramming.com/tests/css/), [w3schools](https://www.w3schools.com/css/css_quiz.asp)
 * [behind the scenes](https://software.hixie.ch/utilities/js/live-dom-viewer/)
-    [demo portfolio](https://elewa-student.github.io)
+* [demo portfolio](https://elewa-student.github.io)
 
 [TOP](#javascript-1)
 
