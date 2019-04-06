@@ -83,12 +83,10 @@ General JS References
 * [Learn-JS](http://www.learn-js.org)
 
 
-Assorted References:
 
 __JS (roughly) in order__:
 1. [learn to execute code by hand](https://github.com/janke-learning/js-notional-machine)
 1. [a model of computing](https://docs.google.com/presentation/d/1uKGPsFpv5BzRzzkvz2TaplWSx_oelMOlUHa0zg770vY/edit#slide=id.p)
-
 1. [errors & life cycle](https://github.com/janke-learning/errors-and-life-cycle)
 1. [special characters](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/names_of_special_characters.md)
 1. [errors exercises](https://github.com/janke-learning/errors)
@@ -98,7 +96,7 @@ __JS (roughly) in order__:
 1. [block scope](https://github.com/janke-learning/block-scope-let-vs-var)
 1. [values](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/values.md)
 1. [operators](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/operators.md)
-1. statements vs expressions: [one]](https://en.hexlet.io/courses/intro_to_programming/lessons/expressions/theory_unit), [two](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2). Most simply: if it takes one step in python tutor, it's a statement.  If it has an operator, it's an expression.  A line of code can be both a statement and an expression
+1. statements vs expressions: [one](https://en.hexlet.io/courses/intro_to_programming/lessons/expressions/theory_unit), [two](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2). Most simply: if it takes one step in python tutor, it's a statement.  If it has an operator, it's an expression.  A line of code can be both a statement and an expression
 1. [expanding expressions & order of operations](https://github.com/janke-learning/expanding/blob/master/1-expressions.md)
 1. implicit coercion: [arithmetic](https://janke-learning.org/arithmetic-coercion/), [equalities](https://janke-learning.org/equalities-coercion/)
 1. [conditionals](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/conditional_execution.md)
