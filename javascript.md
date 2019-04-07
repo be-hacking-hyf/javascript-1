@@ -77,7 +77,7 @@ Great online Tutorials:
 
 General JS References 
 * [Javascript.info](https://javascript.info). General Reference for JavaScript, DOM
-* [W3Schools](https://www.w3schools.com/jS/default.asp)
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 * [Beau Teaches JS](https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5) - youtube series
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going). General reference for JavaScript, not super beginner-friendly.
 * [Learn-JS](http://www.learn-js.org)
