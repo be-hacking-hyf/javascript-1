@@ -25,7 +25,6 @@ For all exercises, not only solve these, analyze them in pythontutor
 
 #### Material & furter readings
 - [javascript.info](http://javascript.info/) up to 2.13
-- [janke-learning/errors-and-life-cycle](https://github.com/janke-learning/errors-and-life-cycle)
 
 ##### First
 - Do the [freecodecamp](http://learn.freecodecamp.org) exercises from Basic JavaScript up to Golf code;
