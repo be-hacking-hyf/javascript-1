@@ -4,7 +4,7 @@
 A basic understanding of the following topics:
 
 - Programming and how computers work:
-  - [a model of computing](https://docs.google.com/presentation/d/1uKGPsFpv5BzRzzkvz2TaplWSx_oelMOlUHa0zg770vY/edit#slide=id.p)
+  - a model of computing
   - lifecycle of a program
 - Intro JavaScript (What is it, where can you use it for)
 - Variables [var, let, const]
