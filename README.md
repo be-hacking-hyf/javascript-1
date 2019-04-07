@@ -48,7 +48,7 @@ _JavaScript_:
 
 _Git & GitHub_
 * [learn git branching](https://learngitbranching.js.org)
-* [git & github](https://github.com/colevandersWands/git-and-hub)
+* [git & github](https://github.com/colevandersWands/git-and-hub) - instructions for portfolio
 * [pull request exercise](https://github.com/colevandersWands/pull-requesting)
 
 
