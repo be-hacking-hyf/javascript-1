@@ -16,7 +16,7 @@
 
 * Familiarize yourself with basic JS language features and study techniques
 * start a basic MarkDown portfolio on GitHub
-* complete the first sections of LearnGitBranching ->  Main: Introduction Sequence, Remote: Push & Pull
+* complete the first sections of LearnGitBranching ->  Main: Introduction Sequence
 
 ### Week 2
 

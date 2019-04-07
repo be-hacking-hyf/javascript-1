@@ -26,31 +26,36 @@ For all exercises, not only solve these, analyze them in pythontutor
 #### Material & furter readings
 - [javascript.info](http://javascript.info/) up to 2.13
 
+##### Overall note
+Do not only write quick solutions to the exercises to pass them too fast.
+**We want you to understand more than we want you to pass a lot of exercises**.
+If you don't finish through Golf code but have understood the code of the ones you finished it's fine.
+
+Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools we showed you at the end of the lecture. See the list in [javascript.md](./javascript.md).
+
 ##### First
 - Do the [freecodecamp](http://learn.freecodecamp.org) exercises from Basic JavaScript up to Golf code;
+
 Hand solutions by
-- commiting and pushing a freecode_camp_solutions.MD file, in your own repo with solutions in code blocks and notes
-- putting a link to your repo into [linked to week 1 repo to create]()
+- Copying your solutions into the freecode_camp_solutions.MD file you created in your portfolio github repository. Put code solutions in code blocks (\`\`\`) and add notes for yourself to make sure your crystallize your learnings
 
 ##### Second
-- Copy-paste [errors exercises](https://github.com/janke-learning/errors) into your repo
-- Solve the challenges, commit and push
+- Copy-paste [errors exercises](https://raw.githubusercontent.com/janke-learning/errors/master/README.md) into a new .md file in your repo.
+- Solve the challenges and commit
 
 ##### Third
-- Solve [variables-and-hoisting](https://github.com/janke-learning/variables-and-hoisting) exercises.  post in your portfolio permanent links to your solutions in PythonTutor
+- Solve [variables-and-hoisting  exercises](https://github.com/janke-learning/variables-and-hoisting#exercises)
+- Copy a permanent link to your pythonthutor solution into a new .md file in your repo
 
-Hand solutions by
-- commiting and pushing a variables_solutions.MD file, in your own repo with solutions in code blocks and notes
-
+#### Fourth
+- Do the first 4 exercises from the Main tab of [learngitbranching](https://learngitbranching.js.org/)
+- No need to copy any solution here, just make sure you get familiar with how the `git` commands affect the picture on the right
 
 ### Second week TBD:
 
 #### Goals
 - Functions
 - Reference data types [Objects, Arrays]
-
-
-
 
 **Git**
 
