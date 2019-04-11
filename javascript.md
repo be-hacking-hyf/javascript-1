@@ -70,6 +70,7 @@ What is JS?
 
 
 Great online Tutorials:
+* [Lynda: Programming Foundations](https://www.lynda.com/Programming-Foundations-tutorials/Welcome/83603/90426-4.html) - ask Maïte for your login
 * [FreeCodeCamp](https://www.freecodecamp.org) & [video series](https://medium.freecodecamp.org/my-giant-javascript-basics-course-is-now-live-on-youtube-and-its-100-free-9020a21bbc27) - Great community support.  To get the most out of FCC, continue studying each exercise even after getting your green check mark. Parsonize your solutions, study them in Python Tutor, run them in the console, Spot them.  It's also worth your time to find at least three solutions to each challenge.
 * Headfirst JavaScript: [PDF](http://wickedlysmart.com/wp-content/uploads/2014/03/Head_First_JavaScript_Programming_SampleChapter.pdf), [GitHub](https://github.com/bethrobson/Head-First-JavaScript-Programming) - very thorough and hand-held introduction to using JS in simple websites. You will learn from this even if nothing else works.
 * [JavaScript for Cats](http://jsforcats.com) - Fun website with good examples to study.
