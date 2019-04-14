@@ -47,6 +47,7 @@ _JavaScript_:
 * [this file here](./javascript.md)
 
 _Git & GitHub_
+* [HYF git lectures](https://github.com/HackYourFuture/Git)
 * [learn git branching](https://learngitbranching.js.org)
 * [git & github](https://github.com/colevandersWands/git-and-hub)
 * [pull request exercise](https://github.com/colevandersWands/pull-requesting)
