@@ -16,7 +16,7 @@
 
 * Familiarize yourself with basic JS language features and study techniques
 * start a basic MarkDown portfolio on GitHub
-* complete the first sections of LearnGitBranching ->  Main: Introduction Sequence, Remote: Push & Pull
+* complete the first sections of LearnGitBranching ->  Main: Introduction Sequence
 
 ### Week 2
 
@@ -49,7 +49,8 @@ _JavaScript_:
 _Git & GitHub_
 * [HYF git lectures](https://github.com/HackYourFuture/Git)
 * [learn git branching](https://learngitbranching.js.org)
-* [git & github](https://github.com/colevandersWands/git-and-hub)
+* [hyf lectures](https://github.com/HackYourFutureBelgium/Git)  
+* [git & github](https://github.com/colevandersWands/git-and-hub) - instructions for portfolio
 * [pull request exercise](https://github.com/colevandersWands/pull-requesting)
 
 
@@ -59,7 +60,7 @@ _HTML+CSS_
 * css
     * quizzes: [after hours](https://www.afterhoursprogramming.com/tests/css/), [w3schools](https://www.w3schools.com/css/css_quiz.asp)
 * [behind the scenes](https://software.hixie.ch/utilities/js/live-dom-viewer/)
-    [demo portfolio](https://elewa-student.github.io)
+* [demo portfolio](https://elewa-student.github.io)
 
 [TOP](#javascript-1)
 

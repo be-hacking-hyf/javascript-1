@@ -70,25 +70,26 @@ What is JS?
 
 
 Great online Tutorials:
-* [JavaScript for Cats](http://jsforcats.com) - Fun website with good examples to study.
+* [Lynda: Programming Foundations](https://www.lynda.com/Programming-Foundations-tutorials/Welcome/83603/90426-4.html) - ask Maïte for your login
 * [FreeCodeCamp](https://www.freecodecamp.org) & [video series](https://medium.freecodecamp.org/my-giant-javascript-basics-course-is-now-live-on-youtube-and-its-100-free-9020a21bbc27) - Great community support.  To get the most out of FCC, continue studying each exercise even after getting your green check mark. Parsonize your solutions, study them in Python Tutor, run them in the console, Spot them.  It's also worth your time to find at least three solutions to each challenge.
 * Headfirst JavaScript: [PDF](http://wickedlysmart.com/wp-content/uploads/2014/03/Head_First_JavaScript_Programming_SampleChapter.pdf), [GitHub](https://github.com/bethrobson/Head-First-JavaScript-Programming) - very thorough and hand-held introduction to using JS in simple websites. You will learn from this even if nothing else works.
+* [roverjs](http://roverjs.com) - a fun game by HYF coach Joost Lubach
+* [JavaScript for Cats](http://jsforcats.com) - Fun website with good examples to study.
+* [javascript, the weird parts](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts) - (advanced)
 
 
 General JS References 
 * [Javascript.info](https://javascript.info). General Reference for JavaScript, DOM
-* [W3Schools](https://www.w3schools.com/jS/default.asp)
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 * [Beau Teaches JS](https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5) - youtube series
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going). General reference for JavaScript, not super beginner-friendly.
 * [Learn-JS](http://www.learn-js.org)
 
 
-Assorted References:
 
 __JS (roughly) in order__:
 1. [learn to execute code by hand](https://github.com/janke-learning/js-notional-machine)
 1. [a model of computing](https://docs.google.com/presentation/d/1uKGPsFpv5BzRzzkvz2TaplWSx_oelMOlUHa0zg770vY/edit#slide=id.p)
-
 1. [errors & life cycle](https://github.com/janke-learning/errors-and-life-cycle)
 1. [special characters](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/names_of_special_characters.md)
 1. [errors exercises](https://github.com/janke-learning/errors)
@@ -98,7 +99,7 @@ __JS (roughly) in order__:
 1. [block scope](https://github.com/janke-learning/block-scope-let-vs-var)
 1. [values](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/values.md)
 1. [operators](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/operators.md)
-1. statements vs expressions: [one]](https://en.hexlet.io/courses/intro_to_programming/lessons/expressions/theory_unit), [two](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2). Most simply: if it takes one step in python tutor, it's a statement.  If it has an operator, it's an expression.  A line of code can be both a statement and an expression
+1. statements vs expressions: [one](https://en.hexlet.io/courses/intro_to_programming/lessons/expressions/theory_unit), [two](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2). Most simply: if it takes one step in python tutor, it's a statement.  If it has an operator, it's an expression.  A line of code can be both a statement and an expression
 1. [expanding expressions & order of operations](https://github.com/janke-learning/expanding/blob/master/1-expressions.md)
 1. implicit coercion: [arithmetic](https://janke-learning.org/arithmetic-coercion/), [equalities](https://janke-learning.org/equalities-coercion/)
 1. [conditionals](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/conditional_execution.md)
