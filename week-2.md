@@ -40,15 +40,21 @@ __JavaScript__
 
 ## homework
 
+**Update on where to put your homework solutions**: let's come back to the structure you used in module 1 and store all your homework in a repository you own called `HYF-javascript1`. So, if you have not done it yet,
+1. Go to your GitHub and create a repository called `HYF-javascript1`
+2. Add a link to that repository into the module-2.md file of [class4 repository](https://github.com/HackYourFutureBEHomework/class4) so we can find and follow that link easily
+3. Back in your `HYF-javascript1` repository, copy all the files from your week 1 homeworks in there
+4. For this week, you'll put your for this week's homeworks in that same repository
+
 * git & github
     * do the first exercises of remotes on learngitbranching
     * install github desktop app so we can use it in class next week
     * form groups of 3 and complete [this exercise](https://github.com/colevandersWands/pull-requesting) 3 times (once with each as 
     repository owner)
 * javascript
-    * [function exercises 1](https://github.com/colevandersWands/function-exercises/blob/master/1-functions.md): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/function-exercises/master/1-functions.md) into your javascript-1 repo, fill it in, and commit
-    * [reference type exercises](https://github.com/colevandersWands/reference-type-exercises)(arrays & objects): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/reference-type-exercises/master/README.md) into your javascript-1 repo, fill it in, and commit
-    * [operator precedence](https://github.com/janke-learning/operator-precedence): copy [the raw file](https://raw.githubusercontent.com/janke-learning/operator-precedence/master/README.md) into your javascript-1 repo, fill it in, and commit
+    * [function exercises 1](https://github.com/colevandersWands/function-exercises/blob/master/1-functions.md): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/function-exercises/master/1-functions.md) into your `HYF-javascript1` repo, fill it in, and commit
+    * [reference type exercises](https://github.com/colevandersWands/reference-type-exercises)(arrays & objects): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/reference-type-exercises/master/README.md) into your `HYF-javascript1` repo, fill it in, and commit
+    * [operator precedence](https://github.com/janke-learning/operator-precedence): copy [the raw file](https://raw.githubusercontent.com/janke-learning/operator-precedence/master/README.md) into your `HYF-javascript1`, fill it in, and commit
     * FreeCodeCamp JavaScript - the rest of basic javascript, and debugging: write and save your solutions like last week
 
 
