@@ -13,7 +13,6 @@
     
 _Review_
 * Feedback on Homework & Week 1
-* FreeCodeCamp: functions & test cases
 * Week 1 Review 
     1. Select topics to review with [a word cloud](https://www.sli.do) (event code: #J369 )
     2. Form groups of 2-3 & assign exercise from last week to present
@@ -31,6 +30,7 @@ __Break__
 _JavaScript_
 * Reference Types
 * Functions & Scope
+    * FreeCodeCamp: functions & test cases
 * Primitive types & Operators
 
 
