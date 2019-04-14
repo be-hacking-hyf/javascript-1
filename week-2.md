@@ -22,8 +22,6 @@ __Review__
 __Git & GitHub__
 * Pull Requesting 
     * add your profiles to the [class4 repository](https://github.com/HackYourFutureBEHomework/class4)
-    * transfer your homework for this week into your HYF-javascript1 repository (if you haven't yet)
-    * add a link to your HYF-javascript1 repo in the module-2.md
 
 _Break_
 
