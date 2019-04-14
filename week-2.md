@@ -40,12 +40,14 @@ __JavaScript__
 
 ## homework
 
-**Update on where to put your homework solutions**: let's come back to the structure you used in module 1 and store all your homework in a repository you own called `HYF-javascript1`. So, if you have not done it yet,
+### Before your start: update on where to put your homework solutions
+Let's come back to the structure you used in module 1 and store all your homework in a repository you own called `HYF-javascript1`. So, if you have not done it yet,
 1. Go to your GitHub and create a repository called `HYF-javascript1`
 2. Add a link to that repository into the module-2.md file of [class4 repository](https://github.com/HackYourFutureBEHomework/class4) so we can find and follow that link easily
 3. Back in your `HYF-javascript1` repository, copy all the files from your week 1 homeworks in there
 4. For this week, you'll put your for this week's homeworks in that same repository
 
+### List of homeworks for this week:
 * git & github
     * do the first exercises of remotes on learngitbranching
     * install github desktop app so we can use it in class next week
