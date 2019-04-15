@@ -52,7 +52,7 @@ Let's come back to the structure you used in module 1 and store all your homewor
     * form groups of 3 and complete [this exercise](https://github.com/colevandersWands/pull-requesting) 3 times (once with each as 
     repository owner)
 * javascript
-    * [function exercises 1](https://github.com/colevandersWands/function-exercises/blob/master/1-functions.md): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/function-exercises/master/1-functions.md) into your `HYF-javascript1` repo, fill it in, and commit
+    * [function exercises 1](https://github.com/colevandersWands/function-exercises/blob/master/1-functions.md): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/function-exercises/master/1-functions.md) into your `HYF-javascript1` repo, fill it in, and commit. ([more examples to study](https://github.com/colevandersWands/function-exercises/blob/master/0-examples-to-study.md))  
     * [reference type exercises](https://github.com/colevandersWands/reference-type-exercises)(arrays & objects): copy [the raw file](https://raw.githubusercontent.com/colevandersWands/reference-type-exercises/master/README.md) into your `HYF-javascript1` repo, fill it in, and commit
     * [operator precedence](https://github.com/janke-learning/operator-precedence): copy [the raw file](https://raw.githubusercontent.com/janke-learning/operator-precedence/master/README.md) into your `HYF-javascript1`, fill it in, and commit
     * FreeCodeCamp JavaScript - the rest of basic javascript, and debugging: write and save your solutions like last week
