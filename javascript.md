@@ -105,7 +105,7 @@ __JS (roughly) in order__:
 1. implicit coercion: [arithmetic](https://janke-learning.org/arithmetic-coercion/), [equalities](https://janke-learning.org/equalities-coercion/)
 1. [conditionals](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/conditional_execution.md)
 1. [truthiness](https://github.com/janke-learning/truthiness)
-1. [boolean by example](https://github.com/janke-learning/boolean-by-examples)
+1. [boolean by example](https://github.com/janke-learning/boolean-by-example)
 1. [loops](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/loops.md)
 
 
