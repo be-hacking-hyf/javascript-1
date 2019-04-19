@@ -28,7 +28,7 @@ _Break_
 __JavaScript__
 * Reference Types
 * Functions & Scope
-    * FreeCodeCamp: functions & test cases
+* [FreeCodeCamp: functions & test cases](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
 * Primitive types & Operators
 
 
