@@ -39,7 +39,7 @@
 * Understanding of Operators and implicit coercion
 * Understanding of `for` and `while` loops
 * Understanding of where JavaScipt fits into Web Development, in link with Module 1 on HTML & CSS
-* The idea and usefulness of test cases, behavior vs implementation
+* Understanding of the idea and usefulness of test cases, the difference between behavior and implementation
 
 ### Git & GitHub
 * At ease with fork, Pull Request and Merge workflow on GitHub
