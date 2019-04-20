@@ -50,6 +50,7 @@ So study hard! Dig in now, and keep at it every day.  The more you prepare, the 
   * [browser console](https://stackoverflow.com/questions/66420/how-do-you-launch-the-javascript-debugger-in-google-chrome) - paste and run JS snippets from any browser tab
   * [linter](https://janke-learning.github.io/linter) - get helpful tips about bad habits or potential errors
   * [spot](https://janke-learning.github.io/spot) - quiz yourself on JS key words and syntax
+  * [shuffle](https://janke-learning.github.io/shuffle) - quiz yourself on JS key words and syntax
   * [flow vizualization](https://janke-learning.github.io/flowviz) - automatically visualize program logic with flow charts
   * [code along](https://janke-learning.github.io/code-along) - save helpful snippets and notes from class-time or group study sessions
 4. Practice whatever keeps you motivated. If you find one tutorial too easy, hard, or boring, move on!  What's important is that you can predict how JS will execute simple programs, not the tutorials you complete.
@@ -104,7 +105,7 @@ __JS (roughly) in order__:
 1. implicit coercion: [arithmetic](https://janke-learning.org/arithmetic-coercion/), [equalities](https://janke-learning.org/equalities-coercion/)
 1. [conditionals](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/conditional_execution.md)
 1. [truthiness](https://github.com/janke-learning/truthiness)
-1. [boolean by example](https://github.com/janke-learning/boolean-by-examples)
+1. [boolean by example](https://github.com/janke-learning/boolean-by-example)
 1. [loops](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/loops.md)
 
 
