@@ -24,7 +24,10 @@
     * [equalities-coercion](https://janke-learning.org/equalities-coercion/)
     * [`==` & `===` tables](https://dorey.github.io/JavaScript-Equality-Table/)
     * [`==` game](https://eqeq.js.org/)
-* Loops (`for`, `while`): [javascript.info:while-for](https://javascript.info/while-for)
+* Loops (`for`, `while`): 
+    * [javascript.info:while-for](https://javascript.info/while-for)
+    * [visualize control flow](https://janke-learning.org/flowviz/?snippet=let%20i%20%3D%200%3B%0Awhile%20%28i%20%3C%203%29%20%7B%0A%20%20alert%28i%29%3B%0A%20%20i%2B%2B%3B%0A%7D)  
+    * [parsonize control flow](https://janke-learning.org/parsonizer/?snippet=let%20i%20%3D%200%3B%0Awhile%20%28i%20%3C%203%29%20%7B%0A%20%20alert%28i%29%3B%0A%20%20i%2B%2B%3B%0A%7D)
 * Test cases: [test cases](https://github.com/colevandersWands/test-cases/)
 
 ### Git & GitHub
