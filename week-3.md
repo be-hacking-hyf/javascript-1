@@ -47,7 +47,7 @@
 
 ## Homework and resources
 
-> SLACK!  Many of you have been asking us very good questions over slack, and many of you are asking the same questions!  This week ask all of your questions on the @general channel and tag us.  If you don't we won't answer
+> SLACK!  Many of you have been asking us very good questions over slack, and many of you are asking the same questions!  This week ask all of your questions on the @class4 channel and tag us.  If you don't we won't answer
 
 * must
     * [functions 2 & 3 & 4](https://github.com/colevandersWands/function-exercises/)
