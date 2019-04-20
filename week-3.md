@@ -47,12 +47,15 @@
 
 ## Homework and resources
 
+> SLACK!  Many of you have been asking us very good questions over slack, and many of you are asking the same questions!  This week ask all of your questions on the @general channel and tag us.  If you don't we won't answer
+
 * must
     * [functions 2 & 3 & 4](https://github.com/colevandersWands/function-exercises/)
     * [QnA repos](https://github.com/colevandersWands/pull-requesting/) - in teams of 3, 3 times.  each of you once as repo owner. 
     * [implicit coercion](https://github.com/colevandersWands/implicit-coercion/)
     * [truthiness](https://github.com/janke-learning/truthiness)
     * FreeCodeCamp: [debugging](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/debugging) and [basic data structures](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
+    * send a new pull request with [more info in your bio](https://github.com/HackYourFutureBEHomework/class4/tree/master/student-bios)  
 * should
     * Use the HTML + CSS CV you created during module-1 as porfolio page (username.github.io)
     * [functions 5](https://github.com/colevandersWands/function-exercises/)
