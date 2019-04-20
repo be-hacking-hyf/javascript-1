@@ -17,8 +17,8 @@
     * [javascript.info:object](https://javascript.info/object)
     * [javascript.info:array](https://javascript.info/array)
     * [functions 4](https://github.com/colevandersWands/function-exercises/)
-    * [this solutions to an exercise from week 2](http://www.pythontutor.com/javascript.html#code=let%20obj_1%3D%7B%7D%3B%0Alet%20obj_2%3D%7B%7D%3B%0Aconsole.assert%28obj_1%20!%3D%3D%20obj_2%29%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1.x%20%3D%3D%3D%20obj_2.x%29%3B%0A%0Alet%20key%20%3D%20%22y%22%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1%5Bkey%5D%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B%0A%0Aobj_1%5Bkey%5D%3B%0Aobj_2%5Bkey%5D%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_2%5Bobj_1.y%5D%29%3B%0A%0Alet%20obj_3%20%3D%20%5Bkey%5D%3B%0Aobj_1%20%3D%20obj_2%3B%20%0Aconsole.assert%28obj_1%20%3D%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_1%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%5Bkey%5D%20%3D%3D%3D%20obj_1.y%29%3B%0A%0Aobj_3.x%20%3D%20obj_2%5Bkey%5D%3B%0Aconsole.assert%28obj_3.x%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
-* Operators and implicit coercion
+    * [this solution to an exercise from week 2](http://www.pythontutor.com/javascript.html#code=let%20obj_1%3D%7B%7D%3B%0Alet%20obj_2%3D%7B%7D%3B%0Aconsole.assert%28obj_1%20!%3D%3D%20obj_2%29%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1.x%20%3D%3D%3D%20obj_2.x%29%3B%0A%0Alet%20key%20%3D%20%22y%22%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1%5Bkey%5D%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B%0A%0Aobj_1%5Bkey%5D%3B%0Aobj_2%5Bkey%5D%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_2%5Bobj_1.y%5D%29%3B%0A%0Alet%20obj_3%20%3D%20%5Bkey%5D%3B%0Aobj_1%20%3D%20obj_2%3B%20%0Aconsole.assert%28obj_1%20%3D%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_1%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%5Bkey%5D%20%3D%3D%3D%20obj_1.y%29%3B%0A%0Aobj_3.x%20%3D%20obj_2%5Bkey%5D%3B%0Aconsole.assert%28obj_3.x%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+* Operators and implicit coercion: [implicit coercion](https://github.com/colevandersWands/implicit-coercion/)
 * Loops (`for`, `while`): [javascript.info:while-for](https://javascript.info/while-for)
 * Test cases: [test cases](https://github.com/colevandersWands/test-cases/)
 
@@ -47,7 +47,7 @@
     * [implicit coercion](https://github.com/colevandersWands/implicit-coercion/) 
     * FreeCodeCamp: [debugging](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/debugging) and [basic data structures](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
 * should
-    * start an HTML & CSS portfolio on your main github repository (username.github.io). no restrictions, make it as cool and impressive as you can
+    * Use the HTML + CSS CV you created during module-1 as porfolio page (username.github.io)
     * [functions 5](https://github.com/colevandersWands/function-exercises/)
     * [test cases](https://github.com/colevandersWands/test-cases/)
 * would be good
