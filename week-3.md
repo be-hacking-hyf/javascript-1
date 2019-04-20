@@ -3,8 +3,7 @@
 ### Index
 * [agenda for the day](#agenda)
 * [learning objectives](#learning-objectives)
-* [homework](#homework)
-* [resources](#resources)
+* [homework & resources](#homework-and-resources)
 
 ---
 
@@ -36,7 +35,7 @@
 ### Git & GitHub
 * At ease with fork, Pull Request and Merge workflow on GitHub
 
-## Homework
+## Homework and resources
 
 * must
     * [functions 2 & 3 & 4](https://github.com/colevandersWands/function-exercises/)
