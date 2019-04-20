@@ -19,6 +19,7 @@
     * [functions 4](https://github.com/colevandersWands/function-exercises/)
     * [this solution to an exercise from week 2](http://www.pythontutor.com/javascript.html#code=let%20obj_1%3D%7B%7D%3B%0Alet%20obj_2%3D%7B%7D%3B%0Aconsole.assert%28obj_1%20!%3D%3D%20obj_2%29%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1.x%20%3D%3D%3D%20obj_2.x%29%3B%0A%0Alet%20key%20%3D%20%22y%22%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1%5Bkey%5D%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B%0A%0Aobj_1%5Bkey%5D%3B%0Aobj_2%5Bkey%5D%3B%0A//%20The%20assert%20below%20passes%20but%20why%3F%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_2%5Bobj_1.y%5D%29%3B%0A%0Alet%20obj_3%20%3D%20%5Bkey%5D%3B%0Aobj_1%20%3D%20obj_2%3B%20%0Aconsole.assert%28obj_1%20%3D%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_1%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%5Bkey%5D%20%3D%3D%3D%20obj_1.y%29%3B%0A%0Aobj_3.x%20%3D%20obj_2%5Bkey%5D%3B%0Aconsole.assert%28obj_3.x%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 * Operators and implicit coercion:
+    * [truthiness](https://github.com/janke-learning/truthiness)
     * [arithmetic-coercion](https://janke-learning.org/arithmetic-coercion/)
     * [equalities-coercion](https://janke-learning.org/equalities-coercion/)
     * [`==` & `===` tables](https://dorey.github.io/JavaScript-Equality-Table/)
@@ -49,7 +50,8 @@
 * must
     * [functions 2 & 3 & 4](https://github.com/colevandersWands/function-exercises/)
     * [QnA repos](https://github.com/colevandersWands/pull-requesting/) - in teams of 3, 3 times.  each of you once as repo owner. 
-    * [implicit coercion](https://github.com/colevandersWands/implicit-coercion/) 
+    * [implicit coercion](https://github.com/colevandersWands/implicit-coercion/)
+    * [truthiness](https://github.com/janke-learning/truthiness)
     * FreeCodeCamp: [debugging](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/debugging) and [basic data structures](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
 * should
     * Use the HTML + CSS CV you created during module-1 as porfolio page (username.github.io)
