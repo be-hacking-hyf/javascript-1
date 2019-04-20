@@ -29,8 +29,9 @@
 ### Git & GitHub
 * More on Pull Requesting and Merging: [QnA repos](https://github.com/colevandersWands/pull-requesting/) - in teams of 3, 3 times.  each of you once as repo owner
 
-### Wrapping-up module 1
+### Wrapping-up module 1 and onto module 2
 * Why are we learning JavaScript again?
+    * Sneak preview of how it's complementary to HTML & CSS, [handler functions](https://github.com/colevandersWands/three-layer-handlers)
 
 ## Learning objectives
 ### JS
@@ -38,7 +39,7 @@
 * Understanding of Operators and implicit coercion
 * Understanding of `for` and `while` loops
 * Understanding of where JavaScipt fits into Web Development, in link with Module 1 on HTML & CSS
-* The idea and usefulness of test cases
+* The idea and usefulness of test cases, behavior vs implementation
 
 ### Git & GitHub
 * At ease with fork, Pull Request and Merge workflow on GitHub
