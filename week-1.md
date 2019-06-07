@@ -1,87 +1,131 @@
-### First week : JavaScript & basic git
+# Week 1
 
-#### Goals
-A basic understanding of the following topics:
+overview
 
-- Programming and how computers work:
-  - a model of computing
-  - lifecycle of a program
-- Intro JavaScript (What is it, where can you use it for)
-- Variables [var, let, const]
-- Primitive data types [Strings, Numbers, Booleans, null, undefined]
-- Operators
-  - precedence and expanding them
-- Naming conventions
-- Conditions
-  - expanding them
-- Statements vs Expressions
-- Loops (for/while)
-- Git: Understand what a commit is and how it represents a certain unit of work
-- Git: Know how to commit and push files in that new repository
-- Debugging: different types of errors (Syntax, Runtime)
+### Index
+* [learning objectives](#learning-objectives)
+* [agenda for the day](#agenda)
+* [homework](#homework)
+* [resources](#resources)
 
-#### Homeworks
-For all exercises, not only solve these, analyze them in pythontutor
+---
 
-#### Material & furter readings
-- [javascript.info](http://javascript.info/) up to 2.13
+## Learning objectives
 
-##### Overall note
-Do not only write quick solutions to the exercises to pass them too fast.
-**We want you to understand more than we want you to pass a lot of exercises**.
-If you don't finish through Golf code but have understood the code of the ones you finished it's fine.
+### JS
+* familiarity with basic syntax
+* [learn to execute code by hand](https://github.com/janke-learning/js-notional-machine)
+* errors
+* variables
+* functions
+* first look at type & operators
 
-Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools we showed you at the end of the lecture. See the list in [javascript.md](./javascript.md).
+### Git & GitHub
+* add & commit
+* branch
+* merge
+* whatever else is on lgb
 
-##### First
-- Do the [freecodecamp](http://learn.freecodecamp.org) exercises from Basic JavaScript up to Golf code;
+### projecting
+* ui layout
+* stories & steps
+* connecting js w/html (onclick)
 
-Hand solutions by
-- Copying your solutions into the freecode_camp_solutions.MD file you created in your portfolio github repository. Put code solutions in code blocks (\`\`\`) and add notes for yourself to make sure your crystallize your learnings
+[TOP](#week-1)
 
-##### Second
-- Copy-paste [errors exercises](https://raw.githubusercontent.com/janke-learning/errors/master/README.md) into a new .md file in your repo.
-- Solve the challenges and commit
+---
 
-##### Third
-- Solve [variables-and-hoisting  exercises](https://github.com/janke-learning/variables-and-hoisting#exercises)
-- Copy a permanent link to your pythonthutor solution into a new .md file in your repo
-
-#### Fourth
-- Do the first 4 exercises from the Main tab of [learngitbranching](https://learngitbranching.js.org/)
-- No need to copy any solution here, just make sure you get familiar with how the `git` commands affect the picture on the right
-
-### Second week TBD:
-
-#### Goals
-- Functions
-- Reference data types [Objects, Arrays]
-
-**Git**
-
-After this sessions students should:
-
-- Know how to add / remove files to that new repository
-- Have an understanding of pull requests and forking workflow.
-- Know how to create a new repository using clone and init
-- Know what a remote is and know how to retrieve remote information from git:
-- git remote [show][-v] [-vv]
-
-Optional / if they seem ready for it:
-
-- Know what the difference between the three states of files in git are.
-- Have an understanding of branches and how they can be used.
-- Know how to navigate between branches and what git commands to use for them.
-- Have an understanding of problems for developers working together on software
-- Have an understanding of what HEAD means.
-- Have an understanding of the need for version control software
-- Have an understanding of what GIT is and what problem it solves.
+## Agenda
+- in general
+  to decide what's on the agenda
+    hit the beginning of each homework assignment
+      do the first 1-2 together and set up the assignment
+  process/expectations over content
+    content is to be learned over the week
+    we make sure they get how to do each thing
+  make clear the outer limits of what's to be learned
+    ie.   
+      very clear learning objectives
+      very clear learning un-objectives 
 
 
+### practicals
+* js-1 homework template repo
+* using the [class5]() repo for homework
 
+### preview
+
+### JS
+* what is it, what's it for
+* python tutor, nm, stepping through & predicting
+* kick-off homework
+  * fcc
+  * errors
+  * variables
+  * functions
+
+### GIT
+* what is it, what's it for
+* learngitbranching
+
+### projects
+* what's this about
+* get set up together
+* js in-context
+* user stories & incremental development
+
+### sendoff
+
+[TOP](#week-1)
+
+---
+
+## Homework
+
+> SLACK!  Many of you have been asking us very good questions over slack, and many of you are asking the same questions!  This week ask all of your questions in your class's channel and tag us.  If you don't we won't know to answer
+
+### JS
+
+Do not only write quick solutions to the exercises to pass them. **We want you to understand more than we want you to pass a lot of exercises**.
+If you don't finish everything but have understood what you finished, that's just ok.  Just be sure to let us know in your homework PR!
+
+Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools listed in the main README for this module. 
+
+__basics__
+* [FreeCodeCamp](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript): "Basics" throguh "counting cards" 
+    * Copy your solutions into the freecode_camp_solutions_basic_js.MD file in your js-1 homework repo. Put code solutions in code blocks (\`\`\`) and add notes for yourself to make sure your crystallize your learnings
+
+__Theory__
+* [errors](https://raw.githubusercontent.com/janke-learning/errors/master/README.md) - redo this, split by feature and assign over the weeks
+    * Copy-paste [errors exercises](https://raw.githubusercontent.com/janke-learning/errors/master/README.md) into a new .md file in your homework repo. Solve the challenges and commit
+* Variables: [swaps](https://github.com/janke-learning/variables-and-hoisting/blob/master/1-swaps.md), [multiple assignments on one line](https://github.com/janke-learning/variables-and-hoisting/blob/master/2-multiple-assignments.md)
+* functions: [exercises 1](https://github.com/colevandersWands/function-exercises/blob/master/1-functions.md), [turtle shuffle](https://github.com/colevandersWands/function-exercises/blob/master/2-turtle-shuffle.md)
+
+__Practice__
+* [cross-module project, week 1]()
+
+
+
+
+### Git & GitHub
+* [learn git branching](https://learngitbranching.js.org/) - intro sequence
+
+[TOP](#week-1)
+
+---
+
+## Resources
+
+
+
+functions: https://github.com/colevandersWands/function-exercises/blob/master/0-examples-to-study.md
+
+* [errors & life cycle](https://github.com/janke-learning/errors-and-life-cycle)
+
+
+[TOP](#week-1)
 
 ___
 ___
 ### <a href="https://hackyourfuture.be" target="_blank"><img src="https://pbs.twimg.com/profile_images/984474625009741824/Bs_qKx6-_400x400.jpg" width="100" height="100"></img></a>
-
 
