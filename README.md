@@ -83,31 +83,23 @@ Below are some recommended resources for learning JavaScript.  Take a look at ea
 
 
 What is JS?
-* ["Preface" from __You Don't Know JS__](https://github.com/getify/You-Dont-Know-JS/blob/master/preface.md)
 * ["Intro" from __JavaScript.info__](https://javascript.info/intro)
-* ["What is JS" from __Practical JavaScirpt__](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-javascript/)
 * ["What is JS" from __MDN__](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
 
 Great online Tutorials:
-* [Lynda: Programming Foundations](https://www.lynda.com/Programming-Foundations-tutorials/Welcome/83603/90426-4.html) - ask Maïte for your login
-* [FreeCodeCamp](https://www.freecodecamp.org) & [video series](https://medium.freecodecamp.org/my-giant-javascript-basics-course-is-now-live-on-youtube-and-its-100-free-9020a21bbc27) - Great community support.  To get the most out of FCC, continue studying each exercise even after getting your green check mark. Parsonize your solutions, study them in Python Tutor, run them in the console, Spot them.  It's also worth your time to find at least three solutions to each challenge.
+* [__Philip Guo video series__](https://www.youtube.com/watch?v=VZfNZGekVms&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u) - _highly_ recommended recommended
+* [FreeCodeCamp](https://www.freecodecamp.org) & [video series](https://medium.freecodecamp.org/my-giant-javascript-basics-course-is-now-live-on-youtube-and-its-100-free-9020a21bbc27) (you will cover most of this in your homeworks)
 * Headfirst JavaScript: [PDF](http://wickedlysmart.com/wp-content/uploads/2014/03/Head_First_JavaScript_Programming_SampleChapter.pdf), [GitHub](https://github.com/bethrobson/Head-First-JavaScript-Programming) - very thorough and hand-held introduction to using JS in simple websites. You will learn from this even if nothing else works.
-* [roverjs](http://roverjs.com) - a fun game by HYF coach Joost Lubach
 * [JavaScript for Cats](http://jsforcats.com) - Fun website with good examples to study.
-* [javascript, the weird parts](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts) - (advanceder video)
+* [javascript, the weird parts](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts) - advanceder video
 
 
 General JS References 
-* [naming conventions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/naming_conventions.md)
-* [code formatting](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/code_formatting.md)
-* [special characters](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/names_of_special_characters.md)
-* [Javascript.info](https://javascript.info). General Reference for JavaScript, DOM
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+* [Javascript.info](https://javascript.info). General Reference & tutorial for JavaScript, DOM
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - your go-to reference for language features
 * [Beau Teaches JS](https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5) - youtube series
-* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going). General reference for JavaScript, not super beginner-friendly.
-* [Learn-JS](http://www.learn-js.org) - some good interactive practice
-* [a model of computing](https://docs.google.com/presentation/d/1uKGPsFpv5BzRzzkvz2TaplWSx_oelMOlUHa0zg770vY/edit#slide=id.p)
+* [air bnb style guide](https://github.com/airbnb/javascript)
 
 ### Git & GitHub
 * [HYF git lectures](https://github.com/HackYourFuture/Git)

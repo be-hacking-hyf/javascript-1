@@ -31,6 +31,9 @@ https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript1/Week1/l
 ## Learning objectives
 
 ### JS
+* primitive operators in deeper
+* some ES6
+* deeper functions
 
 ### Git & GitHub
 * At ease with fork, Pull Request and Merge workflow on GitHub
@@ -50,21 +53,24 @@ https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript1/Week1/l
 __basics__
 * fcc: es6 through "Write Concise Declarative Functions with ES6"
 
-__theory__
-* [reference types](https://github.com/colevandersWands/reference-type-exercises)
-* functions: [ref-type args](https://github.com/colevandersWands/function-exercises/blob/master/4-reference-type-arguments.md)
 
 __practice__
 * [test cases](https://github.com/colevandersWands/test-cases/)
 * final step of project
     * includes tests 
 
+__theory__
+* [reference types](https://github.com/colevandersWands/reference-type-exercises)
+* functions: [ref-type args](https://github.com/colevandersWands/function-exercises/blob/master/4-reference-type-arguments.md)
+
+
 
 
 
 ### Git/Hub
-
+* pr a photo and bio for the next coaches
 * practice & review: pr's, introduction
+
 
 
 

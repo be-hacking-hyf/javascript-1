@@ -27,6 +27,9 @@
 ## Learning objectives
 
 ### JS
+* reference vs. value
+* arrays & objects
+* manipulating state over time
 
 ### Git & GitHub
 * At ease with fork, Pull Request and Merge workflow on GitHub
@@ -49,7 +52,7 @@ __Basics__
 __Theory__
 * types & values
 * operators
-* variables: sentences (split this into multi-files?)
+* variables: sentences
 
 __Practice__
 * steps next of project
@@ -67,8 +70,8 @@ __Practice__
 
 ## Resources
 
-
-* [loops](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/loops.md)
+* [conditionals](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/conditional_execution.md)
+* [loops from HyF](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/loops.md)
 * [loops from js.info](https://javascript.info/while-for)
 
 
