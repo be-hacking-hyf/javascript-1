@@ -1,6 +1,6 @@
 # Week 1
 
-
+you'll be learning the first workings of JavaScript as a language in isolation (the homeworks), experimenting with it in context (the project), and getting serious about GitHub issues & pull requests (assignment submission & feedback).
 
 ### Index
 * [learning objectives](#learning-objectives)
@@ -14,9 +14,8 @@
 
 ### JS
 * familiarity with basic syntax
-* js notional machine
 * errors
-* variables
+* variables with primitive types
 * functions & frames
 * first look at type & operators
 
@@ -27,9 +26,9 @@
 * whatever else is on lgb
 
 ### projecting
-* ui layout
 * stories & steps
-* connecting js w/html (onclick)
+* connecting js w/html
+* organizing code
 * github pages
 
 [TOP](#week-1)
@@ -37,37 +36,30 @@
 ---
 
 ## Agenda
-- in general
-  to decide what's on the agenda
-    hit the beginning of each homework assignment
-      do the first 1-2 together and set up the assignment
-  process/expectations over content
-    content is to be learned over the week
-    we make sure they get how to do each thing
-  make clear the outer limits of what's to be learned
-    ie.   
-      very clear learning objectives
-      very clear learning un-objectives 
+
+In class we'll go over the first tastes of JS, but the main point of class will be making sure you know how to complete and submit your homework assignments.  We'll start each assignment together to get you started for the week, and make sure you know what to study over the week
 
 
-### practicals
-* js-1 homework template repo
-* using the [class5]() repo for homework
-* create github account - USE YOUR REAL NAME
+
+### homework setup
+* create github accounts - USE YOUR REAL NAME
+* fork the [project](https://github.com/be-hacking-hyf/javascript-1-cross-module) & [homework](https://github.com/be-hacking-hyf/javascript-1-homework) repos
+* setup the week-1 tables in the [class-5 wiki](https://github.com/HackYourFutureBEHomework/class-5/wiki/module-2---JS-1)
 
 ### Using GitHub
 * what is it, what's it for
-* a round of pr's
-* practice marking homework as started
+* [pull requesting](https://github.com/janke-learning/pull-requesting) - practicing this with 3-4 others  will help your turn in your homework
 
 ### JS
-* what is it, what's it for
-* python tutor, nm, stepping through & predicting
-* kick-off homework
-  * fcc
-  * errors
-  * variables
-  * functions
+* [what is it, what's it for](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+* stepping through & predicting execution: [python tutor](http://www.pythontutor.com/javascript.html#), [notional machines](https://github.com/janke-learning/js-notional-machine)
+* using [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+* [parsons problems](https://janke-learning.org/parsonizer/)
+* kick-off homework 
+    * [FCC basic JS](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/fcc-basic-js-pt-1.md)
+    * [errors](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-errors-formatting.md)
+    * [variables](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-variables-swaps.md) 
+    * [functions](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-functions.md)
 
 ### projects launch off
 * what's this about
@@ -109,7 +101,7 @@ Really understanding the code means you could do the same work that pythontutor 
 
 
 ### Git & GitHub
-* :seedling: [pull requesting](https://github.com/janke-learning/pull-requesting) - practicing this with 3-4 others  will help your turn in your homework
+* :seedling: send a pull-request to [class-5 repo](https://github.com/HackYourFutureBEHomework/class-5/tree/master/bios) containing a short bio.
 * :dash: [learn git branching intro sequence](https://learngitbranching.js.org/) 
 
 [TOP](#week-1)
@@ -118,7 +110,8 @@ Really understanding the code means you could do the same work that pythontutor 
 
 ## Resources
 
-
+GitHub 
+* How to build a gh-pages site:  [from thinkful](https://www.thinkful.com/learn/a-guide-to-using-github-pages/), [from GitHub](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/), [a video](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
 
 videos
 * [guo on variables & primitive types](https://www.youtube.com/watch?v=pHt_tKYUgbo&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=2)
@@ -132,8 +125,17 @@ JavaScript
 * [block scope](https://github.com/janke-learning/block-scope-let-vs-var)
 * [values](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/values.md)
 * [operators](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/operators.md)
+* scope
+    * [jl: block scope](https://github.com/janke-learning/block-scope-let-vs-var)
+    * [sitepoint: lexical & block scope](https://www.sitepoint.com/demystifying-javascript-variable-scope-hoisting/)
+    * [codeburst: lexical & block scope](https://codeburst.io/javascript-learn-understand-scope-f53d6592c726)
 * statements vs expressions: [one](https://en.hexlet.io/courses/intro_to_programming/lessons/expressions/theory_unit), [two](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2). Most simply: if it takes one step in python tutor, it's a statement.  If it has an operator, it's an expression.  A line of code can be both a statement and an expression
 
+JS study tools
+* [parsonizer](https://janke-learning.org/parsonizer/)
+* [online linter](https://janke-learning.org/linter)
+* [control flow visualization](https://janke-learning.org/flowviz/)
+* syntax quizzing: [spot](https://janke-learning.org/spot), [shuffle](https://janke-learning.org/shuffle)
 
 coding style
 * [air bnb style guide](https://github.com/airbnb/javascript)

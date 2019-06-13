@@ -98,6 +98,7 @@ Great online Tutorials:
 General JS References 
 * [Javascript.info](https://javascript.info). General Reference & tutorial for JavaScript, DOM
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) - your go-to reference for language features
+* [HYF JS fundamentals](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/README.md), and [a quiz](https://github.com/HackYourFutureBelgium/fundamentals/blob/master/fundamentals/exercises.md) to see how you're doing
 * [Beau Teaches JS](https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5) - youtube series
 * [air bnb style guide](https://github.com/airbnb/javascript)
 
@@ -107,6 +108,12 @@ General JS References
 * [hyf lectures](https://github.com/HackYourFutureBelgium/Git)  
 * [git & github](https://github.com/colevandersWands/git-and-hub) - instructions for portfolio
 * [pull request exercise](https://github.com/colevandersWands/pull-requesting)
+* JS study tools
+    * [parsonizer](https://janke-learning.org/parsonizer/)
+    * [online linter](https://janke-learning.org/linter)
+    * [control flow visualization](https://janke-learning.org/flowviz/)
+    * syntax quizzing: [spot](https://janke-learning.org/spot), [shuffle](https://janke-learning.org/shuffle)
+
 
 
 ### HTML+CSS

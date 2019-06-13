@@ -91,9 +91,15 @@ expanded conditionals
 
 * types can be cast
 * [truthiness](https://github.com/janke-learning/truthiness)
+* Operators and implicit coercion:
+  * [equalities-coercion](https://janke-learning.org/equalities-coercion/)
+  * [`==` & `===` tables](https://dorey.github.io/JavaScript-Equality-Table/)
+  * [`==` game](https://eqeq.js.org/)
 
+* native methods: [Methods of Primitives](https://javascript.info/primitives-methods), [Strings](https://javascript.info/string), [Native Array Methods](https://javascript.info/array-methods#tasks)
+* object & array stuff: [Iterables](https://javascript.info/iterable), [Object.keys, values, entries](https://javascript.info/keys-values-entries), [Destructuring](https://javascript.info/destructuring-assignment), [Rest & Spread](https://javascript.info/rest-parameters-spread-operator)
 
-
+* [arithmetic-coercion](https://janke-learning.org/arithmetic-coercion/)
   operator precedence - challenge
     https://github.com/janke-learning/operator-precedence
   coercion - replication exercises
