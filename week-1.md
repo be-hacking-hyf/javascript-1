@@ -66,10 +66,11 @@ In class we'll go over the first tastes of JS, but the main point of class will 
     * [functions](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-functions.md)
 
 ### projects launch off
-* discuss [user stories](http://www.agilemodeling.com/artifacts/userStory.htm) & incremental development
 * set your project forks live on GitHub Pages
+* clone your forked repos using [github desktop](https://desktop.github.com) or [console](https://www.wikihow.com/Clone-a-Repository-on-Github)
 * [using JS in HTML](https://javascript.info/hello-world)
 * [using the chrome inspector](https://javascript.info/debugging-chrome)
+* discuss [user stories](http://www.agilemodeling.com/artifacts/userStory.htm) & incremental development
 * complete together the ```index.html``` for [this week's project](https://github.com/be-hacking-hyf/javascript-1-cross-module/tree/master/week-1)
 
 
