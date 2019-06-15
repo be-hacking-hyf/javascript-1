@@ -27,16 +27,28 @@ So have some patience and study hard! Dig in now, and keep at it every day.  The
 
 __Week 1__
 * Fundamental JS syntax & language features
-* The JavaScript Notional Machine
-* js script lifecycle
-* Sketching runtime behavior on paper
+* js script life cycle
 * Using online code study & visualization tools 
 * Stepping through code
+* connecting JS to HTML
+* Pull Requests
+* planning & structuring projects 1
+* inspecting & debugging 
 
 
 __Week 2__
+* reference types (arrays & objects)
+* more about functions
+* planning & structuring projects 2
+* inspecting & debugging 
+
 
 __Week 3__
+* deeper into operators and primitive types
+* test cases
+* planning & structuring projects 3
+* event listeners
+* inspecting & debugging 
 
 
 
@@ -54,11 +66,10 @@ __Week 3__
 2. Familiarize yourself with these JS study tools: 
   * [PythonTutor](http://www.pythontutor.com/javascript.html#mode=edit) - learn how JS carries out your instructions behind the scenes
   * [Parsonizer](https://janke-learning.github.io/parsonizer) - turn any snippet into a study exercise
-  * [browser console](https://stackoverflow.com/questions/66420/how-do-you-launch-the-javascript-debugger-in-google-chrome) - paste and run JS snippets from any browser tab
+  * [chrome inspector](https://javascript.info/debugging-chrome) - paste and run JS snippets from any browser tab
   * [linter](https://janke-learning.github.io/linter) - get helpful tips about bad habits or potential errors
   * [spot](https://janke-learning.github.io/spot) & [shuffle](https://janke-learning.github.io/shuffle) - quiz yourself on JS key words and syntax
   * [flow vizualization](https://janke-learning.github.io/flowviz) - automatically visualize program logic with flow charts
-  * [code along](https://janke-learning.github.io/code-along) - save helpful snippets and notes from class-time or group study sessions
 4. Practice whatever keeps you motivated. If you find one tutorial too easy, hard, or boring, move on!  What's important is that you can predict how JS will execute simple programs, not which tutorials you complete.
 
 [TOP](#javascript-1)
@@ -108,11 +119,6 @@ General JS References
 * [hyf lectures](https://github.com/HackYourFutureBelgium/Git)  
 * [git & github](https://github.com/colevandersWands/git-and-hub) - instructions for portfolio
 * [pull request exercise](https://github.com/colevandersWands/pull-requesting)
-* JS study tools
-    * [parsonizer](https://janke-learning.org/parsonizer/)
-    * [online linter](https://janke-learning.org/linter)
-    * [control flow visualization](https://janke-learning.org/flowviz/)
-    * syntax quizzing: [spot](https://janke-learning.org/spot), [shuffle](https://janke-learning.org/shuffle)
 
 
 
