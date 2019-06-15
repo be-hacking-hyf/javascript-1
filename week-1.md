@@ -108,7 +108,6 @@ Really understanding the code means you could do the same work that pythontutor 
 ### Git & GitHub
 * :seedling: send a pull-request to [class-5 repo](https://github.com/HackYourFutureBEHomework/class-5/tree/master/bios) containing a short bio.
 * :dash: [learn git branching: remotes (push/pull)](https://learngitbranching.js.org/) 
-    - add this to the homework table for week 1
 
 [TOP](#week-1)
 
