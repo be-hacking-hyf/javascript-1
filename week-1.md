@@ -40,6 +40,7 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 ### Using GitHub
 * create github accounts (if you haven't) - USE YOUR REAL NAME
 * what is github, what's it for?
+* [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [pull requesting](https://github.com/janke-learning/pull-requesting) - practicing this with groups of 3 others.  This is the work flow will use to check your homework.
 
 ### homework setup
