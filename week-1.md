@@ -66,9 +66,9 @@ In class we'll go over the first tastes of JS, but the main point of class will 
     * [JS fundamentals](https://github.com/HackYourFuture-CPH/JavaScript/tree/master/fundamentals)
     * [group quiz in class](https://github.com/HackYourFuture-CPH/JavaScript/blob/master/fundamentals/exercises.md)
 * kick-off homework 
-    * [FCC basic JS](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/fcc-basic-js-pt-1.md)
     * [errors](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-errors-formatting.md)
     * [variables](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-variables-swaps.md) 
+    * [FCC basic JS](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/fcc-basic-js-pt-1.md)
     * [functions](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-functions.md)
 
 ### projects launch off
