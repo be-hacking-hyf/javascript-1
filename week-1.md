@@ -53,7 +53,7 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 * stepping through & predicting execution: 
     * [python tutor](http://www.pythontutor.com/javascript.html#)
     * [js notional machine](https://github.com/janke-learning/js-notional-machine)
-* [chrome inspector](https://javascript.info/debugging-chrome#tracing-the-execution)
+* [chrome inspector](https://javascript.info/debugging-chrome)
 * using [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * [parsons problems](https://janke-learning.org/parsonizer/)
 * language pieces: 
