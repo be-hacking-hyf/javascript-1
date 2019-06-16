@@ -61,7 +61,8 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 * [chrome inspector](https://javascript.info/debugging-chrome)
 * using [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * [parsons problems](https://janke-learning.org/parsonizer/)
-* language pieces: 
+* language pieces:
+    * (have your inspector open to run the examples!)
     * [JS fundamentals](https://github.com/HackYourFuture-CPH/JavaScript/tree/master/fundamentals)
     * [group quiz in class](https://github.com/HackYourFuture-CPH/JavaScript/blob/master/fundamentals/exercises.md)
 * kick-off homework 
