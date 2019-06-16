@@ -111,6 +111,9 @@ Really understanding the code means you could do the same work that pythontutor 
 
 
 ### Project
+
+The goal of the project is to make it work __not__ to understand everything you do.  It's the opposite of the homework, hack it!
+
 * :seedling: [cross-module project, week 1](https://github.com/be-hacking-hyf/javascript-1-cross-module/week-1)
 
 
