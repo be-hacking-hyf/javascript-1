@@ -75,6 +75,8 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 
 
 ### sendoff
+* introduce [LearnGitBranching](https://learngitbranching.js.org)
+* questions?
 
 
 
