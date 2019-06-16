@@ -13,6 +13,7 @@ you'll be learning the first workings of JavaScript as a language in isolation (
 ## Learning objectives
 
 ### JS
+* stepping through & predicting execution
 * familiarity with basic syntax
 * errors
 * variables
