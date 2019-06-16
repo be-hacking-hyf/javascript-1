@@ -107,7 +107,7 @@ If you don't finish everything but have understood what you finished, that's jus
 
 Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools listed in the main README for this module. 
 
-* [JS 1, week 1 homework](https://github.com/be-hacking-hyf/javascript-1-homework/week-1) - follow the link to see assignment priorities
+* Go to your fork of the [JS 1 homework repo](https://github.com/be-hacking-hyf/javascript-1-homework) - follow the link to see assignment priorities
 
 
 ### Project
