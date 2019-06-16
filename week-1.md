@@ -46,6 +46,7 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 * go over the [class-5 wiki](https://github.com/HackYourFutureBEHomework/class-5/wiki/module-2---JS-1) and how turning in homework will work
 * fork the [project](https://github.com/be-hacking-hyf/javascript-1-cross-module) & [homework](https://github.com/be-hacking-hyf/javascript-1-homework) repos and go over how they will be used
 * practice turning in homework by forking [this repo](https://github.com/be-hacking-hyf/first-github-homework) and completing the instructions
+* add your row in the class wiki homework tables
 
 
 
