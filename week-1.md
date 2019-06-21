@@ -13,6 +13,7 @@ you'll be learning the first workings of JavaScript as a language in isolation (
 ## Learning objectives
 
 ### JS
+* stepping through & predicting execution
 * familiarity with basic syntax
 * errors
 * variables
@@ -39,12 +40,16 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 ### Using GitHub
 * create github accounts (if you haven't) - USE YOUR REAL NAME
 * what is github, what's it for?
+* [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [pull requesting](https://github.com/janke-learning/pull-requesting) - practicing this with groups of 3 others.  This is the work flow will use to check your homework.
 
 ### homework setup
 * go over the [class-5 wiki](https://github.com/HackYourFutureBEHomework/class-5/wiki/module-2---JS-1) and how turning in homework will work
 * fork the [project](https://github.com/be-hacking-hyf/javascript-1-cross-module) & [homework](https://github.com/be-hacking-hyf/javascript-1-homework) repos and go over how they will be used
 * practice turning in homework by forking [this repo](https://github.com/be-hacking-hyf/first-github-homework) and completing the instructions
+      * [no issues? no issue!](https://softwareengineering.stackexchange.com/questions/179468/forking-a-repo-on-github-but-allowing-new-issues-on-the-fork)
+      * [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* add your row in the class wiki homework tables
 
 
 
@@ -53,27 +58,31 @@ In class we'll go over the first tastes of JS, but the main point of class will 
 * stepping through & predicting execution: 
     * [python tutor](http://www.pythontutor.com/javascript.html#)
     * [js notional machine](https://github.com/janke-learning/js-notional-machine)
-* [chrome inspector](https://javascript.info/debugging-chrome#tracing-the-execution)
+* [chrome inspector](https://javascript.info/debugging-chrome)
 * using [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * [parsons problems](https://janke-learning.org/parsonizer/)
-* language pieces: 
+* language pieces:
+    * (have your inspector open to run the examples!)
     * [JS fundamentals](https://github.com/HackYourFuture-CPH/JavaScript/tree/master/fundamentals)
     * [group quiz in class](https://github.com/HackYourFuture-CPH/JavaScript/blob/master/fundamentals/exercises.md)
 * kick-off homework 
-    * [FCC basic JS](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/fcc-basic-js-pt-1.md)
     * [errors](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-errors-formatting.md)
     * [variables](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-variables-swaps.md) 
+    * [FCC basic JS](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/fcc-basic-js-pt-1.md)
     * [functions](https://github.com/be-hacking-hyf/javascript-1-homework/blob/master/week-1/jl-functions.md)
 
 ### projects launch off
-* discuss [user stories](http://www.agilemodeling.com/artifacts/userStory.htm) & incremental development
 * set your project forks live on GitHub Pages
+* clone your forked repos using [github desktop](https://desktop.github.com) or [console](https://www.wikihow.com/Clone-a-Repository-on-Github)
 * [using JS in HTML](https://javascript.info/hello-world)
 * [using the chrome inspector](https://javascript.info/debugging-chrome)
+* discuss [user stories](http://www.agilemodeling.com/artifacts/userStory.htm) & incremental development
 * complete together the ```index.html``` for [this week's project](https://github.com/be-hacking-hyf/javascript-1-cross-module/tree/master/week-1)
 
 
 ### sendoff
+* introduce [LearnGitBranching](https://learngitbranching.js.org)
+* questions?
 
 
 
@@ -98,16 +107,19 @@ If you don't finish everything but have understood what you finished, that's jus
 
 Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools listed in the main README for this module. 
 
-* [JS 1, week 1 homework](https://github.com/be-hacking-hyf/javascript-1-homework/week-1) - follow the link to see assignment priorities
+* Go to your fork of the [JS 1 homework repo](https://github.com/be-hacking-hyf/javascript-1-homework) - follow the link to see assignment priorities
 
 
 ### Project
+
+The goal of the project is to make it work __not__ to understand everything you do.  It's the opposite of the homework, hack it!
+
 * :seedling: [cross-module project, week 1](https://github.com/be-hacking-hyf/javascript-1-cross-module/week-1)
 
 
 ### Git & GitHub
 * :seedling: send a pull-request to [class-5 repo](https://github.com/HackYourFutureBEHomework/class-5/tree/master/bios) containing a short bio.
-* :dash: [learn git branching: remotes (push/pull)](https://learngitbranching.js.org/) 
+* :dash: [learn git branching: remote -> clone intro 1, 2, 3, 4](https://learngitbranching.js.org/) 
 
 [TOP](#week-1)
 
