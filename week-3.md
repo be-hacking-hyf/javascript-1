@@ -28,6 +28,12 @@ https://github.com/janke-learning/implicit-coercion/blob/master/study-the-plus-o
       mention tdd
     leave the rest as just examples to study
 * [primitive types](https://github.com/janke-learning/primitive-types)
+* iterating over reference types
+* build-up
+    * data types - https://javascript.info/types & typeof
+    * type conversions - https://javascript.info/type-conversions
+    * operators - https://javascript.info/operators
+    * comparisons - https://javascript.info/comparison
 
 ### GIT
 
@@ -120,6 +126,12 @@ primitive types repo
 * [javascript.info: comparisons](https://javascript.info/comparison)
 
 * [primitive types](https://github.com/janke-learning/primitive-types)
+
+* Expressions vs. Operators:
+  * (This is a tricky concept, it will make more sense after __Scope & Flow Control__)
+  * Over Views:[dev.to](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2), [flaviocopes](https://flaviocopes.com/javascript-expressions/), [lib.ru](http://lib.ru/%3E%3C/JAVA/javascr/expr.html)
+  * In Depth: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators), [2ality](http://2ality.com/2012/09/expressions-vs-statements.html)
+  * Assignment vs Comparison: [Overview (study with PyTut)](https://www.quirksmode.org/blog/archives/2008/01/using_the_assig.html#link1), [This isn't just a JS thing](http://wiki.c2.com/?AssignmentVsEqualityOperator)
 
 https://javascript.info/types
 https://javascript.info/type-conversions

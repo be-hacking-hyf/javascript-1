@@ -108,7 +108,6 @@ Really understanding the code means you could do the same work that pythontutor 
 ### Git & GitHub
 * :seedling: send a pull-request to [class-5 repo](https://github.com/HackYourFutureBEHomework/class-5/tree/master/bios) containing a short bio.
 * :dash: [learn git branching: remotes (push/pull)](https://learngitbranching.js.org/) 
-    - add this to the homework table for week 1
 
 [TOP](#week-1)
 
@@ -146,6 +145,9 @@ Really understanding the code means you could do the same work that pythontutor 
     * [sitepoint: lexical & block scope](https://www.sitepoint.com/demystifying-javascript-variable-scope-hoisting/)
     * [codeburst: lexical & block scope](https://codeburst.io/javascript-learn-understand-scope-f53d6592c726)
 * statements vs expressions: [one](https://en.hexlet.io/courses/intro_to_programming/lessons/expressions/theory_unit), [two](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2). Most simply: if it takes one step in python tutor, it's a statement.  If it has an operator, it's an expression.  A line of code can be both a statement and an expression
+* functions:
+    * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+    * [javascript.info](https://javascript.info/function-basics)
 
 #### JS study tools
 * [chrome inspector](https://javascript.info/debugging-chrome)
