@@ -124,7 +124,7 @@ Really understanding the code means you could do the same work that pythontutor 
 
 The main goal with the project is to make it work!  The homework is for you to understand, this project is for you to hack.
 
-* :seedling: [cross-module project, week 2](https://github.com/be-hacking-hyf/javascript-1-cross-module/week-2)
+* :dash: [cross-module project, week 2](https://github.com/be-hacking-hyf/javascript-1-cross-module/week-2)
   
 
 ### Git/Hub
