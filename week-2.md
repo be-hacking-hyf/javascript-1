@@ -117,14 +117,14 @@ If you don't finish everything but have understood what you finished, that's jus
 
 Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools listed in the main README for this module. 
 
-* [JS 1, week 2 homework](https://github.com/be-hacking-hyf/javascript-1-homework/week-2) - follow the link to see assignment priorities
+* [JS 1, week 2 homework](https://github.com/be-hacking-hyf/javascript-1-homework/tree/master/week-2) - follow the link to see assignment priorities
 
 
 ### Project
 
 The main goal with the project is to make it work!  The homework is for you to understand, this project is for you to hack.
 
-* :dash: [cross-module project, week 2](https://github.com/be-hacking-hyf/javascript-1-cross-module/week-2)
+* :dash: [cross-module project, week 2](https://github.com/be-hacking-hyf/javascript-1-cross-module/tree/master/week-2)
   
 
 ### Git/Hub
