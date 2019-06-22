@@ -105,6 +105,9 @@
 
 > SLACK!  Many of you have been asking us very good questions over slack, and many of you are asking the same questions!  This week ask all of your questions in your class's channel and tag us.  If you don't we won't know to answer
 
+### Study Time!
+* :seedling: share __at least 1__ helpful resource in the "Shared Notes" section of the class wiki.
+
 
 ### JavaScript
 
