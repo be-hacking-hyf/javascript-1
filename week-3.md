@@ -1,6 +1,6 @@
 # Week 3
 
-https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript1/Week1/readme.md#Types
+
 
 ### Index
 * [agenda for the day](#agenda)
@@ -14,17 +14,20 @@ https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript1/Week1/r
 
 
 ### review
+* look over these one more time: 
+    * [JS fundamentals](https://github.com/HackYourFuture-CPH/JavaScript/tree/master/fundamentals)
+    * [group quiz in class](https://github.com/HackYourFuture-CPH/JavaScript/blob/master/fundamentals/exercises.md)
+* [slido](https://www.sli.do) for choosing what to review - code: ```#7492```
 
-### project
+
+### projecting
 * review last week's project
-* studying source code in devtools
-    * [boolean by example](https://janke-learning.org/boolean-by-example/)
+* inspecting in devtools: [boolean by example](https://janke-learning.org/boolean-by-example/)
 
 ### JS
 * primitive data types
-    * primitive types: [javscript.info](https://javascript.info/types), [janke](https://github.com/janke-learning/primitive-types)
-    * comparisons: [javascript.info](https://javascript.info/comparison), [janke](https://github.com/janke-learning/primitive-types/blob/master/strict-comparisons.md)
-    * [primitive types](https://github.com/janke-learning/primitive-types) - be more specific
+    * primitive types: [javscript.info](https://javascript.info/types), [type detector](https://github.com/janke-learning/primitive-types#the-types)
+    * strict comparisons: [type & value](https://github.com/janke-learning/primitive-types#types-and-values), [=== & !==](https://github.com/janke-learning/primitive-types/blob/master/strict-comparisons.md)
     * gotcha's: [NaN](https://github.com/janke-learning/primitive-types/blob/master/nan.md), [null vs. undefined](https://github.com/janke-learning/primitive-types/blob/master/null-vs-undefined.md)
 * converting types
     * [truthiness](https://github.com/janke-learning/truthiness)
@@ -60,6 +63,8 @@ https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript1/Week1/r
 ### projecting
 * incremental development
 * structuring code
+* connecting event listeners
+
 
 [TOP](#week-3)
 
@@ -93,59 +98,50 @@ https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript1/Week1/r
 
 ## Resources
 
-https://javascript.info/introduction-browser-events
 
-expanded loops
-expanded expressions
-expanded conditionals
+__types intro series (js.info)__
+* [types](https://javascript.info/types)
+* [type conversions](https://javascript.info/type-conversions)
+* [operators](https://javascript.info/operators)
+* [comparison](https://javascript.info/comparison)
+* [logical operators](https://javascript.info/logical-operators)
+* [strings in depth](https://javascript.info/string)
 
 
-* implicit coercion (?)
-* undefined, null, NaN - to make (?)
+__comparisons__
+* [js.info](https://javascript.info/comparison)
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+* [=== & !== scripts](https://github.com/janke-learning/primitive-types/blob/master/strict-comparisons.md)
+* [equalities & coercion](https://janke-learning.org/equalities-coercion/)
+* [`==` & `===` tables](https://dorey.github.io/JavaScript-Equality-Table/)
+* [`==` game](https://eqeq.js.org/)
 
-* types can be cast
+__truthiness & booleaning__
 * [truthiness](https://github.com/janke-learning/truthiness)
-* Operators and implicit coercion:
-  * [equalities-coercion](https://janke-learning.org/equalities-coercion/)
-  * [`==` & `===` tables](https://dorey.github.io/JavaScript-Equality-Table/)
-  * [`==` game](https://eqeq.js.org/)
-primitive types repo
-* native methods: 
-    * [Methods of Primitives](https://javascript.info/primitives-methods)
-    * [Strings](https://javascript.info/string)
-    * [Native Array Methods](https://javascript.info/array-methods#tasks)
-* object & array stuff: 
-    * [Iterables](https://javascript.info/iterable)
-    * [Object.keys, values, entries](https://javascript.info/keys-values-entries)
-    * [Destructuring](https://javascript.info/destructuring-assignment)
+* [boolean operators](https://github.com/janke-learning/truthiness/blob/master/operators-of-truthiness.md)
+* [truthiness statements](https://github.com/janke-learning/truthiness/blob/master/statements-of-truthiness.md)
+* [boolean by example](https://janke-learning.org/boolean-by-example/)
+
+  
+__Expressions vs. Operators__
+* Over Views:[dev.to](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2), [flaviocopes](https://flaviocopes.com/javascript-expressions/), [lib.ru](http://lib.ru/%3E%3C/JAVA/javascr/expr.html)
+* In Depth: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators), [2ality](http://2ality.com/2012/09/expressions-vs-statements.html)
+* Assignment vs Comparison: [Overview (study with PyTut)](https://www.quirksmode.org/blog/archives/2008/01/using_the_assig.html#link1), [This isn't just a JS thing](http://wiki.c2.com/?AssignmentVsEqualityOperator)
+
+  
+__deeper into arrays & objects__
+* [Native Array Methods](https://javascript.info/array-methods)
+* [Iterables](https://javascript.info/iterable)
+* [Object.keys, values, entries](https://javascript.info/keys-values-entries)
+* [Destructuring](https://javascript.info/destructuring-assignment)
 * [Rest & Spread](https://javascript.info/rest-parameters-spread-operator)
 
-* [arithmetic-coercion](https://janke-learning.org/arithmetic-coercion/)  
-  operator precedence - challenge  
-    https://github.com/janke-learning/operator-precedence  
-  coercion - replication exercises  
-  expanding  
-    https://github.com/janke-learning/expanding  
-  trace & log  
-    https://github.com/janke-learning/trace-and-log  
 
-* [javascript.info: comparisons](https://javascript.info/comparison)
-
-* [primitive types](https://github.com/janke-learning/primitive-types)
-
-* Expressions vs. Operators:
-    * (This is a tricky concept, it will make more sense after __Scope & Flow Control__)
-    * Over Views:[dev.to](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2), [flaviocopes](https://flaviocopes.com/javascript-expressions/), [lib.ru](http://lib.ru/%3E%3C/JAVA/javascr/expr.html)
-    * In Depth: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators), [2ality](http://2ality.com/2012/09/expressions-vs-statements.html)
-    * Assignment vs Comparison: [Overview (study with PyTut)](https://www.quirksmode.org/blog/archives/2008/01/using_the_assig.html#link1), [This isn't just a JS thing](http://wiki.c2.com/?AssignmentVsEqualityOperator)
-
-challenge resource: https://janke-learning.org/boolean-by-example/
-
-https://javascript.info/types  
-https://javascript.info/type-conversions  
-https://javascript.info/operators  
-https://javascript.info/comparison  
-https://javascript.info/logical-operators  
+__assorted__
+* [refactor: expanding](https://github.com/janke-learning/expanding)
+* [arithmetic-coercion table](https://janke-learning.org/arithmetic-coercion/)  
+* [tracing & logging](https://github.com/janke-learning/trace-and-log)
+* [intro to events](https://javascript.info/introduction-browser-events)
 
 
 [TOP](#week-3)
