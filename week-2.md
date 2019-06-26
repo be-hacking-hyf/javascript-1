@@ -21,9 +21,10 @@
 * introduce [LearnGitBranching](http://learngitbranching.js.org/)
 
 ### project
+* (pull to your fork for week 2 updates)
 * complete week 1 together in a code-along
 * global scope vs. parameters
-    * [on pytut](http://www.pythontutor.com/live.html#code=//%20see%20this%20on%20glitch%3A%20https%3A//glitch.com/edit/%23!/global-scope-vs-parameters%0A%0Avar%20project%20%3D%20%7Bname%3A%20%22jee%22,%20link%3A%20%22http.com%22%7D%3B%0A%0Afunction%20uses_global%28_object,%20_property%29%20%7B%0A%20%20if%20%28_property%20%3D%3D%3D%20%22name%22%29%20%7B%0A%20%20%20%20console.log%28project.name%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20console.log%28project.link%29%3B%0A%20%20%7D%0A%7D%0Auses_global%28%22never%20used%22,%20%22name%22%29%3B%0Auses_global%28%22never%20used%22,%20%22link%22%29%3B%0A%0A%0Afunction%20uses_parameter%28_object,%20_property%29%20%7B%0A%20%20if%20%28_property%20%3D%3D%3D%20%22name%22%29%20%7B%0A%20%20%20%20console.log%28_object.name%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20console.log%28_object.link%29%3B%0A%20%20%7D%0A%7D%0Auses_parameter%28project,%20%22name%22%29%3B%0Auses_parameter%28project,%20%22link%22%29%3B&cumulative=false&curInstr=17&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+    * [on pytut](http://www.pythontutor.com/live.html#code=//%20see%20this%20on%20glitch%3A%20https%3A//glitch.com/edit/%23!/global-scope-vs-parameters%0A%0Avar%20project%20%3D%20%7Bname%3A%20%22jee%22,%20link%3A%20%22http.com%22%7D%3B%0A%0Afunction%20uses_global%28_property%29%20%7B%0A%20%20if%20%28_property%20%3D%3D%3D%20%22name%22%29%20%7B%0A%20%20%20%20console.log%28project.name%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20console.log%28project.link%29%3B%0A%20%20%7D%0A%7D%0Auses_global%28%22name%22%29%3B%0Auses_global%28%22link%22%29%3B%0A%0Afunction%20ignores_parameter%28_object,%20_property%29%20%7B%0A%20%20if%20%28_property%20%3D%3D%3D%20%22name%22%29%20%7B%0A%20%20%20%20console.log%28project.name%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20console.log%28project.link%29%3B%0A%20%20%7D%0A%7D%0Aignores_parameter%28%22never%20used%22,%20%22name%22%29%3B%0Aignores_parameter%28%22never%20used%22,%20%22link%22%29%3B%0A%0A%0Afunction%20uses_parameter%28_object,%20_property%29%20%7B%0A%20%20if%20%28_property%20%3D%3D%3D%20%22name%22%29%20%7B%0A%20%20%20%20console.log%28_object.name%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20console.log%28_object.link%29%3B%0A%20%20%7D%0A%7D%0Auses_parameter%28project,%20%22name%22%29%3B%0Auses_parameter%28project,%20%22link%22%29%3B&cumulative=false&curInstr=25&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
     * [on glitch](https://glitch.com/edit/#!/global-scope-vs-parameters) - (click on :loop: __Show__ to run the example)
 
 ### JS
@@ -116,14 +117,15 @@ If you don't finish everything but have understood what you finished, that's jus
 
 Really understanding the code means you could do the same work that pythontutor does but drawing yourself on a paper. To help you get there, there are all the great tools listed in the main README for this module. 
 
-* [JS 1, week 2 homework](https://github.com/be-hacking-hyf/javascript-1-homework/week-2) - follow the link to see assignment priorities
+* [JS 1, week 2 homework](https://github.com/be-hacking-hyf/javascript-1-homework/tree/master/week-2) - follow the link to see assignment priorities
 
 
 ### Project
 
 The main goal with the project is to make it work!  The homework is for you to understand, this project is for you to hack.
 
-* :seedling: [cross-module project, week 2](https://github.com/be-hacking-hyf/javascript-1-cross-module/week-2)
+* :dash: [cross-module project, week 1](https://github.com/be-hacking-hyf/javascript-1-cross-module/tree/master/week-1)
+* :dash: [cross-module project, week 2](https://github.com/be-hacking-hyf/javascript-1-cross-module/tree/master/week-2)
   
 
 ### Git/Hub
