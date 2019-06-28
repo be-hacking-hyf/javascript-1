@@ -1,7 +1,6 @@
 # Week 3
 
 
-
 ### Index
 * [agenda for the day](#agenda)
 * [learning objectives](#learning-objectives)
@@ -18,6 +17,7 @@
     * [JS fundamentals](https://github.com/HackYourFuture-CPH/JavaScript/tree/master/fundamentals)
     * [group quiz in class](https://github.com/HackYourFuture-CPH/JavaScript/blob/master/fundamentals/exercises.md)
 * [slido](https://www.sli.do) for choosing what to review - code: ```#7492```
+* this week's homework are much lighter, if you made it this far you can make it to JS 2!
 
 
 ### projecting
@@ -25,6 +25,7 @@
 * inspecting in devtools: [boolean by example](https://janke-learning.org/boolean-by-example/)
 
 ### JS
+* (pull for homework updates)
 * primitive data types
     * primitive types: [javscript.info](https://javascript.info/types), [type detector](https://github.com/janke-learning/primitive-types#the-types)
     * strict comparisons: [type & value](https://github.com/janke-learning/primitive-types#types-and-values), [=== & !==](https://github.com/janke-learning/primitive-types/blob/master/strict-comparisons.md)
