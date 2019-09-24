@@ -27,7 +27,7 @@ const BooleanCases = [
   { name: 'sixth', args: [undefined], expected: false },
   { name: 'seventh', args: [null], expected: true },
 ];
-evaluate(Boolean, reverseCases);
+evaluate(Boolean, BooleanCases);
 
 
 {
