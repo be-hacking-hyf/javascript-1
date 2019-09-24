@@ -12,20 +12,20 @@ console.log(`If you want to really push yourself and test your understanding of 
  by adding a property called 'quizzing' to a function, set it true, and the return value is hidden until you pass
 `);
 
-const additionTests = [
+const addTests = [
   { name: 'first test case', args: [4, 4], expected: 8 },
   { name: 'second test case', args: [3, 4], expected: 6 },
   { name: 'third test case', args: [-1, 1], expected: 0 },
   // write a few more tests!
 ];
-function addition(a, b) {
+function add(a, b) {
   console.log('a:', typeof a, a)
   console.log('b:', typeof b, b)
   const result = a + b;
   return result;
 };
-addition.quizzing = true;
-evaluate(addition, additionTests)
+add.quizzing = true;
+evaluate(add, addTests)
 
 
 
