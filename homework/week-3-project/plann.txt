@@ -1,0 +1,15 @@
+a user can
+  encode a string
+  decode a string
+  touppercase
+  tolowercase
+  uppercase an encoding
+  ...
+  things that are inverses and compositions
+
+folder structure
+  logics
+    file per inverse pair
+    with tests provided
+  handlers
+    string together the logic functions to do stuff

@@ -37,6 +37,7 @@ evaluate(mysteryOne, mysteryOneTests);
 
 const mysteryTwoTests = [
   // write at least 5 test cases
+  { name: 'asdf', args: [[3, 4, 5]], expected: { number: [3, 4, 5] } }
 ]
 function mysteryTwo(x) {
   const newObj = {};

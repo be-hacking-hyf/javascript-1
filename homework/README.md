@@ -30,8 +30,25 @@ All of your exercises will ask you to work with functions, but not all functions
 
 ### Weekly Projects
 
-Last module the projects emphasized breaking your web pages into small steps and using incremental development to reach a final webpage.  This module we will expect you to continue practicing this skill, using either Git Branches or separate folders depending on how comfortable your are with Git. (next module you will be required to use branches)
+__Incremental Development 2.0:__ _git instead of folders_
 
-The projects in this module will focus on how to connect javascript logic to your html/css web pages in a modular and organized way by applying the 3-layer handler design pattern to enforce _separation of concerns_ .
+Last module the projects emphasized breaking your web pages into small steps and using incremental development to reach a final webpage.  This module we will expect you to continue practicing incremental development, but no longer ask you to have each step in a new folder.  For this module's projects you should begin using _git commits_ (and branches if you're feeling ambitious!) the way you used folders in the last module.  When we look through your repository's commit history we should see clearly labeled commits that store working but incomplete versions of the week's project.
 
-finish writing this after forking 3-layer-handers to hyfb
+For a more clear idea of what this will look like take some time to clone [Built With Branches](https://github.com/hackyourfuturebelgium/built-with-branches) and study it using GitKraken, VSC & running it in your browser.  What happens when you check out old commits/branches and open VSC or refresh your browser?
+
+
+__How does JavaScript fit in?__
+
+The projects in this module will also introduce how to connect javascript logic to your html/css web pages in a modular and organized way using the 3-layer handler design pattern.
+
+For each week's project you will be given:
+* HTML with input fields, output fields, buttons & script tags. but nothing else!
+* An empty CSS file
+* A JavaScript handler function with the top & bottom working, but the middle empty
+* An event listener connecting the handler to the inputs & outputs
+
+Your tasks will be:
+1. Write the JavaScript logic your webpage needs
+1. Fill out & style the HTML/CSS user interface for the JavaScript you wrote
+
+In more words, what does this mean?  It means you'll be given the working outline of a basic interactive web page, and you will be reponsible for making it glorious!

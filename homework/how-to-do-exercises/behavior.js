@@ -30,11 +30,11 @@ function whatAreTestCases() {
   const returned0 = addition(...args0);
   console.assert(expected0 === returned0, 'first test case');
 
-  const args1 = [3, 4], expected1 = 6;
+  const args1 = [-1, 1], expected1 = 0;
   const returned1 = addition(...args1);
   console.assert(expected1 === returned1, 'second test case');
 
-  const args2 = [-1, 1], expected2 = 0;
+  const args2 = [3, 4], expected2 = 6;
   const returned2 = addition(...args2);
   console.assert(expected2 === returned2, 'third test case');
 
@@ -54,11 +54,13 @@ evaluate will let us know if our function passes the tests!
 (be careful!  sometimes the test case is wrong, not the function ;)
 `);
 
+// what the function does
 const additionTests = [
   { name: 'first test case', args: [4, 4], expected: 8 },
   { name: 'second test case', args: [3, 4], expected: 6 },
   { name: 'third test case', args: [-1, 1], expected: 0 },
 ];
+// how it does it
 function addition(a, b) {
   console.log('a:', typeof a, a)
   console.log('b:', typeof b, b)

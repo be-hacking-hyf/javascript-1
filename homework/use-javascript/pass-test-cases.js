@@ -6,6 +6,7 @@
   console.groupCollapsed(pageTitle);
 }
 
+// what the function does
 const typeTesterTests = [
   { name: 'first', args: [4], expected: '4 is a number' },
   { name: 'second', args: [NaN], expected: 'NaN is a number' },
@@ -15,12 +16,14 @@ const typeTesterTests = [
   { name: 'sixth', args: [true], expected: 'true is a boolean' },
   { name: 'seventh', args: [null], expected: 'Infinity is a number' },
 ];
+// how it does it
 function typeTester(value) {
   // write this!
 }
 evaluate(typeTester, typeTesterTests);
 
 
+// what the function does
 const sortedNumbersTests = [
   { name: 'first', args: [["3", null, 0, 'words', false, -1]], expected: [-1, 0] },
   { name: 'second', args: [["3", null, 'words', false]], expected: [null] },
@@ -29,12 +32,14 @@ const sortedNumbersTests = [
   { name: 'fifth', args: [[4, 9, .5, 100, 1e3]], expected: [.5, 4, 9, 100, 1000] },
   { name: 'sixth', args: [[4, Infinity, 0.0, NaN, null]], expected: [NaN, 0, 4, Infinity] },
 ]
+// how it does it
 function sortedNumbers(arrOfThings) {
   // write this!
 }
 evaluate(sortedNumbers, sortedNumbersTests)
 
 
+// what the function does
 const compareValuesTests = [
   { name: 'null, undefined', args: [null, undefined], expected: true },
   { name: 'null, null', args: [null, null], expected: true },
@@ -55,6 +60,7 @@ const compareValuesTests = [
   { name: 'false, "', args: [false, ""], expected: true },
   { name: '0, ""', args: [0, ""], expected: true }
 ];
+// how it does it
 function compareValues(a, b) {
   // write this!
 }
