@@ -3,7 +3,7 @@
 
 
 {
-  const pageTitle = 'primitives & operators';
+  const pageTitle = 'primitive operators';
   const header = document.createElement("h2");
   header.innerHTML = pageTitle;
   document.body.appendChild(header);

@@ -2,7 +2,7 @@
 
 write a little javascript to:
 - take in the string 'toSort'
-- sort all of the characters
+- sort all of the characters by charCode number
 - and assign the new string to 'sorted'
 
 the handler is already set up to:
@@ -18,7 +18,6 @@ function sortHandler() {
   const toSort = document.getElementById('sort-input').value;
 
   // pass user input through core logic (write this! it doesn't work)
-
   const sorted = `sort the charecters in ${toSort}`;
 
   // report result to user (this works, no need to change it!)

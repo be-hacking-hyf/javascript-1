@@ -1,5 +1,5 @@
 {
-  const pageTitle = 'side effects';
+  const pageTitle = 'side effects (challenge)';
   const header = document.createElement("h2");
   header.innerHTML = pageTitle;
   document.body.appendChild(header);
@@ -96,7 +96,7 @@ function example_copyingObjects() {
   const objCopy = Object.assign({}, object);
 
   // JS Tutor does not support spreading objects, but it works in the browser
-  // here is a first taste of JS cross-environment issues, welcome to JS!
+  // welcome to JS cross-environment problems, welcome to web development!
   // const objCopy = { ...object };
 
   console.assert(object !== objCopy, 'both variables should reference different objects');

@@ -33,7 +33,6 @@ function scrambleHandler() {
   const toScramble = document.getElementById('scramble-input').value;
 
   // pass user input through core logic (this works! no need to change it)
-
   const scrambled = scramble(toScramble);
 
   // report result to user (this works, no need to change it!)

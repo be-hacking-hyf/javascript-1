@@ -29,7 +29,6 @@ function repeatCharsHandler() {
   const stringInput = document.getElementById('repeatChars-input').value;
 
   // pass user input through core logic (this works!  no need to change it)
-
   const repeatCharsed = repeatChars(stringInput);
 
   // report result to user (this works, no need to change it!)

@@ -8,8 +8,58 @@
 }
 
 
+/* tracing function execution
+  tracing function execution is 100% necessary to becoming a confident programmer
 
-function exampleTracingFunctions() {
+  once you get the hang of it it's not really so hard,
+  but if you don't set aside the time to practice tracing functions you will have a lot of trouble later on
+
+  for more info check out:
+    https://github.com/janke-learning/function-exercises/blob/master/tracing-functions.md
+*/
+
+
+function example_howToTraceFunctions() {
+
+  // declaring a function makes it exist for later use
+  // but does not execute the code inside
+  function simpleFunction(param1, param2) {
+    // simpleFunction takes two parameters
+    // parameters are variables that don't exist until function execution
+    // they are assigned the values of arguments passed in at function call
+
+    // the body of the function performs some logic on the parameters
+    const result = param2 + param1;
+
+    // and returns the result so it is available at global scope
+    return result;
+  }
+
+  // variables declared outside of the function can be used as arguments
+  // the values in these variables will be assigned to the function parameters
+  const arg1 = '3', arg2 = 3;
+  // calling a function will open a new frame in memory
+  // the values passed in as arguments will be assigned to the parameters
+  // the lines of code written in the function body will be executed in order
+  // and a value will be returned from the frame before it is closed
+  // the return value can be captured in global scope using a variable
+  const result1 = simpleFunction(arg1, arg2);
+
+  // values can also be passed directly into function calls
+  const result2 = simpleFunction(2, 1);
+
+  // functions can be called as many times as you like
+  // with whatever values you want
+  const result3 = simpleFunction(null, undefined);
+  const result4 = simpleFunction(true, false);
+  const result5 = simpleFunction(' friend', 'hello');
+  const result6 = simpleFunction(1, 1);
+
+}
+evaluate(example_howToTraceFunctions);
+
+
+function example_completedTracingExercise() {
 
   function f(param1, param2, param3) {
     var result = param2 + param3 + param1;
@@ -26,7 +76,7 @@ function exampleTracingFunctions() {
   console.assert(returnVal === "yzx", "returnVal should be 'yzx'");
 
 }
-evaluate(exampleTracingFunctions);
+evaluate(example_completedTracingExercise);
 
 
 function tracing1() {

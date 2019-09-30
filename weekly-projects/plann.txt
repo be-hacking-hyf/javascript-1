@@ -1,0 +1,6 @@
+put in some unresponsiveness and have them responsiveize it
+
+the string thing is confusing in variables, get that into a comment
+
+have them practice emulating different devices in devtools
+  https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode

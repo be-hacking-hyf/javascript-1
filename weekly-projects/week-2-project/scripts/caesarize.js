@@ -30,13 +30,12 @@ function caesarizeHandler() {
 
   const rawNumInput = document.getElementById('caesarize-number-input').value;
   const shiftNumber = Number(rawNumInput);
-  if (shiftNumber !== shiftNumber) {
+  if (isNaN(shiftNumber)) {
     throw new TypeError('second input to "caesarize it" must be a number');
   }
 
 
   // pass user input through core logic (this works!  no need to change it)
-
   const caesarized = caesarize(strToCaesarize);
 
   // report result to user (this works, no need to change it!)

@@ -32,12 +32,9 @@ but will stop it part way through execution
 
 -----
 
-for semantic errors the evaluate function will generate a search link for you,
+for runtime errors the evaluate function will generate a search link for you,
 but it's not always perfect!  you know more about the code than evaluate does
-if a search is not helpful try adding more information about the code that threw the error
-
-many of these errors involve JS language features that are slightly more advanced
-you can keep revisiting this page over the weeks of JS-1 as you learn more JS
+if a search is not helpful try adding more information about the code you're studying
 
 when you find the solutions for these errors
 comment out the erroring code instead of replacing it

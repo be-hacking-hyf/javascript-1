@@ -17,7 +17,6 @@ function devowelHandler() {
   const toDevowel = document.getElementById('devowel-input').value;
 
   // pass user input through core logic (write this! it doesn't work)
-
   const devoweled = `remove all vowels from ${toDevowel}`;
 
   // report result to user (this works, no need to change it!)

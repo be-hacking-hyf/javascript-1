@@ -34,7 +34,6 @@ function constantizeHandler() {
   const toConstantize = document.getElementById('constantize-input').value;
 
   // pass user input through core logic (this works, no need to change it!)
-
   const constantized = constantize(toConstantize);
 
   // report result to user (this works, no need to change it!)

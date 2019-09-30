@@ -1,16 +1,3 @@
-// function typeExercise1() {
-//   const firstVariable = null;
-//   const secondVariable = null;
-
-//   console.assert(typeof firstVariable === 'string',
-//     'first variable should be a string');
-//   console.assert(typeof secondVariable === 'string',
-//     'second variable should be a string');
-//   console.assert(firstVariable !== secondVariable,
-//     'both variables should not store the same string');
-// }
-// evaluate(typeExercise1);
-
 // https://github.com/janke-learning/primitive-types
 
 {
@@ -22,27 +9,164 @@
 }
 
 
-// all primitives
+// all values in JavaScript have a type
+// the type of a value is very important to understanding how JS works
 const typeofTests = [
-  { name: 'NaN', args: [NaN], expected: null },
-  { name: 'NaN', args: [NaN], expected: null },
+  // boolean values
+  { name: 'boo, true', args: [true], expected: '' },
+  { name: 'boo, false', args: [false], expected: '' },
+  // null's type is 'null'.  just remember, don't try yet to understand
+  { name: 'obj, true', args: [null], expected: '' },
+  // undefined. like with null, there is only one value with this type
+  { name: 'und, undefined', args: [undefined], expected: '' },
+  // strings are anything with quotes around it
+  { name: 'str, ', args: [''], expected: '' },
+  { name: 'str, anything with quotes!', args: ['anything with quotes!'], expected: '' },
+  // numbers are a bit more strange and varied
+  { name: 'num, 0.0', args: [0.0], expected: 'number' },
+  { name: 'num, NaN', args: [NaN], expected: 'number' },
+  { name: 'num, Infinity', args: [Infinity], expected: 'number' },
+  { name: 'num, 4', args: [4], expected: 'number' },
+  // write 6 more passing test cases with expected value 'number'
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
 ]
-function typeofWrapper(x) {
-  const typeofX = typeof x;
-  return typeofX;
+function allValuesHaveAType(value) {
+  return typeof value;
 }
-typeofWrapper.quizzing = true;
-evaluate(typeofWrapper, typeofTests);
+allValuesHaveAType.quizzing = true;
+evaluate(allValuesHaveAType, typeofTests);
 
 
-const castToStringTests = [
-  { name: '', }
+// fix the test cases' expected values to pass the function
+const typeofReturnsAStringTests = [
+  { name: 'boo, true', args: [true], expected: 'boolean' },
+  { name: 'boo, false', args: [false], expected: 'boolean' },
+  { name: 'obj, true', args: [null], expected: 'object' },
+  { name: 'und, undefined', args: [undefined], expected: 'undefined' },
+  { name: 'str, anything with quotes!', args: ['anything with quotes!'], expected: 'string' },
+  { name: 'num, 4', args: [4], expected: 'number' },
 ];
-function castToString(arg) {
-  const stringed = String(arg);
-  return;
-};
+function typeofReturnsAString(value) {
+  const typeofValue = typeof value;
+  return typeof typeofValue;
+}
+typeofReturnsAString.quizzing = true;
+evaluate(typeofReturnsAString, typeofReturnsAStringTests);
 
+
+
+function example_aBitAboutNaN() {
+
+  // NaN is the only value that does not strictly equal itself
+  // this is a bit strange. just remember it
+  const valuesToStudy = [
+    true, false, 1, 0, "", " ", NaN, undefined, null,
+    "got it?", "add some of your own values to study"
+  ];
+
+  valuesToStudy.forEach(value => {
+    const equalsItself = value === value;
+    const doesNotEqualItself = value !== value;
+  });
+
+}
+evaluate(example_aBitAboutNaN);
+
+// fix the expected values to pass the tests
+const strictEqualityTests = [
+  { name: 'NaN', args: [NaN, NaN], expected: null },
+  { name: 'first', args: [true, 'true'], expected: null },
+  { name: 'second', args: [1, '1'], expected: null },
+  { name: 'third', args: ['1', '1'], expected: null },
+  { name: 'fourth', args: [1000, 1e3], expected: null },
+  { name: 'fifth', args: [+0, -0], expected: null },
+  { name: 'sixth', args: [1, 1.0], expected: null },
+  { name: 'seventh', args: ['', ""], expected: null },
+  { name: 'eighth', args: ["", ``], expected: null },
+  { name: 'ninth', args: ['  ', ' '], expected: null },
+];
+function strictEquality(a, b) {
+  // if type OR value are not the same, returns false
+  // if type AND value are the same, returns true
+  return a === b;
+}
+strictEquality.quizzing = true;
+evaluate(strictEquality, strictEqualityTests);
+
+
+
+const strictInequalityTests = [
+  { name: 'NaN', args: [NaN, NaN], expected: null },
+  { name: 'first', args: [true, 'true'], expected: null },
+  { name: 'second', args: [1, '1'], expected: null },
+  { name: 'third', args: ['1', '1'], expected: null },
+  { name: 'fourth', args: [1000, 1e3], expected: null },
+  { name: 'fifth', args: [+0, -0], expected: null },
+  { name: 'sixth', args: [1, 1.0], expected: null },
+  { name: 'seventh', args: ['', ""], expected: null },
+  { name: 'eighth', args: ["", ``], expected: null },
+  { name: 'ninth', args: ['  ', ' '], expected: null },
+];
+function strictInequality(a, b) {
+  // if type OR value are not the same, returns true
+  // if type AND value are the same, returns false
+  return a !== b;
+}
+strictInequality.quizzing = true;
+evaluate(strictInequality, strictInequalityTests);
+
+
+
+// for more: https://github.com/janke-learning/primitive-types/blob/master/null-vs-undefined.md
+function example_nullVsUndefined() {
+
+  // null and undefined are two different types
+  const typeofNull = typeof null;
+  const typeofUndefined = typeof undefined;
+
+  // undefined can happen by accident in a few ways (here are a few)
+  const assignedToUndefined = undefined;
+  let unAssignedVariable;
+  const object = {};
+  const nonExistentProperty = object.prop;
+  const array = [];
+  const nonExistentEntry = array[0];
+
+
+  // null will only happen on purpose (until you study the DOM)
+  const assignedNull = null;
+
+  // so, using null or undefined is a matter of convention
+  // using null means that you intentionally want something empty
+  // undefined could be on purpose or by accident
+
+}
+evaluate(example_nullVsUndefined);
+
+
+
+/* P.S.
+  this set of exercises covers only the basic primitive types
+
+  Symbols are also a primitive type, but are a bit more complicated
+  and you won't need them for now: https://javascript.info/symbol
+
+  There are also more object types than just null (Object, Array, Date, ...)
+    but these are more complicated and don't play so nice with type casting
+    they are also stored by reference so are fundamentally different than the primitives
+
+  comparing objects also works differently than comparing primitives
+    this will be covered in the exercises on arrays & objects
+
+  functions are also their own type: typeof function(){} - 'function'
+    but functions are not primitives, so more on them later in the course
+
+*/
 
 {
   console.groupEnd();

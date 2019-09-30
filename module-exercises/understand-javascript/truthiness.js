@@ -9,26 +9,23 @@
 }
 
 
-function truthinessIsCoersionToBoolean() {
+function example_truthinessIsCastingToBoolean() {
   const valuesToStudy = [
-    true, false, 1, 0, "", " ", NaN, undefined, null
+    true, false, 1, 0, "", " ", NaN, undefined, null,
+    "got it?", "add some of your own values to study"
   ];
   valuesToStudy.forEach(value => {
     const type = typeof value;
-    const coerced = Boolean(value);
-    const coercedType = typeof coerced;
-    const truthiness = coerced + 'y';
+    const castToBoolean = Boolean(value);
+    const newType = typeof castToBoolean;
+    const truthiness = castToBoolean + 'y';
   })
 }
-evaluate(truthinessIsCoersionToBoolean);
+evaluate(example_truthinessIsCastingToBoolean);
 
-function truthinessByTestCase(x) {
-  const coercedToBool = Boolean(x);
-  const truthiness = coercedToBool + 'y';
-  return truthiness;
-}
 
-const falseyValues = [
+const truthinessTests = [
+  // flasey values, everything else is truthy!
   { name: 'false', args: [false], expected: 'falsey' },
   { name: 'null', args: [null], expected: 'falsey' },
   { name: 'undefined', args: [undefined], expected: 'falsey' },
@@ -40,17 +37,25 @@ const falseyValues = [
   { name: '+0', args: [+0], expected: 'falsey' },
   { name: '-0', args: [-0], expected: 'falsey' },
   { name: 'NaN', args: [NaN], expected: 'falsey' },
+  // try it yourself! write some more test cases
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
+  { name: '', args: null, expected: null },
 ];
-evaluate(truthinessByTestCase, falseyValues);
-
-const truthyValues = [
-  { name: 'anything else!', args: ['anything else!'], expected: 'truey' }
-];
-evaluate(truthinessByTestCase, truthyValues);
+function truthinessByTestCase(x) {
+  const coercedToBool = Boolean(x);
+  const truthiness = coercedToBool + 'y';
+  return truthiness;
+}
+truthinessByTestCase.quizzing = true;
+evaluate(truthinessByTestCase, truthinessTests);
 
 
 // change the expected values from null to true or false
-// and come on, try thinking instead of just trying both till it's green!
+// and come on. don't just use trial and error, think a bit harder!
 const testsToPass = [
   { name: 'first', args: [0.0], expected: null },
   { name: 'second', args: [null], expected: null },
