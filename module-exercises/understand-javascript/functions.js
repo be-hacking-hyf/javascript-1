@@ -19,14 +19,79 @@
 */
 
 
+function example_functionDeclaration() {
+
+  // declaring a function makes it exist in memory
+  // but does not execute the code inside
+
+  function declaredAndUnused() {
+    const variable = 'this is never executed';
+  }
+
+}
+evaluate(example_functionDeclaration);
+
+
+function example_functionCalling() {
+
+  // calling a function will open a new frame in memory
+  // variables declared in the function are not available outside the frame
+  // the lines of code written in the function body will be executed in order
+
+  function declaredAndUsed() {
+    const variable = 'stuck in this frame';
+  }
+  declaredAndUsed();
+
+  // functions can be called as may times as you like
+  declaredAndUsed();
+  declaredAndUsed();
+  declaredAndUsed();
+
+}
+evaluate(example_functionCalling);
+
+
+function example_arguments() {
+
+  // functions can be declared with parameters
+  // parameters are variables that don't exist until function execution
+
+  // functions can take arguments when the are called
+  // the values passed as arguments will be assigned to the function parameters
+
+  function takesTwoArguments(param1, param2) {
+    const variable = param2 + param1;
+  }
+  takesTwoArguments(3, 4);
+  takesTwoArguments('4', '3');
+  takesTwoArguments(true, true);
+
+}
+evaluate(example_arguments);
+
+function example_returnValues() {
+
+  // parameters and local variables are not available outside of a function frame
+  // but functions can return values to the global frame
+
+  function returnsAValue(param) {
+    return param + param;
+  }
+
+  returnsAValue(1);
+
+  // but the return value is lost if you don't store it in a variable
+  const returnValueFor2 = returnsAValue(2);
+  const returnValueFor10 = returnsAValue(10);
+
+}
+evaluate(example_returnValues);
+
 function example_howToTraceFunctions() {
 
-  // declaring a function makes it exist for later use
-  // but does not execute the code inside
   function simpleFunction(param1, param2) {
     // simpleFunction takes two parameters
-    // parameters are variables that don't exist until function execution
-    // they are assigned the values of arguments passed in at function call
 
     // the body of the function performs some logic on the parameters
     const result = param2 + param1;
@@ -38,10 +103,7 @@ function example_howToTraceFunctions() {
   // variables declared outside of the function can be used as arguments
   // the values in these variables will be assigned to the function parameters
   const arg1 = '3', arg2 = 3;
-  // calling a function will open a new frame in memory
-  // the values passed in as arguments will be assigned to the parameters
-  // the lines of code written in the function body will be executed in order
-  // and a value will be returned from the frame before it is closed
+
   // the return value can be captured in global scope using a variable
   const result1 = simpleFunction(arg1, arg2);
 

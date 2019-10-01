@@ -48,7 +48,8 @@ So instead the evaluate function works with test cases in this format:
 console.log({ name: 'a string describing the test case', args: ['an array of arguments'], expected: 'what the function should return' })
 
 
-console.log(`By writing a few test cases in in this format and passing to evaluate along with the function they test,
+
+console.log(`By writing a few test cases in in this format and passing them to evaluate along with the function they describe,
 evaluate will let us know if our function passes the tests!
 
 (be careful!  sometimes the test case is wrong, not the function ;)
@@ -68,6 +69,23 @@ function addition(a, b) {
   return result;
 };
 evaluate(addition, additionTests)
+
+
+console.log(`if there is a mistake formatting a test case, that exercise will turn purple.
+the console readout will give more information about what was wrong with the test case
+
+any valid tests cases will still be run`);
+
+// what the function does
+const invalidTests = [
+  'hello!',
+  { name: true, args: true, expected: 8 },
+  {},
+  { name: 'valid test', args: ['4', 4], expected: 8 }
+];
+evaluate(addition, invalidTests);
+
+
 
 
 
