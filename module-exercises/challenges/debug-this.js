@@ -8,37 +8,17 @@
 
 /* debug these
 
-in each of the exercises below either the function or the test cases have a mistake in them
-and sometimes both
+in the exercise below either the function and the test cases have mistakes in them
 
-But never the asserts!
+But never in the asserts!
 
-these are some tricky exercises with no single correct answer
-you're free to change any operation (ie. comparisons) but cannot change the control flow structures or the asserts
-you can also change the test cases
+this is a very tricky exercise with no single correct answer
+you're free to change any operation (ie. comparisons) but cannot change the asserts
+you can also change the test cases, of course.  some of them are wrong
 
 have at it!
 
-(heads up, these are very tricky exercises)
-
 */
-
-const loopyTests = [
-
-];
-function loopy(a, b) {
-  // be a little off in looping
-}
-loopy.quizzing = true;
-evaluate(loopy, loopyTests);
-
-
-const anArray = [0, 1, 2];
-const anObject = { a: 0, b: 1 };
-
-// an exercise with some side-effect & logic mistakes
-// quizzing = true;
-
 
 const typeStrangenessTests = [
   // psst.  only use primitives as args or everything becomes confusing

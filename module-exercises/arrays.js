@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=W1NTK09o-vM&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=4
+
 {
   const pageTitle = 'arrays';
   const header = document.createElement("h2");
@@ -139,6 +141,9 @@ function passTheAssertions3() {
   console.assert(arr3[2] === arr2[index], 'arr3[2] should strictly equal arr2[index]');
 }
 evaluate(passTheAssertions3);
+
+
+
 
 
 {

@@ -7,9 +7,9 @@
 }
 
 console.log(`If you want to really push yourself and test your understanding of a function's behavior,
- activate quiz mode!
+activate quiz mode!
 
- by adding a property called 'quizzing' to a function, set it true, and the return value is hidden until you pass
+add a property called 'quizzing' to a function, set it true, and the return value is hidden until you pass
 `);
 
 const addTests = [

@@ -30,6 +30,8 @@ but will stop it part way through execution
 - for more info: https://github.com/janke-learning/errors-and-life-cycle
 
 
+gotcha!  different browsers will print different messages for the same errors
+
 -----
 
 for runtime errors the evaluate function will generate a search link for you,
@@ -45,60 +47,60 @@ this way you can come back later to study the errors and solutions
 // --- syntax errors ---
 // these are detected at creation phase and will stop the page from loading
 
-// function missingVariableName() {
-//   const = null;
-// }
-// evaluate(missingVariableName);
+function missingVariableName() {
+  const = null;
+}
+evaluate(missingVariableName);
 
-// function missingInConst() {
-//   const x;
-// }
-// evaluate(missingInConst)
+function missingInConst() {
+  const x;
+}
+evaluate(missingInConst)
 
-// function unexpectedToken1() {
-//   const a = 1:
-// }
-// evaluate(unexpectedToken1);
+function unexpectedToken1() {
+  const a = 1:
+}
+evaluate(unexpectedToken1);
 
-// function unexpectedToken2() {
-//   const x = 3];
-// }
-// evaluate(unexpectedToken2);
+function unexpectedToken2() {
+  const x = 3];
+}
+evaluate(unexpectedToken2);
 
-// function unexpectedToken3() {
-//   let a = { b: 3 };
-//   let b = a.b.3;
-// }
-// evaluate(unexpectedToken3);
+function unexpectedToken3() {
+  let a = { b: 3 };
+  let b = a.b.3;
+}
+evaluate(unexpectedToken3);
 
-// function unexpectedToken4() {
-//   const str = "he told me "run!" the horse arrives!";
-// }
-// evaluate(unexpectedToken4);
+function unexpectedToken4() {
+  const str = "he told me "run!" the horse arrives!";
+}
+evaluate(unexpectedToken4);
 
-// function missingAfterElement1() {
-//   const myArray = [1, 2, 3;
-// }
-// evaluate(missingAfterElement1)
+function missingAfterElement1() {
+  const myArray = [1, 2, 3;
+}
+evaluate(missingAfterElement1)
 
-// function missingAfterElement1() {
-//   const myArray = [1, 2 3];
-// }
-// evaluate(missingAfterElement1)
+function missingAfterElement1() {
+  const myArray = [1, 2 3];
+}
+evaluate(missingAfterElement1)
 
-// function missingBeforeformal() {
-//   function getNine {
-//     const x = 6, y = 3;
-//     return x + y;
-//   }
-// }
-// evaluate(missingBeforeformal);
+function missingBeforeformal() {
+  function getNine {
+    const x = 6, y = 3;
+    return x + y;
+  }
+}
+evaluate(missingBeforeformal);
 
-// function unEscapedLineBreak() {
-//   const a = 'this is
-//   two lines';
-// }
-// evaluate(unEscapedLineBreak);
+function unEscapedLineBreak() {
+  const a = 'this is
+  two lines';
+}
+evaluate(unEscapedLineBreak);
 
 
 // --- semantic errors ---

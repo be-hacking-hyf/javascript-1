@@ -51,4 +51,4 @@ Your tasks will be:
 1. Write the JavaScript logic your webpage needs
 1. Fill out & style the HTML/CSS user interface for the JavaScript you wrote
 
-In more words, what does this mean?  It means you'll be given the working outline of a basic interactive web page, and you will be reponsible for making it glorious!
+In more words, what does this mean?  It means you'll be given the working outline of a basic interactive web page, and you will be responsible for making it glorious!

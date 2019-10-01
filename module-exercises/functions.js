@@ -1,6 +1,7 @@
+// https://www.youtube.com/watch?v=bJUmxDsaduY&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=6
 
 {
-  const pageTitle = 'tracing functions';
+  const pageTitle = 'functions';
   const header = document.createElement("h2");
   header.innerHTML = pageTitle;
   document.body.appendChild(header);
@@ -41,6 +42,7 @@ function example_functionCalling() {
   function declaredAndUsed() {
     const variable = 'stuck in this frame';
   }
+
   declaredAndUsed();
 
   // functions can be called as may times as you like
@@ -70,15 +72,38 @@ function example_arguments() {
 }
 evaluate(example_arguments);
 
+
+function example_lexicalScope() {
+
+  // variables declared inside a function body are only available in the function frames
+  // parameters are also not available before or after the function call
+  // this is called "lexical scope"
+
+
+  function declaredAndUsed(param) {
+    const variable = 'stuck in this frame';
+  }
+
+  // "variable" and "param" do not exist in global before the call
+  declaredAndUsed(); // or during the function call
+  // or after the function call
+
+
+  // JS also has "block scope", but you'll see that later on
+}
+evaluate(example_lexicalScope);
+
 function example_returnValues() {
 
   // parameters and local variables are not available outside of a function frame
   // but functions can return values to the global frame
 
   function returnsAValue(param) {
-    return param + param;
+    const result = param + param;
+    return result;
   }
 
+  // the result is returned but lost
   returnsAValue(1);
 
   // but the return value is lost if you don't store it in a variable
@@ -349,8 +374,138 @@ function tracing10() {
 }
 evaluate(tracing10);
 
+// looking for more tracing? https://github.com/janke-learning/function-exercises/blob/master/turtle-shuffle.md
 
-// looking for more? https://github.com/janke-learning/function-exercises/blob/master/turtle-shuffle.md
+
+
+function example1_testCases() {
+
+  // without using the word "test case", you've been using test cases!
+  // test cases are a way of describing a function
+  // what return values do you expect for different arguments?
+
+  // the tracing exercises looked inside JS memory WHILE the function executes
+  // test case look at what's in memory BEFORE and AFTER
+
+  const testCases = [
+    { name: 'first', args: [0, 1], expected: 1 },
+    { name: 'second', args: [1, 1], expected: 2 },
+    { name: 'third', args: [1, 0], expected: 1 },
+    { name: 'fourth', args: [1, 3], expected: 4 }
+  ];
+
+  function add(a, b) {
+    const result = a + b;
+    return result;
+  }
+
+  testCases.forEach(test => {
+    const name = test.name;
+    const args0 = test.args[0];
+    const args1 = test.args[1];
+    const expected = test.expected;
+    const returned = add(...test.args);
+    console.assert(returned === test.expected, `${test.name}: expected ${test.expected}, returned ${returned}`);
+  });
+
+
+}
+evaluate(example1_testCases);
+
+const exampleTestCases = [
+  { name: 'first', args: [0, 1], expected: 1 },
+  { name: 'second', args: [1, 1], expected: 2 },
+  { name: 'third', args: [1, 0], expected: 1 },
+  { name: 'fourth', args: [1, 3], expected: 4 }
+];
+function example2_testCases(a, b) {
+  console.log('a:', typeof a, ',', a);
+  console.log('b:', typeof b, ',', b);
+
+  const result = a + b;
+  console.log('result:', typeof result, ',', result);
+
+  return result;
+}
+evaluate(example2_testCases, exampleTestCases);
+
+
+const writeTestCases1 = [
+  { name: 'first', args: [/* what adds to be 5? */], expected: 5 },
+  { name: 'second', args: [/* what else adds to be 5? */], expected: 5 },
+  { name: 'third', args: [-2, 2], expected: null }, // what return value do you expect?
+  { name: 'fourth', args: [100, 20], expected: null }, // what return value do you expect?
+  { name: 'fifth', args: [], expected: null }, // create your own test case!
+  { name: 'sixth', args: [], expected: null }, // create your own test case!
+];
+function functionToTest1(a, b) {
+  const result = a + b;
+  return result;
+}
+evaluate(functionToTest1, writeTestCases1);
+
+const writeTestCases2 = [
+  { name: 'first', args: [/* what subtracts to be 5? */], expected: 5 },
+  { name: 'second', args: [/* what else subtracts to be 5? */], expected: 5 },
+  { name: 'third', args: [10, 2], expected: null }, // what return value do you expect?
+  { name: 'fourth', args: [10, 20], expected: null }, // what return value do you expect?
+  { name: 'fifth', args: [], expected: null }, // create your own test case!
+  { name: 'sixth', args: [], expected: null }, // create your own test case!
+];
+function functionToTest2(a, b) {
+  const result = a - b;
+  return result;
+}
+functionToTest2.quizzing = true;
+evaluate(functionToTest2, writeTestCases2);
+
+
+const writeTestCases3 = [
+  { name: 'first', args: [/* what multiplies to be 5? */], expected: 5 },
+  { name: 'second', args: [/* what else multiplies to be 5? */], expected: 5 },
+  { name: 'third', args: [10, 2], expected: null }, // what return value do you expect?
+  { name: 'fourth', args: [10, 20], expected: null }, // what return value do you expect?
+  { name: 'fifth', args: [], expected: null }, // create your own test case!
+  { name: 'sixth', args: [], expected: null }, // create your own test case!
+];
+function functionToTest3(a, b) {
+  const result = a * b;
+  return result;
+}
+functionToTest3.quizzing = true;
+evaluate(functionToTest3, writeTestCases3);
+
+
+const writeTestCases4 = [
+  { name: 'first', args: [/* what letters in what order will return "zyx"? */], expected: 'zyx' },
+  { name: 'second', args: [/* what letters in what order will return "yzx"? */], expected: 'yzx' },
+  { name: 'third', args: ['y', 'z', 'x'], expected: null }, // what return value do you expect?
+  { name: 'fourth', args: ['x', 'y', 'z'], expected: null }, // what return value do you expect?
+  { name: 'fifth', args: [], expected: null }, // create your own test case!
+  { name: 'sixth', args: [], expected: null }, // create your own test case!
+];
+function functionToTest4(a, b, c) {
+  const result = c + a + b;
+  return result;
+}
+functionToTest4.quizzing = true;
+evaluate(functionToTest4, writeTestCases4);
+
+
+const writeTestCases5 = [
+  { name: 'first', args: [/* what letters in what order will return "zyx"? */], expected: 'zyx' },
+  { name: 'second', args: [/* what letters in what order will return "yzx"? */], expected: 'yzx' },
+  { name: 'third', args: ['y', 'z', 'x'], expected: null }, // what return value do you expect?
+  { name: 'fourth', args: ['x', 'y', 'z'], expected: null }, // what return value do you expect?
+  { name: 'fifth', args: [], expected: null }, // create your own test case!
+  { name: 'sixth', args: [], expected: null }, // create your own test case!
+];
+function functionToTest5(a, b, c) {
+  const result = b + c + a;
+  return result;
+}
+functionToTest5.quizzing = true;
+evaluate(functionToTest5, writeTestCases5);
 
 
 {

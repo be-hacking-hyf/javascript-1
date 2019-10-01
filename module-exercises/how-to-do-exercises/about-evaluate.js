@@ -20,7 +20,6 @@ If either argument is the wrong type, evaluate will log and return an error
   evaluate('2: not a function!', '2: not an array!');
   evaluate(function validFuncInvalidTests() { }, '3: not an array!');
   evaluate('4: not a function!', []);
-  evaluate(function validFuncEmptyTests() { }, []);
 }
 console.groupEnd();
 
@@ -42,7 +41,7 @@ but you can find the same information  (except for console output!) in a more fr
   }
   console.groupEnd();
 
-  console.groupCollapsed('implementation');
+  console.groupCollapsed('implementation exercises');
   {
     function passImp() {
       console.assert(true, 'yay!')
@@ -58,7 +57,7 @@ but you can find the same information  (except for console output!) in a more fr
   }
   console.groupEnd();
 
-  console.groupCollapsed('behavior');
+  console.groupCollapsed('behavior exercises');
   {
     const passBehaveReturned = evaluate(
       function passTest() { },
@@ -74,7 +73,7 @@ but you can find the same information  (except for console output!) in a more fr
   }
   console.groupEnd();
 
-  console.groupCollapsed('mixed');
+  console.groupCollapsed('mixed exercises');
   {
     const passingMixedReturned = evaluate(
       function passMix() { console.assert(true, 'yay!') },
@@ -135,9 +134,10 @@ console.groupCollapsed('errors');
 {
   console.log(`if one of your functions throws an error, evaluate will let you know by turning red
 
-you can then expand the error log in console, click on the <anonymous> line at the bottom of the callstack
+to find the code that threw an error (directly in devtools!) expand the console output,
+and click on the top or bottom line of the error readout
 
-and the source code for your error will appear in the debugger!
+you an also find the code in your editor using the file name and line number in the logs
 `);
 
   function throwsAnError() {

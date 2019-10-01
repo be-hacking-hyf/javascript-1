@@ -1,5 +1,5 @@
 {
-  const pageTitle = 'side effects (challenge)';
+  const pageTitle = 'side effects';
   const header = document.createElement("h2");
   header.innerHTML = pageTitle;
   document.body.appendChild(header);
