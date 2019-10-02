@@ -8,6 +8,41 @@
   console.groupCollapsed(pageTitle);
 }
 
+
+function example_arraysAreStoredByReference() {
+
+  // primitives are stored "by value"
+  // or directly in the slot of a variable
+  const number5 = 5;
+  // assigning number5 to a new variable makes a copy of 5
+  let new5 = number5;
+  // modifying the new variable does not change the old one
+  new5 = new5 + 1;
+  // because primitives are copied to new variables
+
+  // arrays are stored by reference
+  // meaning there is an array in memory that variables point to
+  const array1 = [];
+  // assigning array1 to a new variable doesn't create a copy of the array
+  let array2 = array1;
+  // modifying either variable will effect the other
+  array2.push(6);
+  console.log(array1);
+
+  array1.push('hi!');
+  console.log(array2);
+
+
+  // to create a new array in memory, you must write new square brackets
+  const array3 = [];
+  // reassigning object2 will move its pointer ...
+  array2 = array3;
+  // but not effect the array1 variable
+  console.log(array1);
+
+}
+evaluate(example_arraysAreStoredByReference);
+
 function example_comparingArrays() {
   let a = [0, 1];
   let b = [0, 1];

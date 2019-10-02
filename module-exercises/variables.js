@@ -44,25 +44,6 @@ function example_declarationAndAssignment() {
 evaluate(example_declarationAndAssignment);
 
 
-function example_var() {
-
-  // in JS you can also declare variables using 'var'
-  // 'var' is like 'let' in that variables can be reassigned
-  // 'var' variables are different in two main ways
-  //    this type of variable is "hoisted"
-  //    they have no block scope, only lexical
-  // don't worry about "var" or these differences for now
-  // just know that this exists since you will find it online
-  // always use 'let' and 'const' in your programs to avoid "var" bugs
-
-  var varVariable = 'the slot is created before the declaration is reached (hoisting)';
-
-  varVariable = 'reassignment is possible';
-
-}
-evaluate(example_var);
-
-
 function example_twoVariableSwap() {
 
   // swapping the values stored in two variables is a key skill
@@ -315,6 +296,25 @@ function chainedAssignments2() {
   console.assert(c2 === c3, 'c2 should store the same as c3');
 }
 evaluate(chainedAssignments2);
+
+
+function footnote_var() {
+
+  // in JS you can also declare variables using 'var'
+  // 'var' is like 'let' in that variables can be reassigned
+  // 'var' variables are different in two main ways
+  //    this type of variable is "hoisted"
+  //    they have no block scope, only lexical
+  // don't worry about "var" or these differences for now
+  // just know that this exists since you will find it online
+  // always use 'let' and 'const' in your programs to avoid "var" bugs
+
+  var varVariable = 'the slot is created before the declaration is reached (hoisting)';
+
+  varVariable = 'reassignment is possible';
+
+}
+evaluate(footnote_var);
 
 
 {

@@ -9,6 +9,52 @@
 }
 
 
+function example_primitiveTypes() {
+
+  // there 5 types of primitive values you will study in JavaScript 1
+
+  // these two types have only one possible value
+  const nullPrimitive = null;
+  const undefinedPrimitive = undefined;
+
+  // there are two possible boolean values
+  const booleanPrimitive1 = true;
+  const booleanPrimitive2 = false;
+
+  // anything between quotes is a string
+  const stringPrimitives = 'anything between quotes';
+
+  // numbers are a bit stranger than the rest
+  // besides the "normal" numbers:
+  const normalNumber0 = 0;
+  const normalNumber1 = 1;
+  const normalNumberNegative1 = -1;
+  const normalNumber1Point5 = 1.5;
+  // there are some strange numbers:
+  const strangeNumberNaN = NaN;
+  const strangeNumberInfinity = Infinity;
+
+}
+evaluate(example_primitiveTypes);
+
+function example_allValuesHaveAType() {
+
+  const valuesToStudy = ["hi!", "", '', ``, Infinity, NaN,
+    0, 1, 1e3, true, false, null, undefined,
+    1000, -20, 'got it?'
+  ];
+
+  valuesToStudy.forEach(value => {
+    const type = typeof value;
+  });
+
+  // null's type is, confusingly, "object".
+  // just go with it, JS is sometimes strange
+  // and all there is to do is memorize the strange parts
+
+}
+evaluate(example_allValuesHaveAType);
+
 // all values in JavaScript have a type
 // the type of a value is very important to understanding how JS works
 const typeofTests = [

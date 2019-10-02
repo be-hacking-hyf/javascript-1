@@ -8,6 +8,40 @@
   console.groupCollapsed(pageTitle);
 }
 
+
+function example_objectsAreStoredByReference() {
+
+  // primitives are stored "by value"
+  // or directly in the slot of a variable
+  const number5 = 5;
+  // assigning number5 to a new variable makes a copy of 5
+  let new5 = number5;
+  // modifying the new variable does not change the old one
+  new5 = new5 + 1;
+  // because primitives are copied to new variables
+
+  // objects are stored by reference
+  // meaning there is an object in memory that variables point to
+  const object1 = {};
+  // assigning object1 to a new variable doesn't create a copy of the object
+  let object2 = object1;
+  // modifying either variable will effect the other
+  object2.x = 6;
+  console.log(object1);
+
+  object1.y = 'hi!';
+  console.log(object2);
+
+  // to create a new object in memory, you must write new curly braces
+  const object3 = {};
+  // reassigning object2 will move its pointer ...
+  object2 = object3;
+  // but not effect the object1 variable
+  console.log(object1);
+
+}
+evaluate(example_objectsAreStoredByReference);
+
 function example_comparingObjects() {
   let a = { x: 0, y: 1 };
   let b = { x: 0, y: 1 };
