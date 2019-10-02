@@ -15,10 +15,12 @@ you can even find the source directly from the devtools!
 if you open the debugger, you can navigate through the source code of this web page a lot like you do in VSC.`);
 
 function findMeInTheSourceCode(str) {
+  console.log('click on the link over there -->');
   // found me!
 };
 evaluate(findMeInTheSourceCode);
 
+console.log(`pro tip:  expand the console output, if there are any logs you can  click the link on the right side ;)`);
 
 
 {

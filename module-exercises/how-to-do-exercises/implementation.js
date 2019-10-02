@@ -10,8 +10,8 @@ console.log(`Implemention exercises are based on asserting, asserting simply mea
 
 console.assert is a method that allows you to make and check predictions about values in your program,
 
-- if your prediction is correct (the first argument is truthy), nothing will print in the console
-- if your prediction is incorrect (the first argument is truthy), there will be a nasty red log in the console output
+- if your prediction is correct (the first argument is truey), nothing will print in the console
+- if your prediction is incorrect (the first argument is falsey), there will be a nasty red log in the console output
 
 for more info on console.assert: https://developer.mozilla.org/en-US/docs/Web/API/Console/assert
 

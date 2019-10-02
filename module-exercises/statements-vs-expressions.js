@@ -19,7 +19,7 @@
     3. A line of code can be both a statement and an expression
     (semicolons can also be a helpful indicator, one semicolon per statement)
 
-  ternaries operators & conditional statements are good for getting a first basic understandign
+  ternaries operators & conditional statements are good for getting a first basic understanding
   understanding statements vs. expressions in depth is beyond JavaScript 1
 */
 
@@ -87,7 +87,7 @@ function conditionalStatement(a, b) {
 conditionalStatement.quizzing = true;
 evaluate(conditionalStatement, sharedTests);
 
-// for more info on ++ and -- : https://github.com/janke-learning/expanding/blob/master/worked-in-place-operators.md
+
 
 {
   console.groupEnd();

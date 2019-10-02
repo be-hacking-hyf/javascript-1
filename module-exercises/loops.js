@@ -37,6 +37,8 @@ function example_forVsWhile() {
   // this is because it takes two steps of execution per iteration:
   //  the first time through the loop: declare "i", evaluate "i < 4"
   //  every other iteration: execute "i++", then evaluate "i < 4"
+  // remember how "statements" take one step of execution?
+  // for loops put two statements on one line of code
 
   for (let i = 0; i < 4; i++) { // declare & check, check & increment
     console.log(i);
