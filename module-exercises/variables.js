@@ -22,20 +22,20 @@ function example_declarationAndAssignment() {
   declaredLetWithoutAssignment = 'assigned after declaration';
 
   // accessing a const/let variable before it is declared will error
-  // declaredLetWithAssignment; // uncomment his line for an error!
+  declaredLetWithAssignment; // comment this line to remove the error!
 
   // you will generally do both declaration and assignment at once
   // notice how this slot is only created when this line is reached?
   let declaredLetWithAssignment = 'assigned at declaration';
 
   // variables declared with 'let' can have their values reassigned later on
-  declaredLetNoAssignment = 'new value';
+  declaredLetWithoutAssignment = 'new value';
   declaredLetWithAssignment = 'another new value';
 
 
   // const variables cannot be declared without an assignment
   const constantVariable = 'forever!';
-  // const errorTime; // uncomment this for an error!
+  // const errorTime; // uncomment this line to throw error!
 
   // const variables cannot be reassigned later in the program
   constantVariable = 'error time';
@@ -53,7 +53,7 @@ function example_var() {
   //    they have no block scope, only lexical
   // don't worry about "var" or these differences for now
   // just know that this exists since you will find it online
-  // always use 'let' and 'const'
+  // always use 'let' and 'const' in your programs to avoid "var" bugs
 
   var varVariable = 'the slot is created before the declaration is reached (hoisting)';
 
