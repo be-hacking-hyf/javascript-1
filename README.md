@@ -10,6 +10,8 @@
 
 Things are about to get real!  Over the last three week's you've become familiar with the basic workflow of a web developer using GitHub, GitKraken, VSC & your browser to develop and deploy static web pages.  Starting this week you begin your journey into JavaScript, making web pages that can store and process user input, change and respond to user feedback.  This won't be easy but it iwll be worth it!
 
+> check [the wiki](https://github.com/be-hacking-hyf/javascript-1/wiki) for supporting resources
+
 ---
 
 ### [Module Exercises](./module-exercises)
