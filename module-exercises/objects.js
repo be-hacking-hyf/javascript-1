@@ -205,6 +205,17 @@ function passTheAssertions3() {
 evaluate(passTheAssertions3);
 
 
+function footnote_objectDotKeysAndValues() {
+  // there are two very helpful native JS functions for working with objects
+  // some day you'll be glad you remembered these exist!
+
+  const obj = { x: 3, y: 2, z: 1 };
+  const objKeys = Object.keys(obj);
+  const objValues = Object.values(obj);
+
+}
+evaluate(footnote_objectDotKeysAndValues);
+
 {
   console.groupEnd();
   document.body.appendChild(document.createElement('hr'));

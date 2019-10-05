@@ -85,8 +85,8 @@ function example_forOfObject() {
   // but what does "iterable" mean?
   // it means objects don't have an "order" to their items
 
-  // strings and arrays have a first, second, third, ... entry
-  // objects have keys, but no 'first' or 'second' entry.
+  // strings and arrays have a first, second, third, ...
+  // objects store value by keys, not by the order they're added
   // order doesn't matter in an object!
 
   const obj = { a: 0, b: 1, c: 2, d: 3 };
@@ -100,7 +100,34 @@ function example_forOfObject() {
 evaluate(example_forOfObject);
 
 
-/* exercises coming soon */
+
+function passTheAsserts1() {
+  // fix the error
+
+  const obj = { c: 2, b: 1, a: 0 };
+
+  const objKeys = Object.keys(obj);
+  console.log('objKeys:', objKeys);
+
+  // this line doesn't work in JS Tutor, can you find another way to do this?
+  const objValues = Object.values(obj);
+  console.log('objValues:', objValues);
+
+  let i = 0;
+  for (let prop of obj) {
+    const val = null; // fix this line
+
+    console.assert(prop === objKeys[i], 'prop should strictly equal ' + objKeys[i]);
+    console.assert(val === objValues[i], 'val should strictly equal ' + objValues[i]);
+    i++;
+  }
+
+}
+evaluate(passTheAsserts1);
+
+
+
+/* stay tuned for more */
 
 
 {
