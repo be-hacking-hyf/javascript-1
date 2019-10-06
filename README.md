@@ -34,6 +34,7 @@ All of your exercises will ask you to work with functions, but not all functions
 * __Mixed__: Some exercises will assess both _behavior_ and _implementation_ by having ```test cases``` and ```console.assert's```.  But there won't be too many of these so don't worry about them until you get there.
 * __Testing Native Code__: Some of the exercises won't even ask you to write any functions!  To better understand how JavaScript works, a few of the exercises will ask you to write test cases for functions built into the JavaScript language.
 
+> There is a suggested order to the exercises, which is the order they are included into the index.html file.  But you are not required to study them in this order.  
 > You'll know you've completed the exercises when all of the links in your browser are either black or green
 
 ---
