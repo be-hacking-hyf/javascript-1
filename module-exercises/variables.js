@@ -84,8 +84,8 @@ function threeVariableSwap1() {
   // can be done in 4 lines
  temp = a;
  a = c;
- c = b;
- b = temp;
+ b = a;
+ c = temp;
 
 
   console.assert(a === "a", "a should store 'a'");
