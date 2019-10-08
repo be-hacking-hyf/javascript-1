@@ -22,7 +22,7 @@ function example_declarationAndAssignment() {
   declaredLetWithoutAssignment = 'assigned after declaration';
 
   // accessing a const/let variable before it is declared will error
-  declaredLetWithAssignment; // comment this line to remove the error!
+  // declaredLetWithAssignment; // comment this line to remove the error!
 
   // you will generally do both declaration and assignment at once
   // notice how this slot is only created when this line is reached?
@@ -38,7 +38,7 @@ function example_declarationAndAssignment() {
   // const errorTime; // uncomment this line to throw error!
 
   // const variables cannot be reassigned later in the program
-  constantVariable = 'error time';
+  // constantVariable = 'error time';
 
 }
 evaluate(example_declarationAndAssignment);
@@ -87,6 +87,7 @@ function threeVariableSwap1() {
   b=c;
   c=temp;
 
+
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
   console.assert(c === "c", "c should store 'c'");
@@ -99,10 +100,11 @@ function threeVariableSwap2() {
   let temp = '';
 
   // can be done in 4 lines
-  temp=c;
+  temp=a;
+  a=c;
   c=b;
-  b=a;
-  a=temp;
+  b=temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -114,12 +116,14 @@ function fourVariableSwap1() {
 
   let a = "d", b = "a", c = "b", d = "c";
   let temp = '';
+
+  // can be done in 5 lines
   temp=a;
   a=b;
   b=c;
   c=d;
   d=temp;
-  // can be done in 5 lines
+
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -135,13 +139,13 @@ function fourVariableSwap2() {
   let temp = '';
 
   // can be done in 6 lines
+  temp=a;
+  a=d;
+  d=temp;
+  temp=b;
+  b=c;
+  c=temp;
 
-  temp=d;
-  d=a;
-  a=temp;
-  temp=c;
-  c=b;
-  b=temp;
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -156,13 +160,13 @@ function fiveVariableSwap() {
   let temp = ' ';
 
   // can be done in 6 lines
-
   temp=a;
   a=e;
   e=temp;
   temp=b;
   b=d;
   d=temp;
+
 
   console.assert(a === "v", "a should store 'v'");
   console.assert(b === "w", "b should store 'w'");
@@ -211,7 +215,8 @@ function multipleAssignments1() {
   let temp = '';
 
   // can be done in 1 line
-temp=a, a=b, b=c, c=temp;
+  temp = a, a = b, b = c, c = temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -225,7 +230,8 @@ function multipleAssignments2() {
   let temp = '';
 
   // can be done in 1 line
-  temp=a, a=c ,c=b, b=temp;
+  temp = a, a = c,  c = b,  b = temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -239,8 +245,9 @@ function multipleAssignments3() {
   let temp = '';
 
   // can be done in 1 line
+  temp=a,  a=b,  b=c,  c=d,  d=temp;
 
-  temp=a, a=b, b=c ,c=d ,d=temp;
+
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
   console.assert(c === "c", "c should store 'c'");
@@ -253,15 +260,9 @@ function multipleAssignments4() {
   let a = "z", b = "y", c = "x", d = "w";
   let temp = '';
 
-  temp=d;
-  d=a;
-  a=temp;
-  temp=c;
-  c=b;
-  b=temp;
+  // can be done in 1 line
+  temp=a,  a=d,  d=temp,  temp=b,  b=c,  c=temp;
 
-  // can be done in 6 lines
- 
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -298,9 +299,10 @@ function chainedAssignments1() {
   let temp = '';
 
   // can be done in 3 lines or less
-  temp=a1=a2;
+  temp=a1;
   a1=a2=b;
   b=temp;
+
   console.assert(a1 === "a", 'a1 should store "a"');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
   console.assert(b === "b", 'b should store "b"');
@@ -318,8 +320,8 @@ function chainedAssignments2() {
   // can be done in 4 lines or less
 
 temp=a;
-a=b1;
-b1=b2=c1;
+a=b1=b2;
+b1=b2=c1=c2=c3;
 c1=c2=c3=temp;
 
   console.assert(a === "a", 'a should store "a"');
