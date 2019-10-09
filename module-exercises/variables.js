@@ -1,5 +1,4 @@
 // https://www.youtube.com/watch?v=pHt_tKYUgbo&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=2
-// https://github.com/janke-learning/variables-and-hoisting
 // https://github.com/janke-learning/variable-exercises
 
 {
