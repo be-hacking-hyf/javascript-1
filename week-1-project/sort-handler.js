@@ -14,8 +14,13 @@ function sortHandler() {
   // read and process user input (this works, no need to change it!)
   const toSort = document.getElementById('sort-input').value;
 
-  // pass user input through core logic (write this! it doesn't work)
-  const sorted = `sort the charecters in ${toSort}`;
+ // pass user input through core logic (write this! it doesn't work)
+
+    function forReverse(){
+     return toReverse.split('').reverse().join('');
+     };
+     const reversed = forReverse() ;
+  
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('sort-output');
