@@ -1,55 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+    <title>welcome to javascript Akbel</title>
+    <meta name="description" content="week 2 project" />
+  </head>
 
-  <title>week 1 project</title>
-  <meta name="description" content="week 2 project">
+  <header>
+    <h1>TYPE AND SEE</h1>
+    <p>
+      Would you like to play a silly game and could not deside what it is?
+      <br />
+      Than this site is for you, Type and Enjoy!
+    </p>
+    <nav>
+      <ul>
+        <li>Sort</li>
+        <li>Reverse</li>
+        <li>Dewovel</li>
+        <li>Repeat</li>
+      </ul>
+    </nav>
+  </header>
 
+  <body>
+    <section>
+      You can type anything you like in the box below. It will sort your entry
+      alfabetically.
 
-</head>
+      <div id="sort-container">
+        <input
+          style="width:400px"
+          id="sort-input"
+          placeholder="characters to sort"
+        />
+        <br />
+        <button id="sort-button">sort it</button> <br />
+        <pre id="sort-output"></pre>
+      </div>
+    </section>
 
-<body>
+    <section>
+        You can type anything you like in the box below. It will reverse your entry. Try to read it aloud!
+      <div id="reverse-container">
+        <input
+          style="width:400px"
+          id="reverse-input"
+          placeholder="characters to reverse"
+        />
+        <br />
+        <button id="reverse-button">reverse it</button> <br />
+        <pre id="reverse-output"></pre>
+      </div>
+    </section>
 
+    <section>
+        You can type anything you like in the box below. It will shrink your entry by deleting all the wovels.
+        Do you remember the times when there is no internet in your phone and messages were so expensive.
+        So that you had to type without wovels and also understand what your friend has written to you.
+        If you don't remember or did not experience it, you should definetly try it!
+      <div id="devowel-container">
+        <input
+          style="width:400px"
+          id="devowel-input"
+          placeholder="string to devowel"
+        />
+        <br />
+        <button id="devowel-button">devowel it</button> <br />
+        <pre id="devowel-output"></pre>
+      </div>
+    </section>
 
-  <div id='sort-container'>
-    <input style='width:400px' id='sort-input' placeholder='characters to sort' /> <br>
-    <button id='sort-button'>sort it</button> <br>
-    <pre id='sort-output'></pre>
-  </div>
+    <section>
+        You can type anything you like in the box below. It is a version of Parrot. Just repeats what you say.
+        Then don't afraid to say it, I LOVE YOU and I Believe You, You Can Do It!
+      <div id="repeat-container">
+        <input
+          style="width:400px"
+          id="repeat-string-input"
+          placeholder="characters to repeat"
+        />
+        <br />
+        <input
+          style="width:400px"
+          id="repeat-number-input"
+          placeholder="# of times to repeat"
+        />
+        <br />
+        <button id="repeat-button">repeat it</button> <br />
+        <pre id="repeat-output"></pre>
+      </div>
+    </section>
 
+    <script src="sort-handler.js"></script>
+    <script src="reverse-handler.js"></script>
+    <script src="devowel-handler.js"></script>
+    <script src="repeat-handler.js"></script>
 
-  <div id='reverse-container'>
-    <input style='width:400px' id='reverse-input' placeholder='characters to reverse' /> <br>
-    <button id='reverse-button'>reverse it</button> <br>
-    <pre id='reverse-output'></pre>
-  </div>
-
-  <div id='devowel-container'>
-    <input style='width:400px' id='devowel-input' placeholder='string to devowel' /> <br>
-    <button id='devowel-button'>devowel it</button> <br>
-    <pre id='devowel-output'></pre>
-  </div>
-
-
-  <div id='repeat-container'>
-    <input style='width:400px' id='repeat-string-input' placeholder='characters to repeat' /> <br>
-    <input style='width:400px' id='repeat-number-input' placeholder='# of times to repeat' /> <br>
-    <button id='repeat-button'>repeat it</button> <br>
-    <pre id='repeat-output'></pre>
-  </div>
-
-
-
-
-  <script src="sort-handler.js"></script>
-  <script src="reverse-handler.js"></script>
-  <script src="devowel-handler.js"></script>
-  <script src="repeat-handler.js"></script>
-
-
-</body>
-
+    <footer>JavasSript first week homework, Akbel 2019</footer>
+  </body>
 </html>
