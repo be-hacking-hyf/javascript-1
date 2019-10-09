@@ -1,5 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+// https://javascript.info/array#loops
+// https://javascript.info/object#the-for-in-loop
 // https://alligator.io/js/for-of-for-in-loops/
 
 {
