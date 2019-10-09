@@ -59,27 +59,27 @@ evaluate(example_allValuesHaveAType);
 // the type of a value is very important to understanding how JS works
 const typeofTests = [
   // boolean values
-  { name: 'boo, true', args: [true], expected: '' },
-  { name: 'boo, false', args: [false], expected: '' },
+  { name: 'boo, true', args: [true], expected: 'boolean' },
+  { name: 'boo, false', args: [false], expected: 'boolean' },
   // null's type is 'null'.  just remember, don't try yet to understand
-  { name: 'obj, true', args: [null], expected: '' },
+  { name: 'obj, true', args: [null], expected: 'null' },
   // undefined. like with null, there is only one value with this type
-  { name: 'und, undefined', args: [undefined], expected: '' },
+  { name: 'und, undefined', args: [undefined], expected: 'undefined' },
   // strings are anything with quotes around it
-  { name: 'str, ', args: [''], expected: '' },
-  { name: 'str, anything with quotes!', args: ['anything with quotes!'], expected: '' },
+  { name: 'str, ', args: [''], expected: 'string' },
+  { name: 'str, anything with quotes!', args: ['anything with quotes!'], expected: 'string' },
   // numbers are a bit more strange and varied
   { name: 'num, 0.0', args: [0.0], expected: 'number' },
   { name: 'num, NaN', args: [NaN], expected: 'number' },
   { name: 'num, Infinity', args: [Infinity], expected: 'number' },
   { name: 'num, 4', args: [4], expected: 'number' },
   // write 6 more passing test cases with expected value 'number'
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
+  { name: 'num, 1', args: [1], expected: number },
+  { name: 'num, 5', args: [5], expected: number },
+  { name: 'num, Nan', args: [NaN], expected: number },
+  { name: 'num, infinity', args: [Infinity], expected: number },
+  { name: 'num, 1.1', args: [1.1], expected: number },
+  { name: 'num, -2', args: [-2], expected: number },
 ]
 function allValuesHaveAType(value) {
   return typeof value;

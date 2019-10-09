@@ -1,14 +1,11 @@
 /*
-
 write a little javascript to:
 - take in the string 'toSort'
 - sort all of the characters by charCode number
 - and assign the new string to 'sorted'
-
 the handler is already set up to:
 - read user input to the variable 'toSort'
 - write 'sorted' to the output
-
 */
 
 
