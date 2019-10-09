@@ -81,6 +81,12 @@ function threeVariableSwap1() {
   let temp = '';
 
   // can be done in 4 lines
+  temp = a;
+  a = b;
+  b = c;
+  c = temp;
+
+
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -95,7 +101,10 @@ function threeVariableSwap2() {
   let temp = '';
 
   // can be done in 4 lines
-
+  temp=a;
+  a=c;
+  c=b;
+  b=temp;
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -110,7 +119,11 @@ function fourVariableSwap1() {
 
   // can be done in 5 lines
 
-
+  temp = a;
+  a = b;
+  b = c;
+  c = d;
+  d = temp;
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
   console.assert(c === "c", "c should store 'c'");
@@ -124,7 +137,11 @@ function fourVariableSwap2() {
   let temp = '';
 
   // can be done in 6 lines
-
+  temp = b;
+  a = d;
+  b = c;
+  c = temp;
+  d = 'z';
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -139,7 +156,11 @@ function fiveVariableSwap() {
   let temp = ' ';
 
   // can be done in 6 lines
-
+  temp = b;
+  a = d;
+  b = c;
+  c = temp;
+  d = a;
 
   console.assert(a === "v", "a should store 'v'");
   console.assert(b === "w", "b should store 'w'");
