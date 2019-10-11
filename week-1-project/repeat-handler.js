@@ -33,7 +33,7 @@ function repeatHandler() {
     else 
       return string + strToRepeat1(string, times - 1);
   }
-  const repeated = strToRepeat.repeat(20) ;
+  const repeated = strToRepeat.repeat(rawNumInput) ;
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('repeat-output');
   outputField.innerHTML = repeated;
