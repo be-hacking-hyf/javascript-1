@@ -1,4 +1,5 @@
 // https://www.youtube.com/watch?v=pHt_tKYUgbo&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=2
+// https://github.com/janke-learning/variables-and-hoisting
 // https://github.com/janke-learning/variable-exercises
 
 {
@@ -81,6 +82,12 @@ function threeVariableSwap1() {
   let temp = '';
 
   // can be done in 4 lines
+  temp = a;
+  a = b;
+  b = c;
+  c = temp;
+
+
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -95,7 +102,10 @@ function threeVariableSwap2() {
   let temp = '';
 
   // can be done in 4 lines
-
+  temp=a;
+  a=c;
+  c=b;
+  b=temp;
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -110,7 +120,11 @@ function fourVariableSwap1() {
 
   // can be done in 5 lines
 
-
+  temp = a;
+  a = b;
+  b = c;
+  c = d;
+  d = temp;
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
   console.assert(c === "c", "c should store 'c'");
@@ -124,7 +138,11 @@ function fourVariableSwap2() {
   let temp = '';
 
   // can be done in 6 lines
-
+  temp = b;
+  a = d;
+  b = c;
+  c = temp;
+  d = 'z';
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -139,6 +157,12 @@ function fiveVariableSwap() {
   let temp = ' ';
 
   // can be done in 6 lines
+  temp = c;
+  a = e;
+  b = d;
+  c = temp;
+  d = 'y';
+  e = 'z';
 
 
   console.assert(a === "v", "a should store 'v'");
@@ -158,7 +182,7 @@ function example1_multipleAssignments() {
   let a = 'b', b = 'a', temp = '';
 
   temp = a, a = b, b = temp;
-
+  
   console.assert(a === 'a', 'a should store "a"');
   console.assert(b === 'b', 'b should store "b"');
 }
@@ -188,7 +212,7 @@ function multipleAssignments1() {
   let temp = '';
 
   // can be done in 1 line
-
+  temp = a, a = b, b = c, c = temp;
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -202,7 +226,7 @@ function multipleAssignments2() {
   let temp = '';
 
   // can be done in 1 line
-
+  temp = a, a = c, b = temp, c = 'c';
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -216,7 +240,7 @@ function multipleAssignments3() {
   let temp = '';
 
   // can be done in 1 line
-
+  temp = a, a = b, b = c, c = d, d= temp;
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -231,7 +255,7 @@ function multipleAssignments4() {
   let temp = '';
 
   // can be done in 1 line
-
+  temp = a, a = d, b = c, c = 'y', d = temp;
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
