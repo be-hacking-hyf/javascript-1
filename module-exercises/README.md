@@ -1,6 +1,6 @@
 ## Module Exercises
 
-## Please click the link below to see the my progress in Module Exercises;
+# Please click the link below to see the my progress in Module Exercises;
 
 <a href="https://mert1980.github.io/javascript-1/module-exercises/">Module Exercises</a>
 
