@@ -7,42 +7,57 @@
 
   <title>week 1 project</title>
   <meta name="description" content="week 2 project">
-
+  <link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
 
 <body>
 
+  <header id='header'>
+    <h1>HYF-Week1 JS Project</h1>
+    <h3><span id='name_header'>Mert Demirok</span></h3> 
+  </header>
 
   <div id='sort-container'>
-    <input style='width:400px' id='sort-input' placeholder='characters to sort' /> <br>
-    <button id='sort-button'>sort it</button> <br>
+    <input style='width:183px' center' id='sort-input' placeholder='characters to sort' /> <br>
+    <button id='sort-button'><strong>Sort It</strong></button> <br>
     <pre id='sort-output'></pre>
+    <h3>What Does This Function Do!</h3>
+    <p>This JavaScript function sorts the characters of the 
+      word you typed in accordance with their charCode numbers.</p>
   </div>
 
-
   <div id='reverse-container'>
-    <input style='width:400px' id='reverse-input' placeholder='characters to reverse' /> <br>
-    <button id='reverse-button'>reverse it</button> <br>
+    <input style='width:183px' id='reverse-input' placeholder='characters to reverse' /> <br>
+    <button id='reverse-button'><strong>Reverse It</strong></button> <br>
     <pre id='reverse-output'></pre>
+    <h3>What Does This Function Do!</h3>
+    <p>This JavaScript function reverses the characters of the 
+      word you typed.</p>
   </div>
 
   <div id='devowel-container'>
-    <input style='width:400px' id='devowel-input' placeholder='string to devowel' /> <br>
-    <button id='devowel-button'>devowel it</button> <br>
+    <input style='width:183px' id='devowel-input' placeholder='string to devowel' /> <br>
+    <button id='devowel-button'><strong>Devowel It</strong></button> <br>
     <pre id='devowel-output'></pre>
+    <h3>What Does This Function Do!</h3>
+    <p>This JavaScript function takes the vowels out of the 
+      word you typed.</p>
   </div>
 
 
   <div id='repeat-container'>
-    <input style='width:400px' id='repeat-string-input' placeholder='characters to repeat' /> <br>
-    <input style='width:400px' id='repeat-number-input' placeholder='# of times to repeat' /> <br>
-    <button id='repeat-button'>repeat it</button> <br>
+    <input style='width:183px' id='repeat-string-input' placeholder='characters to repeat' /> <br>
+    <input style='width:183px' id='repeat-number-input' placeholder='# of times to repeat' /> <br>
+    <button id='repeat-button'><strong>Repeat It</strong></button> <br>
     <pre id='repeat-output'></pre>
+    <h3>What Does This Function Do!</h3>
+    <p>This JavaScript function repeats the words you typed as many as you want.</p>
   </div>
 
-
-
+  <footer id='footer'>
+    <p><strong>Mert DEMIROK, Copyright &copy; 2019</strong></p>
+</footer>
 
   <script src="sort-handler.js"></script>
   <script src="reverse-handler.js"></script>
