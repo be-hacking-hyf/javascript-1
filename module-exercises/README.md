@@ -1,5 +1,8 @@
 ## Module Exercises
 
+Please click the link below to see the my progress in Module Exercises;
+
+
 
 In this folder you'll find a lot of files and two folders:
 * __[how-to-do-exercises](./how-to-do-exercises)__: Check out this folder for a guide to completing these exercises.  Completing these exercises isn't as easy as following FreeCodeCamp or CodeAcademy, but you will learn a whole lot more!  You will have an immersive experience working in the Developer Tools. And will be able to study any snippet or function you want instead of being limited to the exercises provided.  Taking a look at how ```evaluate``` works before diving into the exercises will make the transition a bit smoother.
