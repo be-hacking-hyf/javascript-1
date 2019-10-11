@@ -219,6 +219,8 @@ function multipleAssignments1() {
 
   // can be done in 1 line
 
+  temp = a, a = b, b = c, c = temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -232,6 +234,8 @@ function multipleAssignments2() {
   let temp = '';
 
   // can be done in 1 line
+
+  temp = a, a = c, c = b, b = temp;
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -247,6 +251,8 @@ function multipleAssignments3() {
 
   // can be done in 1 line
 
+  temp = a, a = b, b = c, c = d, d = temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -261,6 +267,8 @@ function multipleAssignments4() {
   let temp = '';
 
   // can be done in 1 line
+
+  temp = a, a = d, d = temp, temp = b, b = c, c = temp;
 
 
   console.assert(a === "w", "a should store 'w'");
@@ -299,6 +307,8 @@ function chainedAssignments1() {
 
   // can be done in 3 lines or less
 
+  a1 = b, b = a2, a2 = a1;
+
   console.assert(a1 === "a", 'a1 should store "a"');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
   console.assert(b === "b", 'b should store "b"');
@@ -315,6 +325,7 @@ function chainedAssignments2() {
 
   // can be done in 4 lines or less
 
+  c1 = a, a = b1, b1 = b2 = c2, c2 = c3 = c1;
 
 
   console.assert(a === "a", 'a should store "a"');
