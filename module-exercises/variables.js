@@ -47,23 +47,25 @@ evaluate(example_declarationAndAssignment);
 function example_twoVariableSwap() {
 
   // swapping the values stored in two variables is a key skill
-  // once you get it, it's quite simple
-  // if you don't get it, programming will be very confusing
-  // so take some time now to understand how variables work
-  //  how they store values in memory
-  //  that the "=" sign does not work like in math
-  //  what happens when one variable is assigned to another
-  //  that variable assignments go from right to left
-  //  that program memory changes over time
-  //  what is written in source code will not be true forever
+ // once you get it, it's quite simple
+ // if you don't get it, programming will be very confusing
+ // so take some time now to understand how variables work
+ //  how they store values in memory
+ //  that the "=" sign does not work like in math
+ //  what happens when one variable is assigned to another
+ //  that variable assignments go from right to left
+ //  that program memory changes over time
+ //  what is written in source code will not be true forever/
+
 
   let a = 'b', b = 'a';
   let temp = '';
 
-  temp = a;
-  a = b;
-  b = temp;
 
+  temp=a;
+  a=b;
+  b=temp;
+  
   console.assert(a === 'a', 'a should store "a"');
   console.assert(b === 'b', 'b should store "b"');
 
@@ -82,7 +84,11 @@ function threeVariableSwap1() {
   let temp = '';
 
   // can be done in 4 lines
-
+  temp=a
+  a=b;
+  b=c;
+  c=temp;
+  
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -96,7 +102,11 @@ function threeVariableSwap2() {
   let temp = '';
 
   // can be done in 4 lines
-
+  temp=a;
+  a=c;
+  c=b;
+  b=temp;
+  
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -111,7 +121,11 @@ function fourVariableSwap1() {
 
   // can be done in 5 lines
 
-
+  temp=a;
+  a=b;
+  b=c;
+  c=d;
+  d=temp;
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
   console.assert(c === "c", "c should store 'c'");
@@ -125,7 +139,12 @@ function fourVariableSwap2() {
   let temp = '';
 
   // can be done in 6 lines
-
+  temp=a;
+  a=d;
+  d=b;
+  b=c;
+  c=d;
+  d=temp;
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -140,6 +159,13 @@ function fiveVariableSwap() {
   let temp = ' ';
 
   // can be done in 6 lines
+
+  temp=a;
+  a=e;
+  e=b;
+  b=d;
+  d=e;
+  e=temp;
 
 
   console.assert(a === "v", "a should store 'v'");
@@ -190,6 +216,8 @@ function multipleAssignments1() {
 
   // can be done in 1 line
 
+temp=a; a=b; b=c; c=temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -203,7 +231,7 @@ function multipleAssignments2() {
   let temp = '';
 
   // can be done in 1 line
-
+  temp=c; c=b; b=a; a=temp;
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -218,6 +246,7 @@ function multipleAssignments3() {
 
   // can be done in 1 line
 
+  temp=a; a=b; b=c; c=d; d=temp;
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -233,6 +262,7 @@ function multipleAssignments4() {
 
   // can be done in 1 line
 
+temp=a; a=d; d=temp; temp=c; c=b; b=temp;
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -269,6 +299,9 @@ function chainedAssignments1() {
   let temp = '';
 
   // can be done in 3 lines or less
+  temp=b;
+b=a1=a2;
+a1=a2=temp;
 
   console.assert(a1 === "a", 'a1 should store "a"');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
@@ -286,7 +319,10 @@ function chainedAssignments2() {
 
   // can be done in 4 lines or less
 
-
+  let a = 'c';
+  let b1 = b2 = 'a';
+  let c1 = c2 = c3 = 'b';
+  let temp = '';
 
   console.assert(a === "a", 'a should store "a"');
   console.assert(b1 === "b", 'b1 should store "b"');
