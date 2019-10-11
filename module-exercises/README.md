@@ -6,6 +6,9 @@ In this folder you'll find a lot of files and two folders:
 * __[a lot of files](./)__: This folder contains the exercises your are expected to complete by the end of the module. There are a lot of them, but have no fear!  Many are not so difficult and each file has a few similar examples to study before asking you to program yourself.  The exercises' main objective is to introduce you to important JS concepts not for you to master everything, so don't be too concerned if you feel totally comfortable with each file.  It takes years to become comfortable with JS!  And anyway, your completed exercises can act as a live study reference for later. You can always come back to review :)
 * __[challenges](./challenges)__: Just what it sounds like.  Some challenge exercises for after you complete the main exercises. Not required, but definitely worth some studying.
 
-You'll know you've completed the exercises when you open [this file](./index.html) in your browser and all of the links are either green or black.
+
+There is a suggested order to the exercises, which is the order they are included into the index.html file.  But you are not required to study them in this order.  
+
+You'll know you've completed the exercises when all of the links in your browser are either black or green
 
 Have at it!
