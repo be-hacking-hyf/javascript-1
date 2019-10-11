@@ -1,0 +1,49 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    
+  }
+header{
+    text-align: center;
+    color: #ac0808;
+    
+}
+  .container {
+    display: block;
+    overflow: hidden;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+/*footer*/
+footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    margin:0rem;
+    background:#053b57;
+    color:white;
+    text-align:center;
+    padding:0.5rem;
+  }
+  footer a{
+    color:yellow;
+    font-size:1.5rem;
+  }
+  @media (max-width: 768px) {
+    
+    body {
+        font-size: 0.8em;
+        background-color: beige;
+
+      }
+    
+    .container {
+      max-width: 400px;
+      text-align: center;
+      margin: auto;
+      margin-top: 10px;
+      padding: 10px;
+    }
+}
