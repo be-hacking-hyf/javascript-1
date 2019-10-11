@@ -2,8 +2,9 @@
 
 ## Please click the link below to see the my progress in Module Exercises;
 
-<a href="https://mert1980.github.io/HTML-CSS-GitHub/homework/week-3-project/home.html">Replicated DuckDuckGo Website Using Branches</a>
+<a href="https://mert1980.github.io/javascript-1/blob/master/module-exercises/index.html">Module Exercises</a>
 
+https://github.com/Mert1980/javascript-1/blob/master/module-exercises/index.html
 
 
 In this folder you'll find a lot of files and two folders:
