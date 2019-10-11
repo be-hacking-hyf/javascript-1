@@ -403,9 +403,9 @@ function example1_testCases() {
     const name = test.name;
     const args0 = test.args[0];
     const args1 = test.args[1];
-    const expected = test.expected;
     const returned = add(...test.args);
-    console.assert(returned === test.expected, `${test.name}: expected ${test.expected}, returned ${returned}`);
+    const expected = test.expected;
+    console.assert(returned === expected, `${test.name}: expected ${test.expected}, returned ${returned}`);
   });
 
 

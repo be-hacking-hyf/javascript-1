@@ -1,5 +1,5 @@
 {
-  const pageTitle = 'debug these (challenge)';
+  const pageTitle = 'debug these';
   const header = document.createElement("h2");
   header.innerHTML = pageTitle;
   document.body.appendChild(header);

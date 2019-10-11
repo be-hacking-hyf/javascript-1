@@ -57,15 +57,15 @@ function example_twoVariableSwap() {
   //  that program memory changes over time
   //  what is written in source code will not be true forever
 
-  let a = 'b', b = 'a';
+  let a = 2, b = 1;
   let temp = '';
 
   temp = a;
   a = b;
   b = temp;
 
-  console.assert(a === 'a', 'a should store "a"');
-  console.assert(b === 'b', 'b should store "b"');
+  console.assert(a === 1, 'a should store 1');
+  console.assert(b === 2, 'b should store 2');
 
 }
 evaluate(example_twoVariableSwap);
@@ -78,44 +78,44 @@ evaluate(example_twoVariableSwap);
 
 function threeVariableSwap1() {
 
-  let a = "c", b = "a", c = "b";
+  let a = 3, b = 1, c = 2;
   let temp = '';
 
   // can be done in 4 lines
 
 
-  console.assert(a === "a", "a should store 'a'");
-  console.assert(b === "b", "b should store 'b'");
-  console.assert(c === "c", "c should store 'c'");
+  console.assert(a === 1, "a should store 1");
+  console.assert(b === 2, "b should store 2");
+  console.assert(c === 3, "c should store 3");
 }
 evaluate(threeVariableSwap1);
 
 function threeVariableSwap2() {
 
-  let a = "b", b = "c", c = "a";
+  let a = 2, b = 3, c = 1;
   let temp = '';
 
   // can be done in 4 lines
 
 
-  console.assert(a === "a", "a should store 'a'");
-  console.assert(b === "b", "b should store 'b'");
-  console.assert(c === "c", "c should store 'c'");
+  console.assert(a === 1, "a should store 1");
+  console.assert(b === 2, "b should store 2");
+  console.assert(c === 3, "c should store 3");
 }
 evaluate(threeVariableSwap2);
 
 function fourVariableSwap1() {
 
-  let a = "d", b = "a", c = "b", d = "c";
+  let a = 4, b = 1, c = 2, d = 3;
   let temp = '';
 
   // can be done in 5 lines
 
 
-  console.assert(a === "a", "a should store 'a'");
-  console.assert(b === "b", "b should store 'b'");
-  console.assert(c === "c", "c should store 'c'");
-  console.assert(d === "d", "d should store 'd'");
+  console.assert(a === 1, "a should store 1");
+  console.assert(b === 2, "b should store 2");
+  console.assert(c === 3, "c should store 3");
+  console.assert(d === 4, "d should store 4");
 }
 evaluate(fourVariableSwap1);
 
@@ -156,12 +156,12 @@ function example1_multipleAssignments() {
   // it is possible to assign multiple variables on one line
   // these assignments are executed from left to right
 
-  let a = 'b', b = 'a', temp = '';
+  let a = 2, b = 1, temp = '';
 
   temp = a, a = b, b = temp;
 
-  console.assert(a === 'a', 'a should store "a"');
-  console.assert(b === 'b', 'b should store "b"');
+  console.assert(a === 1, 'a should store 1');
+  console.assert(b === 2, 'b should store 2');
 }
 evaluate(example1_multipleAssignments);
 
@@ -172,57 +172,57 @@ function example2_multipleAssignments() {
   // using multiple assignments is largely a style choice
   // if you find it easier to read and understand, go for it!
 
-  let a = 'c', b = 'a', c = 'b', temp = '';
+  let a = 3, b = 1, c = 2, temp = '';
 
   temp = a, a = b, b = c, c = temp;
 
-  console.assert(a === 'a', 'a should store "a"');
-  console.assert(b === 'b', 'b should store "b"');
-  console.assert(c === 'c', 'c should store "c"');
+  console.assert(a === 1, 'a should store 1');
+  console.assert(b === 2, 'b should store 2');
+  console.assert(c === 3, 'c should store 3');
 }
 evaluate(example2_multipleAssignments);
 
 
 function multipleAssignments1() {
 
-  let a = "c", b = "a", c = "b";
+  let a = 3, b = 1, c = 2;
   let temp = '';
 
   // can be done in 1 line
 
 
-  console.assert(a === "a", "a should store 'a'");
-  console.assert(b === "b", "b should store 'b'");
-  console.assert(c === "c", "c should store 'c'");
+  console.assert(a === 1, "a should store 1");
+  console.assert(b === 2, "b should store 2");
+  console.assert(c === 3, "c should store 3");
 }
 evaluate(multipleAssignments1);
 
 function multipleAssignments2() {
 
-  let a = "b", b = "c", c = "a";
+  let a = 2, b = 3, c = 1;
   let temp = '';
 
   // can be done in 1 line
 
 
-  console.assert(a === "a", "a should store 'a'");
-  console.assert(b === "b", "b should store 'b'");
-  console.assert(c === "c", "c should store 'c'");
+  console.assert(a === 1, "a should store 1");
+  console.assert(b === 2, "b should store 2");
+  console.assert(c === 3, "c should store 3");
 }
 evaluate(multipleAssignments2);
 
 function multipleAssignments3() {
 
-  let a = "d", b = "a", c = "b", d = "c";
+  let a = 4, b = 1, c = 2, d = 3;
   let temp = '';
 
   // can be done in 1 line
 
 
-  console.assert(a === "a", "a should store 'a'");
-  console.assert(b === "b", "b should store 'b'");
-  console.assert(c === "c", "c should store 'c'");
-  console.assert(d === "d", "d should store 'd'");
+  console.assert(a === 1, "a should store 1");
+  console.assert(b === 2, "b should store 2");
+  console.assert(c === 3, "c should store 3");
+  console.assert(d === 4, "d should store 4");
 }
 evaluate(multipleAssignments3);
 
@@ -249,15 +249,15 @@ function example_chainedAssignments() {
   // chained assignments are read right to left
   // using chained or single assignments depends on what you understand better
 
-  let a = 'b', b1 = b2 = 'a';
+  let a = 2, b1 = b2 = 1;
   let temp = '';
 
   temp = a;
   a = b1;
   b1 = b2 = temp;
 
-  console.assert(a === "a", 'a should store "a"');
-  console.assert(b1 === "b", 'b1 should store "b"');
+  console.assert(a === 1, 'a should store 1');
+  console.assert(b1 === 2, 'b1 should store 2');
   console.assert(b1 === b2, 'b1 should store the same value as b2');
 }
 evaluate(example_chainedAssignments);
@@ -265,33 +265,33 @@ evaluate(example_chainedAssignments);
 
 function chainedAssignments1() {
 
-  let a1 = a2 = 'b', b = 'a';
+  let a1 = a2 = 2, b = 1;
   let temp = '';
 
   // can be done in 3 lines or less
 
-  console.assert(a1 === "a", 'a1 should store "a"');
+  console.assert(a1 === 1, 'a1 should store 1');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
-  console.assert(b === "b", 'b should store "b"');
+  console.assert(b === 2, 'b should store 2');
 }
 evaluate(chainedAssignments1);
 
 
 
 function chainedAssignments2() {
-  let a = 'c';
-  let b1 = b2 = 'a';
-  let c1 = c2 = c3 = 'b';
+  let a = 3;
+  let b1 = b2 = 1;
+  let c1 = c2 = c3 = 2;
   let temp = '';
 
   // can be done in 4 lines or less
 
 
 
-  console.assert(a === "a", 'a should store "a"');
-  console.assert(b1 === "b", 'b1 should store "b"');
+  console.assert(a === 1, 'a should store 1');
+  console.assert(b1 === 2, 'b1 should store 2');
   console.assert(b1 === b2, 'b1 should store the same as b2');
-  console.assert(c1 === "c", 'c1 should store "c"');
+  console.assert(c1 === 3, 'c1 should store 3');
   console.assert(c1 === c2, 'c1 should store the same as c2');
   console.assert(c2 === c3, 'c2 should store the same as c3');
 }
