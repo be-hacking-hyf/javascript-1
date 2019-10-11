@@ -21,7 +21,7 @@ function example_declarationAndAssignment() {
   declaredLetWithoutAssignment = 'assigned after declaration';
 
   // accessing a const/let variable before it is declared will error
-  declaredLetWithAssignment; // comment this line to remove the error!
+  //declaredLetWithAssignment; // comment this line to remove the error!
 
   // you will generally do both declaration and assignment at once
   // notice how this slot is only created when this line is reached?
@@ -34,7 +34,7 @@ function example_declarationAndAssignment() {
 
   // const variables cannot be declared without an assignment
   const constantVariable = 'forever!';
-  // const errorTime; // uncomment this line to throw error!
+  const errorTime; // uncomment this line to throw error!
 
   // const variables cannot be reassigned later in the program
   constantVariable = 'error time';
@@ -82,6 +82,11 @@ function threeVariableSwap1() {
 
   // can be done in 4 lines
 
+  temp = a;
+  a = b;
+  b = c;
+  c = temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -96,6 +101,11 @@ function threeVariableSwap2() {
 
   // can be done in 4 lines
 
+  temp = a;
+  a = c;
+  c = b;
+  b = temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -109,6 +119,12 @@ function fourVariableSwap1() {
   let temp = '';
 
   // can be done in 5 lines
+
+  temp = a;
+  a = b;
+  b = c;
+  c = d;
+  d = temp;
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -125,6 +141,12 @@ function fourVariableSwap2() {
 
   // can be done in 6 lines
 
+  temp = a;
+  a = d;
+  d = temp;
+  temp = b;
+  b = c;
+  c = temp;
 
   console.assert(a === "w", "a should store 'w'");
   console.assert(b === "x", "b should store 'x'");
@@ -139,6 +161,14 @@ function fiveVariableSwap() {
   let temp = ' ';
 
   // can be done in 6 lines
+
+  temp = a;
+  a = e;
+  e = temp;
+  temp =b;
+  b = d;
+  d = temp;
+
 
 
   console.assert(a === "v", "a should store 'v'");
