@@ -22,10 +22,15 @@ function repeatHandler() {
   if (numOfRepetitions !== numOfRepetitions) {
     throw new TypeError('second input to "repeat it" must be a number');
   }
-
+  function repeatString(strToRepeat, numOfRepetitions){
+    if(numOfRepetitions > 0)
+     return strToRepeat.repeat(numOfRepetitions)
+    else
+      return "";
+  }
 
   // pass user input through core logic (write this! it doesn't work)
-  const repeated = `repeat ${strToRepeat} ${numOfRepetitions} times`;
+  const repeated = repeatString(strToRepeat, numOfRepetitions);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('repeat-output');
