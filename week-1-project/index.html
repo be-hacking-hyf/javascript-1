@@ -1,55 +1,73 @@
-<!doctype html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-
-  <title>week 1 project</title>
-  <meta name="description" content="week 2 project">
-
-
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Akader-Ibrahim | JS week 1 project</title>
+    <meta name="description" content="JS week 1 project">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    
+    <!--header -->
+    <header>
+        <div class="container" id="header">
+            <div class="box" id="header-content">
+                <h1>JS Week-01 homework Akader Ibrahim</h1>
+                <p>This web page created to sort JS strings</p>
+                
+
+    <div id="sort-container" class="box">
+        <article class="accordion">
+            <input id="tab-1" type="checkbox" name="tab">
+            <div class="accordion_content">
+                <img src="sorted.png">
+            </div>
+        </article>
+        
+        <input id="sort-input" placeholder="characters to sort" type="text"> <br>
+        <button id="sort-button">sort it</button> <br>
+        <pre id="sort-output">akader</pre>
+    </div>
 
 
-  <div id='sort-container'>
-    <input style='width:400px' id='sort-input' placeholder='characters to sort' /> <br>
-    <button id='sort-button'>sort it</button> <br>
-    <pre id='sort-output'></pre>
-  </div>
+    <div id="reverse-container" class="box">
+        <input id="reverse-input" placeholder="characters to reverse" type="text"> <br>
+        <button id="reverse-button">reverse it</button> <br>
+        <pre id="reverse-output">reverse A</pre>
+    </div>
+
+    <div id="devowel-container" class="box">
+        <input id="devowel-input" placeholder="string to devowel" type="text"> <br>
+        <button id="devowel-button">devowel it</button> <br>
+        <pre id="devowel-output">remove all vowels from A</pre>
+    </div>
 
 
-  <div id='reverse-container'>
-    <input style='width:400px' id='reverse-input' placeholder='characters to reverse' /> <br>
-    <button id='reverse-button'>reverse it</button> <br>
-    <pre id='reverse-output'></pre>
-  </div>
-
-  <div id='devowel-container'>
-    <input style='width:400px' id='devowel-input' placeholder='string to devowel' /> <br>
-    <button id='devowel-button'>devowel it</button> <br>
-    <pre id='devowel-output'></pre>
-  </div>
+    <div id="repeat-container" class="box">
+        <input id="repeat-string-input" placeholder="characters to repeat" type="text"> <br>
+        <input id="repeat-number-input" placeholder="# of times to repeat" type="text"> <br>
+        <button id="repeat-button">repeat it</button> <br>
+        <pre id="repeat-output">repeat 4333 0 times</pre>
+    </div>
 
 
-  <div id='repeat-container'>
-    <input style='width:400px' id='repeat-string-input' placeholder='characters to repeat' /> <br>
-    <input style='width:400px' id='repeat-number-input' placeholder='# of times to repeat' /> <br>
-    <button id='repeat-button'>repeat it</button> <br>
-    <pre id='repeat-output'></pre>
-  </div>
+    <footer>
+        <div id="footer">
+            <p>Akader-Ibrahim Copyright© 2019</p>
+        </div>
+    </footer>
 
 
 
 
-  <script src="sort-handler.js"></script>
-  <script src="reverse-handler.js"></script>
-  <script src="devowel-handler.js"></script>
-  <script src="repeat-handler.js"></script>
+    <script src="sort-handler.js"></script>
+    <script src="reverse-handler.js"></script>
+    <script src="devowel-handler.js"></script>
+    <script src="repeat-handler.js"></script>
 
 
-</body>
 
-</html>
+
+</body></html>
