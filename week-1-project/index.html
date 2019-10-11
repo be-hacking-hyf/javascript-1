@@ -2,34 +2,44 @@
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-
     <title>welcome to javascript Akbel</title>
-    <meta name="description" content="week 2 project" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="keywords"
+      content="javascript, learn javascript,first exercises with js"
+    />
+    <meta name="author" content="Akbel" />
+    <meta name="description" content="week 1 project in javascript" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
+  <!-- header: I could not stop writing even in the header -->
+
   <header>
-    <h1>TYPE AND SEE</h1>
-    <p>
-      Would you like to play a silly game and could not deside what it is?
-      <br />
-      Than this site is for you, Type and Enjoy!
-    </p>
     <nav>
       <ul>
-        <li>Sort</li>
-        <li>Reverse</li>
-        <li>Dewovel</li>
-        <li>Repeat</li>
+        <li><a href="sort-handler.js">Sort</a></li>
+        <li><a href="reverse-handler.js">Reverse</a></li>
+        <li><a href="devowel-handler.js">Dewovel</a></li>
+        <li><a href="repeat-handler.js">Repeat</a></li>
       </ul>
     </nav>
+    <div>
+      <h1><string class="colored">TYPE</string> AND SEE</h1>
+      <h3>
+        Would you like to play a silly game and could not deside what it is?
+        <br />
+        Then this site is for you, <string class="colored">Type</string> and Enjoy!
+      </h3>
+    </div>
   </header>
 
   <body>
-    <section>
+    <div class="box">
       You can type anything you like in the box below. It will sort your entry
-      alfabetically.
-    </section>
+      according to charCode.
+
       <div id="sort-container">
         <input
           style="width:400px"
@@ -40,63 +50,64 @@
         <button id="sort-button">sort it</button> <br />
         <pre id="sort-output"></pre>
       </div>
-    
+    </div>
 
-    <section>
-        You can type anything you like in the box below. It will reverse your entry. Try to read it aloud!
-    </section>
-      <div id="reverse-container">
-        <input
-          style="width:400px"
-          id="reverse-input"
-          placeholder="characters to reverse"
-        />
-        <br />
-        <button id="reverse-button">reverse it</button> <br />
-        <pre id="reverse-output"></pre>
-      </div>
-    
+    <div class="box">
+      You can type anything you like in the box below. It will reverse your
+      entry. Try to read it aloud!
+    </div>
+    <div id="reverse-container">
+      <input
+        style="width:400px"
+        id="reverse-input"
+        placeholder="characters to reverse"
+      />
+      <br />
+      <button id="reverse-button">reverse it</button> <br />
+      <pre id="reverse-output"></pre>
+    </div>
 
-    <section>
-        You can type anything you like in the box below. It will shrink your entry by deleting all the wovels.
-        Do you remember the times when there is no internet in your phone and messages were so expensive.
-        So that you had to type without wovels and also understand what your friend has written to you.
-        If you don't remember or did not experience it, you should definetly try it!
-    </section>
-        <div id="devowel-container">
-        <input
-          style="width:400px"
-          id="devowel-input"
-          placeholder="string to devowel"
-        />
-        <br />
-        <button id="devowel-button">devowel it</button> <br />
-        <pre id="devowel-output"></pre>
-      </div>
-    
+    <div class="box">
+      You can type anything you like in the box below. It will shrink your entry
+      by deleting all the wovels. Do you remember the times when there is no
+      internet in your phone and messages were so expensive. So that you had to
+      type without wovels and also understand what your friend has written to
+      you. If you don't remember or did not experience it, you should definetly
+      try it!
+    </div>
+    <div id="devowel-container">
+      <input
+        style="width:400px"
+        id="devowel-input"
+        placeholder="string to devowel"
+      />
+      <br />
+      <button id="devowel-button">devowel it</button> <br />
+      <pre id="devowel-output"></pre>
+    </div>
 
-    <section>
-        You can type anything you like in the box below. It is a version of Parrot. Just repeats what you say.
-        Then don't afraid to say it, I LOVE YOU and I Believe You, You Can Do It!
-    </section>  
-      
-        <div id="repeat-container">
-        <input
-          style="width:400px"
-          id="repeat-string-input"
-          placeholder="characters to repeat"
-        />
-        <br />
-        <input
-          style="width:400px"
-          id="repeat-number-input"
-          placeholder="# of times to repeat"
-        />
-        <br />
-        <button id="repeat-button">repeat it</button> <br />
-        <pre id="repeat-output"></pre>
-      </div>
-    
+    <div class="box">
+      You can type anything you like in the box below. It is a version of
+      Parrot. Just repeats what you say. Then don't afraid to say it, I LOVE YOU
+      and I Believe You, You Can Do It!
+    </div>
+
+    <div id="repeat-container">
+      <input
+        style="width:400px"
+        id="repeat-string-input"
+        placeholder="characters to repeat"
+      />
+      <br />
+      <input
+        style="width:400px"
+        id="repeat-number-input"
+        placeholder="# of times to repeat"
+      />
+      <br />
+      <button id="repeat-button">repeat it</button> <br />
+      <pre id="repeat-output"></pre>
+    </div>
 
     <script src="sort-handler.js"></script>
     <script src="reverse-handler.js"></script>

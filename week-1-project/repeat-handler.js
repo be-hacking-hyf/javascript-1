@@ -13,27 +13,31 @@ the handler is already set up to:
 */
 
 function repeatHandler() {
-
   // read and process user input (this works, no need to change it!)
-  const strToRepeat = document.getElementById('repeat-string-input').value;
+  const strToRepeat = document.getElementById("repeat-string-input").value;
 
-  const rawNumInput = document.getElementById('repeat-number-input').value;
+  const rawNumInput = document.getElementById("repeat-number-input").value;
   const numOfRepetitions = Number(rawNumInput);
   if (numOfRepetitions !== numOfRepetitions) {
     throw new TypeError('second input to "repeat it" must be a number');
   }
 
-
   // pass user input through core logic (write this! it doesn't work)
-  const repeated = `repeat ${strToRepeat} ${numOfRepetitions} times`;
+
+  function toRepeat(strToRepeat, numOfRepetitions) {
+    if (numOfRepetitions < 0) return "";
+    if (numOfRepetitions === 1) return strToRepeat;
+    else return strToRepeat + toRepeat(strToRepeat, numOfRepetitions - 1);
+  }
+  const repeated = toRepeat();
 
   // report result to user (this works, no need to change it!)
-  const outputField = document.getElementById('repeat-output');
+  const outputField = document.getElementById("repeat-output");
   outputField.innerHTML = repeated;
 
-  console.log('\n--- repeatHandler ---');
-  console.log('strToRepeat:', typeof strToRepeat, ',', strToRepeat);
-  console.log('repeated:', typeof repeated, ',', repeated);
-};
-const repeatButton = document.getElementById('repeat-button');
-repeatButton.addEventListener('click', repeatHandler);
+  console.log("\n--- repeatHandler ---");
+  console.log("strToRepeat:", typeof strToRepeat, ",", strToRepeat);
+  console.log("repeated:", typeof repeated, ",", repeated);
+}
+const repeatButton = document.getElementById("repeat-button");
+repeatButton.addEventListener("click", repeatHandler);
