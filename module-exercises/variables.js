@@ -82,10 +82,11 @@ function threeVariableSwap1() {
   let temp = '';
 
   // can be done in 4 lines
-  temp = a;
-  a = b;
-  b = c;
-  c = temp;
+  temp=a;
+  a=b;
+  b=c;
+  c=temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -99,10 +100,11 @@ function threeVariableSwap2() {
   let temp = '';
 
   // can be done in 4 lines
-  temp = a;
-  a = c;
-  c = b;
-  b = temp;
+  temp=a;
+  a=c;
+  c=b;
+  b=temp;
+
 
   console.assert(a === "a", "a should store 'a'");
   console.assert(b === "b", "b should store 'b'");
@@ -116,6 +118,12 @@ function fourVariableSwap1() {
   let temp = '';
 
   // can be done in 5 lines
+  temp=a;
+  a=b;
+  b=c;
+  c=d;
+  d=temp;
+
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -131,6 +139,12 @@ function fourVariableSwap2() {
   let temp = '';
 
   // can be done in 6 lines
+  temp=a;
+  a=d;
+  d=temp;
+  temp=b;
+  b=c;
+  c=temp;
 
 
   console.assert(a === "w", "a should store 'w'");
@@ -146,6 +160,12 @@ function fiveVariableSwap() {
   let temp = ' ';
 
   // can be done in 6 lines
+  temp=a;
+  a=e;
+  e=temp;
+  temp=b;
+  b=d;
+  d=temp;
 
 
   console.assert(a === "v", "a should store 'v'");
@@ -195,6 +215,7 @@ function multipleAssignments1() {
   let temp = '';
 
   // can be done in 1 line
+  temp = a, a = b, b = c, c = temp;
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -209,6 +230,7 @@ function multipleAssignments2() {
   let temp = '';
 
   // can be done in 1 line
+  temp = a, a = c,  c = b,  b = temp;
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -223,6 +245,7 @@ function multipleAssignments3() {
   let temp = '';
 
   // can be done in 1 line
+  temp=a,  a=b,  b=c,  c=d,  d=temp;
 
 
   console.assert(a === "a", "a should store 'a'");
@@ -238,6 +261,7 @@ function multipleAssignments4() {
   let temp = '';
 
   // can be done in 1 line
+  temp=a,  a=d,  d=temp,  temp=b,  b=c,  c=temp;
 
 
   console.assert(a === "w", "a should store 'w'");
@@ -270,11 +294,12 @@ evaluate(example_chainedAssignments);
 
 
 function chainedAssignments1() {
-
+  
   let a1 = a2 = 'b', b = 'a';
   let temp = '';
 
   // can be done in 3 lines or less
+  temp=a1=a2,  a1=a2=b,  b=temp;
 
   console.assert(a1 === "a", 'a1 should store "a"');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
@@ -291,6 +316,7 @@ function chainedAssignments2() {
   let temp = '';
 
   // can be done in 4 lines or less
+  temp=a, a=b1=b2, b1=b2=c1, c1=c2=c3=temp;
 
 
 
