@@ -34,7 +34,7 @@ function example_declarationAndAssignment() {
 
   // const variables cannot be declared without an assignment
   const constantVariable = 'forever!';
-  const errorTime; // uncomment this line to throw error!
+ // const errorTime; // uncomment this line to throw error!
 
   // const variables cannot be reassigned later in the program
   constantVariable = 'error time';
