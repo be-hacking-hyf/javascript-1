@@ -1,5 +1,5 @@
 
-## Week 1 Project
+## Week 2 Project
 
 > The user stories are not listed in the same order here as they are in the ```index.html```.  This page lists them in order of difficulty to help you build up your skillzz over the week
 
