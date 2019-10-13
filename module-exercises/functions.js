@@ -476,12 +476,12 @@ evaluate(functionToTest3, writeTestCases3);
 
 
 const writeTestCases4 = [
-  { name: 'first', args: [y,x,z], expected: 'zyx' },
-  { name: 'second', args: [z,x,y], expected: 'yzx' },
+  { name: 'first', args: ['y','x','z'], expected: 'zyx' },
+  { name: 'second', args: ['z','x','y'], expected: 'yzx' },
   { name: 'third', args: ['y', 'z', 'x'], expected: 'xyz' }, // what return value do you expect?
   { name: 'fourth', args: ['x', 'y', 'z'], expected: 'zxy' }, // what return value do you expect?
   { name: 'fifth', args: ['z','y','x'], expected: 'xzy' }, // create your own test case!
-  { name: 'sixth', args: ['y','x','z'], expected: 'z,y,x' }, // create your own test case!
+  { name: 'sixth', args: ['y','x','z'], expected: 'zyx' }, // create your own test case!
 ];
 function functionToTest4(a, b, c) {
   const result = c + a + b;
@@ -492,12 +492,12 @@ evaluate(functionToTest4, writeTestCases4);
 
 
 const writeTestCases5 = [
-  { name: 'first', args: [x,z,y], expected: 'zyx' },
-  { name: 'second', args: [x,y,z], expected: 'yzx' },
+  { name: 'first', args: ['x','z','y'], expected: 'zyx' },
+  { name: 'second', args: ['x','y','z'], expected: 'yzx' },
   { name: 'third', args: ['y', 'z', 'x'], expected: 'zxy' }, // what return value do you expect?
   { name: 'fourth', args: ['x', 'y', 'z'], expected: 'yzx' }, // what return value do you expect?
-  { name: 'fifth', args: [z,y,x], expected: 'yxz' }, // create your own test case!
-  { name: 'sixth', args: [y,x,z], expected: 'x,z,y' }, // create your own test case!
+  { name: 'fifth', args: ['z','y','x'], expected: 'yxz' }, // create your own test case!
+  { name: 'sixth', args: ['y','x','z'], expected: 'xzy' }, // create your own test case!
 ];
 function functionToTest5(a, b, c) {
   const result = b + c + a;

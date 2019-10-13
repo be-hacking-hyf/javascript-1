@@ -38,12 +38,12 @@ const truthinessTests = [
   { name: '-0', args: [-0], expected: 'falsey' },
   { name: 'NaN', args: [NaN], expected: 'falsey' },
   // try it yourself! write some more test cases
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
-  { name: '', args: null, expected: null },
+  { name: '', args: [1], expected: 'truey' },
+  { name: '', args: [0], expected: 'falsey' },
+  { name: '', args: ['1'], expected: 'truey' },
+  { name: '', args: [''], expected: 'falsey' },
+  { name: '', args: [' '], expected: 'truey' },
+  { name: '', args: [NaN], expected: 'falsey'},
 ];
 function truthinessByTestCase(x) {
   const coercedToBool = Boolean(x);
@@ -57,25 +57,25 @@ evaluate(truthinessByTestCase, truthinessTests);
 // change the expected values from null to true or false
 // and come on. don't just use trial and error, think a bit harder!
 const testsToPass = [
-  { name: 'first', args: [0.0], expected: null },
-  { name: 'second', args: [null], expected: null },
-  { name: 'third', args: ['hacking your future!'], expected: null },
-  { name: "fourth", args: [''], expected: null },
-  { name: 'fifth', args: ["--<(*)>--"], expected: null },
-  { name: 'sixth', args: [undefined], expected: null },
-  { name: 'seventh', args: [""], expected: null },
-  { name: 'eighth', args: [Symbol('hello')], expected: null },
-  { name: 'ninth', args: [``], expected: null },
-  { name: 'tenth', args: [true], expected: null },
-  { name: 'eleventh', args: [1e3], expected: null },
-  { name: 'twelfth', args: [0], expected: null },
-  { name: 'thirteenth', args: [Symbol()], expected: null },
-  { name: 'fourteenth', args: [-0], expected: null },
-  { name: 'fifteenth', args: [NaN], expected: null },
-  { name: 'sixteenth', args: [Infinity], expected: null },
-  { name: 'seventeenth', args: [Symbol(false)], expected: null },
-  { name: 'eighteenth', args: [+0], expected: null },
-  { name: 'nineteenth', args: [false], expected: null },
+  { name: 'first', args: [0.0], expected: false },
+  { name: 'second', args: [null], expected:false  },
+  { name: 'third', args: ['hacking your future!'], expected: true },
+  { name: "fourth", args: [''], expected: false },
+  { name: 'fifth', args: ["--<(*)>--"], expected: true },
+  { name: 'sixth', args: [undefined], expected: false },
+  { name: 'seventh', args: [""], expected: false },
+  { name: 'eighth', args: [Symbol('hello')], expected: true },
+  { name: 'ninth', args: [``], expected: false },
+  { name: 'tenth', args: [true], expected: true },
+  { name: 'eleventh', args: [1e3], expected: true },
+  { name: 'twelfth', args: [0], expected: false },
+  { name: 'thirteenth', args: [Symbol()], expected: true },
+  { name: 'fourteenth', args: [-0], expected: false },
+  { name: 'fifteenth', args: [NaN], expected: false },
+  { name: 'sixteenth', args: [Infinity], expected: true },
+  { name: 'seventeenth', args: [Symbol(false)], expected: true },
+  { name: 'eighteenth', args: [+0], expected: false },
+  { name: 'nineteenth', args: [false], expected: false },
 ];
 Boolean.quizzing = true;
 evaluate(Boolean, testsToPass);
