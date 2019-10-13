@@ -26,9 +26,13 @@ function repeatHandler() {
 
   // pass user input through core logic (write this! it doesn't work)
   
-  repeatVar = (strToRepeat.repeat(numOfRepetitions));
-  const repeated = `repeat ${strToRepeat} ${numOfRepetitions} times`;
-  
+  function repeatSitring(){
+    let repeatstr = strToRepeat+' ';
+    let repeating = repeatstr.repeat(rawNumInput);
+    return repeating;
+  }
+
+  const repeated =repeatSitring();
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('repeat-output');
   outputField.innerHTML = repeated + ":  "+repeatVar ;
