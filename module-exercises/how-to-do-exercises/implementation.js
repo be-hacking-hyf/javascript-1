@@ -5,8 +5,9 @@
   document.body.appendChild(header);
   console.groupCollapsed(pageTitle);
 }
+try {
 
-console.log(`Implemention exercises are based on asserting, asserting simply means predicting.
+  console.log(`Implemention exercises are based on asserting, asserting simply means predicting.
 
 console.assert is a method that allows you to make and check predictions about values in your program,
 
@@ -26,48 +27,48 @@ In Implementation exercises you will have to pass console.assert statements by e
 let's see some examples:
 `)
 
-function asserting() {
-  console.assert(false, 'this assert will show up in console output');
-  console.assert(true, 'this assert will not show up in console output');
+  function asserting() {
+    console.assert(false, 'this assert will show up in console output');
+    console.assert(true, 'this assert will not show up in console output');
 
-  console.assert(1 === 1, 'this assert will not show up');
-  console.assert(1 === 0, 'this assert will also show up');
+    console.assert(1 === 1, 'this assert will not show up');
+    console.assert(1 === 0, 'this assert will also show up');
 
-}
-evaluate(asserting)
+  }
+  evaluate(asserting)
 
-function writeCodeForAsserts() {
-  const a = null; // fix this line of code!
-  console.assert(a === 5, 'variable a should store the number 5');
+  function writeCodeForAsserts() {
+    const a = null; // fix this line of code!
+    console.assert(a === 5, 'variable a should store the number 5');
 
-  const b = null; // fix this line of code!
-  console.assert(b === '5', 'variable b should store the string 5');
-}
-evaluate(writeCodeForAsserts);
+    const b = null; // fix this line of code!
+    console.assert(b === '5', 'variable b should store the string 5');
+  }
+  evaluate(writeCodeForAsserts);
 
-function writeAssertsForCode() {
-  const a = 5 + '5';
-  console.assert(a === null, 'variable a should store ___');// replace null with your guess!
+  function writeAssertsForCode() {
+    const a = 5 + '5';
+    console.assert(a === null, 'variable a should store ___');// replace null with your guess!
 
-  const b = '5' + '5';
-  console.assert(b === null, 'variable b should store ___');// replace null with your guess!
-}
-evaluate(writeAssertsForCode);
+    const b = '5' + '5';
+    console.assert(b === null, 'variable b should store ___');// replace null with your guess!
+  }
+  evaluate(writeAssertsForCode);
 
-function passAndWriteAsserts() {
-  const a = null; // fix this line of code!
-  console.assert(a === 5, 'variable a should store the number 5');
+  function passAndWriteAsserts() {
+    const a = null; // fix this line of code!
+    console.assert(a === 5, 'variable a should store the number 5');
 
-  const b = null; // fix this line of code!
-  console.assert(b === '5', 'variable b should store the string 5');
+    const b = null; // fix this line of code!
+    console.assert(b === '5', 'variable b should store the string 5');
 
-  const c = a + b;
-  console.assert(c === null, 'variable c should store ____'); // complete the assert!
-}
-evaluate(passAndWriteAsserts);
+    const c = a + b;
+    console.assert(c === null, 'variable c should store ____'); // complete the assert!
+  }
+  evaluate(passAndWriteAsserts);
 
 
-console.log(`
+  console.log(`
 the evaluate function is not magic, it just makes things prettier to read and generates the study links.
 
 here's a simple way for you to check your work in the console without using the evaluate function,
@@ -75,15 +76,20 @@ here's a simple way for you to check your work in the console without using the 
 `)
 
 
-console.groupCollapsed(passAndWriteAsserts.name + ': implementation');
-{
-  passAndWriteAsserts();
+  console.groupCollapsed(passAndWriteAsserts.name + ': implementation');
+  {
+    passAndWriteAsserts();
+  }
+  console.groupEnd();
+
+
+
+} catch (err) {
+  console.log(err);
+  document.body.appendChild(
+    evaluate.errorSearchComponent('.js file', err)
+  );
 }
-console.groupEnd();
-
-
-
-
 {
   console.groupEnd();
   document.body.appendChild(document.createElement('hr'));
