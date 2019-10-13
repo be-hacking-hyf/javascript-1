@@ -13,21 +13,22 @@ the handler is already set up to:
 
 
 function sortHandler() {
-  const toSort1 = ['Lemon','Banana','Apples','Grapes'];
+
   // read and process user input (this works, no need to change it!)
   const toSort = document.getElementById('sort-input').value;
 
+  let arr = toSort.split('').sort().join('');
+  
   // pass user input through core logic (write this! it doesn't work)
-  function sortString(toSort){
-    let toSort1 = toSort.split('');
-    let sorted = toSort1.sort();
-    return sorted.join('');
-  }
-  const sorted = sortString(toSort);
-
+  const sorted = `sort the charecters in ${arr}`;
+    
+   
   // report result to user (this works, no need to change it!)
+  //const outputField = document.getElementById('sort-output');
+  //outputField.innerHTML = sorted;
   const outputField = document.getElementById('sort-output');
   outputField.innerHTML = sorted;
+  
 
   console.log('\n--- sortHandler ---');
   console.log('toSort:', typeof toSort, ',', toSort);

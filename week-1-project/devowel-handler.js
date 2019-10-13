@@ -19,9 +19,22 @@ function devowelHandler() {
   // pass user input through core logic (write this! it doesn't work)
   const devoweled = `remove all vowels from ${toDevowel}`;
 
+    let vowels = "aieuo";
+    let strArr = toDevowel.toLowerCase().split("");
+    let newArr = strArr.filter(function(letter){
+        if(vowels.indexOf(letter)  == -1){
+            return letter;
+        }
+    });
+    var string = "";
+    newArr.forEach(function(letter){
+        string += letter;
+    });
+    
+
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('devowel-output');
-  outputField.innerHTML = devoweled;
+  outputField.innerHTML = devoweled +":  "+ string;
 
   console.log('\n--- devowelHandler ---');
   console.log('toDevowel:', typeof toDevowel, ',', toDevowel);

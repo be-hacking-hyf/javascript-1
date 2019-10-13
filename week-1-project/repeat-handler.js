@@ -25,11 +25,13 @@ function repeatHandler() {
 
 
   // pass user input through core logic (write this! it doesn't work)
+  
+  repeatVar = (strToRepeat.repeat(numOfRepetitions));
   const repeated = `repeat ${strToRepeat} ${numOfRepetitions} times`;
-
+  
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('repeat-output');
-  outputField.innerHTML = repeated;
+  outputField.innerHTML = repeated + ":  "+repeatVar ;
 
   console.log('\n--- repeatHandler ---');
   console.log('strToRepeat:', typeof strToRepeat, ',', strToRepeat);
