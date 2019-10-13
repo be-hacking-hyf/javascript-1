@@ -62,3 +62,7 @@ function leftpadHandler() {
 };
 const leftpadButton = document.getElementById('leftpad-button');
 leftpadButton.addedEventListener('click', leftpadHandler);
+
+
+// https://www.npmjs.com/package/left-pad
+// https://programmingpraxis.com/2016/03/25/leftpad/

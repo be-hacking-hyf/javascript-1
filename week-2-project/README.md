@@ -10,6 +10,6 @@
 | _... constantize a string_ | nothing | nothing | pass all tests for the ```constantize``` function |
 | _... caesarize a string_ | nothing | nothing | pass all tests for the ```caesarize``` function |
 | _... repeat the characters in a string_ | nothing | nothing | pass all tests for the ```repeatChars``` function |
-| _... scramble a string_ | nothing | nothing | pass all tests for the ```scramble``` function |
+| _... leftpad a string_ | nothing | nothing | pass all tests for the ```leftpad``` function |
 | _... have a pleasant user experience_ | write a stylish styling sheet <br> make sure everything is responsive  | nothing | nothing |
 
