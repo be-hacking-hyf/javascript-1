@@ -74,7 +74,12 @@ header{
     text-align: center;
     bottom: 0;
     width: 100%;
+    position: fixed;
   }
+
+#repeat-container {
+  margin-bottom: 100px;
+}
 
 
   @media (max-width: 680px) {

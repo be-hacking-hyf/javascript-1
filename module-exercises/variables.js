@@ -348,7 +348,7 @@ function footnote_var() {
 evaluate(footnote_var);
 
 
-{
+
   console.groupEnd();
   document.body.appendChild(document.createElement('hr'));
-}
+

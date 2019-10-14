@@ -62,7 +62,7 @@ const typeofTests = [
   { name: 'boo, true', args: [true], expected: 'boolean' },
   { name: 'boo, false', args: [false], expected: 'boolean' },
   // null's type is 'null'.  just remember, don't try yet to understand
-  { name: 'obj, true', args: [null], expected: 'null' },
+  { name: 'obj, true', args: [null], expected: 'object' },
   // undefined. like with null, there is only one value with this type
   { name: 'und, undefined', args: [undefined], expected: 'undefined' },
   // strings are anything with quotes around it
@@ -74,12 +74,12 @@ const typeofTests = [
   { name: 'num, Infinity', args: [Infinity], expected: 'number' },
   { name: 'num, 4', args: [4], expected: 'number' },
   // write 6 more passing test cases with expected value 'number'
-  { name: 'num, 1', args: [1], expected: number },
-  { name: 'num, 5', args: [5], expected: number },
-  { name: 'num, Nan', args: [NaN], expected: number },
-  { name: 'num, infinity', args: [Infinity], expected: number },
-  { name: 'num, 1.1', args: [1.1], expected: number },
-  { name: 'num, -2', args: [-2], expected: number },
+  { name: 'num, 1', args: [1], expected: 'number'},
+  { name: 'num, 5', args: [5], expected: 'number' },
+  { name: 'num, Nan', args: [NaN], expected: 'number' },
+  { name: 'num, infinity', args: [Infinity], expected: 'number' },
+  { name: 'num, 1.1', args: [1.1], expected: 'number' },
+  { name: 'num, -2', args: [-2], expected: 'number' },
 ]
 function allValuesHaveAType(value) {
   return typeof value;
@@ -125,16 +125,16 @@ evaluate(example_aBitAboutNaN);
 
 // fix the expected values to pass the tests
 const strictEqualityTests = [
-  { name: 'NaN', args: [NaN, NaN], expected: null },
-  { name: 'first', args: [true, 'true'], expected: null },
-  { name: 'second', args: [1, '1'], expected: null },
-  { name: 'third', args: ['1', '1'], expected: null },
-  { name: 'fourth', args: [1000, 1e3], expected: null },
-  { name: 'fifth', args: [+0, -0], expected: null },
-  { name: 'sixth', args: [1, 1.0], expected: null },
-  { name: 'seventh', args: ['', ""], expected: null },
-  { name: 'eighth', args: ["", ``], expected: null },
-  { name: 'ninth', args: ['  ', ' '], expected: null },
+  { name: 'NaN', args: [NaN, NaN], expected: false },
+  { name: 'first', args: [true, 'true'], expected: false },
+  { name: 'second', args: [1, '1'], expected: false },
+  { name: 'third', args: ['1', '1'], expected: true },
+  { name: 'fourth', args: [1000, 1e3], expected: true },
+  { name: 'fifth', args: [+0, -0], expected: true },
+  { name: 'sixth', args: [1, 1.0], expected: true },
+  { name: 'seventh', args: ['', ""], expected: true },
+  { name: 'eighth', args: ["", ``], expected: true },
+  { name: 'ninth', args: ['  ', ' '], expected: false },
 ];
 function strictEquality(a, b) {
   // if type OR value are not the same, returns false
@@ -147,16 +147,16 @@ evaluate(strictEquality, strictEqualityTests);
 
 
 const strictInequalityTests = [
-  { name: 'NaN', args: [NaN, NaN], expected: null },
-  { name: 'first', args: [true, 'true'], expected: null },
-  { name: 'second', args: [1, '1'], expected: null },
-  { name: 'third', args: ['1', '1'], expected: null },
-  { name: 'fourth', args: [1000, 1e3], expected: null },
-  { name: 'fifth', args: [+0, -0], expected: null },
-  { name: 'sixth', args: [1, 1.0], expected: null },
-  { name: 'seventh', args: ['', ""], expected: null },
-  { name: 'eighth', args: ["", ``], expected: null },
-  { name: 'ninth', args: ['  ', ' '], expected: null },
+  { name: 'NaN', args: [NaN, NaN], expected: true },
+  { name: 'first', args: [true, 'true'], expected: true},
+  { name: 'second', args: [1, '1'], expected: true},
+  { name: 'third', args: ['1', '1'], expected: false },
+  { name: 'fourth', args: [1000, 1e3], expected: false },
+  { name: 'fifth', args: [+0, -0], expected: false },
+  { name: 'sixth', args: [1, 1.0], expected: false },
+  { name: 'seventh', args: ['', ""], expected: false },
+  { name: 'eighth', args: ["", ``], expected: false },
+  { name: 'ninth', args: ['  ', ' '], expected: true },
 ];
 function strictInequality(a, b) {
   // if type OR value are not the same, returns true

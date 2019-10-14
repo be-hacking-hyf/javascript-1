@@ -29,7 +29,9 @@ function repeatHandler() {
     if (numOfRepetitions === 1) return strToRepeat;
     else return strToRepeat + toRepeat(strToRepeat, numOfRepetitions - 1);
   }
-  const repeated = toRepeat();
+  
+
+  const repeated = strToRepeat.repeat(numOfRepetitions);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById("repeat-output");
