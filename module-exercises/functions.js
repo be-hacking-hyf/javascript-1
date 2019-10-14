@@ -239,11 +239,11 @@ function tracing4() {
   // pass x, y and z to the function in the right order
   // don't change their values!
   let x = "x", y = "y", z = "z";
-  let returnVal = f(x + z + y);
+  let returnVal = f(x, z, y);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
   x = "y", y = "x", z = "z";
-  returnVal = f(x + y + z);
+  returnVal = f(x, y, z);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
 
 }
@@ -260,11 +260,11 @@ function tracing5() {
   // pass x, y and z to the function in the right order
   // don't change their values!
   let x = "x", y = "y", z = "z";
-  let returnVal = f();
+  let returnVal = f(z, x, y);
   console.assert(returnVal === "xzy", "returnVal should be xzy");
 
   x = "y", y = "x", z = "z";
-  returnVal = f();
+  returnVal = f(x, z, y);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
 
 }
@@ -275,7 +275,7 @@ function tracing6() {
 
   // concatinate the params to pass the tests
   function f(param1, param2, param3) {
-    const result = null;
+    const result = (param3 + param1 + param2);
     return result;
   };
 
@@ -295,7 +295,7 @@ function tracing7() {
 
   // concatinate the params to pass the tests
   function f(param1, param2, param3) {
-    const result = null;
+    const result = (param2 + param3 + param1);
     return result;
   };
 
@@ -314,7 +314,7 @@ evaluate(tracing7);
 function tracing8() {
 
   // arrange the parameters to pass the asserts
-  function f() {
+  function f(param3, param2, param1) {
     var result = param2 + param1 + param3;
     return result;
   };
@@ -334,7 +334,7 @@ evaluate(tracing8);
 function tracing9() {
 
   // arrange the parameters to pass the asserts
-  function f() {
+  function f(param2, param3, param1) {
     var result = param1 + param2 + param3;
     return result;
   };
@@ -354,21 +354,21 @@ evaluate(tracing9);
 function tracing10() {
 
   // do what needs to be done!
-  function f() {  // <--
+  function f(param3, param1, param2, param4) {  // <--
     var result = param3 + param1 + param2 + param4;
     return result;
   };
 
-  let arg1 = "", arg2 = "", arg3 = "", arg4 = ""; // <--
+  let arg1 = "x", arg2 = "y", arg3 = "z", arg4 = "w"; // <--
   let returnVal = f(arg1, arg2, arg3, arg4);
   console.assert(returnVal === "xyzw", "returnVal should be xyzw");
 
   arg1 = "z", arg2 = "w", arg3 = "y", arg4 = "x";
   returnVal = f(arg3, arg1, arg4, arg2);
-  console.assert(returnVal === "", "returnVal should be ?"); // <--
+  console.assert(returnVal === "yzxw", "returnVal should be ?"); // <--
 
   arg1 = "z", arg2 = "w", arg3 = "y", arg4 = "x";
-  returnVal = f();                                   // <--
+  returnVal = f(arg1, arg3, arg2, arg4);                                   // <--
   console.assert(returnVal === "zywx", "returnVal should be zywx");
 
 }
