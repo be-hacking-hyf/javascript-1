@@ -20,14 +20,14 @@ const orTests = [
   { name: '"true", NaN', args: ["true", NaN], expected: "true" },
   { name: 'NaN, NaN', args: [NaN, NaN], expected: NaN },
   // complete these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: '5,0', args: [5,0], expected: 5 },
+  { name: '1,0', args: [1,0], expected: 1 },
+  { name: '0,-10', args: [0,-10], expected: -10 },
+  { name: '"Infinite", NaN', args: ['Infinite', NaN], expected: 'Infinite' },
+  { name: '1,1', args: [1,1], expected: 1 },
+  { name: '0,1', args: [0,1], expected: 1 },
+  { name: '"Infinite",0', args: ["Infinite",0], expected: 'Infinite' },
+  { name: '"null",1', args: ["null",1], expected: 'null' },
 ];
 function or(a, b) {
   return a || b;
