@@ -46,16 +46,16 @@ evaluate(example_declarationAndAssignment);
 
 function example_twoVariableSwap() {
 
-  // swapping the values stored in two variables is a key skill
- // once you get it, it's quite simple
- // if you don't get it, programming will be very confusing
- // so take some time now to understand how variables work
- //  how they store values in memory
- //  that the "=" sign does not work like in math
- //  what happens when one variable is assigned to another
- //  that variable assignments go from right to left
- //  that program memory changes over time
- //  what is written in source code will not be true forever/
+// swapping the values stored in two variables is a key skill
+// once you get it, it's quite simple
+// if you don't get it, programming will be very confusing
+// so take some time now to understand how variables work
+//  how they store values in memory
+//  that the "=" sign does not work like in math
+//  what happens when one variable is assigned to another
+//  that variable assignments go from right to left
+//  that program memory changes over time
+//  what is written in source code will not be true forever/
 
 
   let a = 'b', b = 'a';
@@ -300,8 +300,8 @@ function chainedAssignments1() {
 
   // can be done in 3 lines or less
   temp=b;
-b=a1=a2;
-a1=a2=temp;
+  b=a1=a2;
+  a1=a2=temp;
 
   console.assert(a1 === "a", 'a1 should store "a"');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
@@ -319,10 +319,10 @@ function chainedAssignments2() {
 
   // can be done in 4 lines or less
 
-  let a = 'c';
-  let b1 = b2 = 'a';
-  let c1 = c2 = c3 = 'b';
-  let temp = '';
+  temp=a, 
+  a=b1=b2,
+  b1=b2=c1, 
+  c1=c2=c3=temp;
 
   console.assert(a === "a", 'a should store "a"');
   console.assert(b1 === "b", 'b1 should store "b"');

@@ -174,13 +174,14 @@ function tracing1() {
   };
 
   // set values in the args to pass the assert
-  let arg1 = "", arg2 = "", arg3 = "";
+  let arg1 = "y", arg2 = "x", arg3 = "z";
   let returnval = f(arg1, arg2, arg3);
   console.assert(returnval === "zyx", "1 a");
 
-  arg1 = "", arg2 = "", arg3 = "";
+  arg1 = "z", arg2 = "x", arg3 = "y";
   returnval = f(arg1, arg2, arg3);
   console.assert(returnval === "yzx", "1 b");
+  
 
 }
 evaluate(tracing1);
@@ -194,14 +195,15 @@ function tracing2() {
   };
 
   // set values in the args to pass the assert
-  let arg1 = "", arg2 = "", arg3 = "";
+  let arg1 = "x", arg2 = "y", arg3 = "z";
   let returnVal = f(arg1, arg3, arg2);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
-  arg1 = "", arg2 = "", arg3 = "";
+  arg1 = "y", arg2 = "x", arg3 = "z";
   returnVal = f(arg2, arg1, arg3);
   console.log(returnVal === "zxy", "returnVal should be zxy");
-
+  
+  
 }
 evaluate(tracing2);
 
@@ -217,12 +219,12 @@ function tracing3() {
   };
 
   // set values in the args to pass the assert
-  let arg1 = "", arg2 = "", arg3 = "";
+  let arg1 = "z", arg2 = "x", arg3 = "y";
   let returnVal = f(arg1, arg2, arg3);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
 
-  arg1 = "", arg2 = "", arg3 = "";
+  arg1 = "z", arg2 = "y", arg3 = "x";
   returnVal = f(arg3, arg2, arg1);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
 
@@ -239,11 +241,11 @@ function tracing4() {
   // pass x, y and z to the function in the right order
   // don't change their values!
   let x = "x", y = "y", z = "z";
-  let returnVal = f();
+  let returnVal = f(x,z,y);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
   x = "x", y = "z", z = "y";
-  returnVal = f();
+  returnVal = f(z,x,y);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
 
 }
@@ -260,11 +262,11 @@ function tracing5() {
   // pass x, y and z to the function in the right order
   // don't change their values!
   let x = "x", y = "y", z = "z";
-  let returnVal = f();
+  let returnVal = f(z,x,y);
   console.assert(returnVal === "xzy", "returnVal should be xzy");
 
   x = "y", y = "x", z = "z";
-  returnVal = f();
+  returnVal = f(x,z,y);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
 
 }
@@ -275,7 +277,7 @@ function tracing6() {
 
   // concatinate the params to pass the tests
   function f(param1, param2, param3) {
-    const result = null;
+    const result = param3+param1+param2;
     return result;
   };
 
@@ -286,7 +288,8 @@ function tracing6() {
   arg1 = "z", arg2 = "x", arg3 = "y";
   returnVal = f(arg3, arg2, arg1);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
-
+ 
+  
 }
 evaluate(tracing6);
 
@@ -295,7 +298,7 @@ function tracing7() {
 
   // concatinate the params to pass the tests
   function f(param1, param2, param3) {
-    const result = null;
+    const result = param2+ param3+param1;
     return result;
   };
 
@@ -307,6 +310,8 @@ function tracing7() {
   returnVal = f(arg3, arg1, arg2);
   console.assert(returnVal === "xzy", "returnVal should be xzy");
 
+
+  
 }
 evaluate(tracing7);
 
@@ -314,16 +319,16 @@ evaluate(tracing7);
 function tracing8() {
 
   // arrange the parameters to pass the asserts
-  function f() {
+  function f(param1, param2, param3) {
     var result = param2 + param1 + param3;
     return result;
   };
 
-  let arg1 = "z", arg2 = "y", arg3 = "x";
+  let arg1 = "x", arg2 = "y", arg3 = "z";
   let returnVal = f(arg1, arg2, arg3);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
-  arg1 = "x", arg2 = "z", arg3 = "y";
+  arg1 = "x", arg2 = "y", arg3 = "z";
   returnVal = f(arg3, arg1, arg2);
   console.assert(returnVal === "xzy", "returnVal should be xzy");
 
@@ -334,16 +339,16 @@ evaluate(tracing8);
 function tracing9() {
 
   // arrange the parameters to pass the asserts
-  function f() {
+  function f(param1, param2, param3) {
     var result = param1 + param2 + param3;
     return result;
   };
 
-  let arg1 = "y", arg2 = "z", arg3 = "x";
+  let arg1 = "x", arg2 = "y", arg3 = "z";
   let returnVal = f(arg1, arg2, arg3);
   console.assert(returnVal === "xyz", "returnVal should be xyz");
 
-  arg1 = "z", arg2 = "x", arg3 = "y";
+  arg1 = "y", arg2 = "z", arg3 = "x";
   returnVal = f(arg3, arg1, arg2);
   console.assert(returnVal === "xyz", "returnVal should be xyz");
 
@@ -354,21 +359,21 @@ evaluate(tracing9);
 function tracing10() {
 
   // do what needs to be done!
-  function f() {  // <--
+  function f(param1, param2, param3, param4) {  // <--
     var result = param3 + param1 + param2 + param4;
     return result;
   };
 
-  let arg1 = "", arg2 = "", arg3 = "", arg4 = ""; // <--
+  let arg1 = "y", arg2 = "z", arg3 = "x", arg4 = "w"; // <--
   let returnVal = f(arg1, arg2, arg3, arg4);
   console.assert(returnVal === "xyzw", "returnVal should be xyzw");
 
   arg1 = "z", arg2 = "w", arg3 = "y", arg4 = "x";
   returnVal = f(arg3, arg1, arg4, arg2);
-  console.assert(returnVal === "", "returnVal should be ?"); // <--
+  console.assert(returnVal === "xyzw", "returnVal should be ?"); // <--
 
   arg1 = "z", arg2 = "w", arg3 = "y", arg4 = "x";
-  returnVal = f();                                   // <--
+  returnVal = f(arg3, arg2, arg1, arg4);                                   // <--
   console.assert(returnVal === "zywx", "returnVal should be zywx");
 
 }
@@ -431,12 +436,12 @@ evaluate(example2_testCases, exampleTestCases);
 
 
 const writeTestCases1 = [
-  { name: 'first', args: [/* what adds to be 5? */], expected: 5 },
-  { name: 'second', args: [/* what else adds to be 5? */], expected: 5 },
-  { name: 'third', args: [-2, 2], expected: null }, // what return value do you expect?
-  { name: 'fourth', args: [100, 20], expected: null }, // what return value do you expect?
-  { name: 'fifth', args: [], expected: null }, // create your own test case!
-  { name: 'sixth', args: [], expected: null }, // create your own test case!
+  { name: 'first', args: [/* what adds to be 5? */0,5], expected: 5 },
+  { name: 'second', args: [/* what else adds to be 5? */2,3], expected: 5 },
+  { name: 'third', args: [-2, 2], expected: 0 }, // what return value do you expect?
+  { name: 'fourth', args: [100, 20], expected: 120 }, // what return value do you expect?
+  { name: 'fifth', args: [8,9], expected: 17 }, // create your own test case!
+  { name: 'sixth', args: [4,9], expected: 13 }, // create your own test case!
 ];
 function functionToTest1(a, b) {
   const result = a + b;
@@ -445,12 +450,12 @@ function functionToTest1(a, b) {
 evaluate(functionToTest1, writeTestCases1);
 
 const writeTestCases2 = [
-  { name: 'first', args: [/* what subtracts to be 5? */], expected: 5 },
-  { name: 'second', args: [/* what else subtracts to be 5? */], expected: 5 },
-  { name: 'third', args: [10, 2], expected: null }, // what return value do you expect?
-  { name: 'fourth', args: [10, 20], expected: null }, // what return value do you expect?
-  { name: 'fifth', args: [], expected: null }, // create your own test case!
-  { name: 'sixth', args: [], expected: null }, // create your own test case!
+  { name: 'first', args: [/* what subtracts to be 5? */7,2], expected: 5 },
+  { name: 'second', args: [/* what else subtracts to be 5? */10,5], expected: 5 },
+  { name: 'third', args: [10, 2], expected: 8 }, // what return value do you expect?
+  { name: 'fourth', args: [10, 20], expected: -10 }, // what return value do you expect?
+  { name: 'fifth', args: [20,9], expected: 11 }, // create your own test case!
+  { name: 'sixth', args: [8, 9], expected: -1 }, // create your own test case!
 ];
 function functionToTest2(a, b) {
   const result = a - b;
@@ -461,12 +466,12 @@ evaluate(functionToTest2, writeTestCases2);
 
 
 const writeTestCases3 = [
-  { name: 'first', args: [/* what multiplies to be 5? */], expected: 5 },
-  { name: 'second', args: [/* what else multiplies to be 5? */], expected: 5 },
-  { name: 'third', args: [10, 2], expected: null }, // what return value do you expect?
-  { name: 'fourth', args: [10, 20], expected: null }, // what return value do you expect?
-  { name: 'fifth', args: [], expected: null }, // create your own test case!
-  { name: 'sixth', args: [], expected: null }, // create your own test case!
+  { name: 'first', args: [/* what multiplies to be 5? */1,5], expected: 5 },
+  { name: 'second', args: [/* what else multiplies to be 5? */-1, -5], expected: 5 },
+  { name: 'third', args: [10, 2], expected: 20 }, // what return value do you expect?
+  { name: 'fourth', args: [10, 20], expected: 200 }, // what return value do you expect?
+  { name: 'fifth', args: [7,9], expected: 63 }, // create your own test case!
+  { name: 'sixth', args: [2,9], expected: 18 }, // create your own test case!
 ];
 function functionToTest3(a, b) {
   const result = a * b;
@@ -483,6 +488,7 @@ const writeTestCases4 = [
   { name: 'fourth', args: ['x', 'y', 'z'], expected: null }, // what return value do you expect?
   { name: 'fifth', args: [], expected: null }, // create your own test case!
   { name: 'sixth', args: [], expected: null }, // create your own test case!
+  
 ];
 function functionToTest4(a, b, c) {
   const result = c + a + b;
