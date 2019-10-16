@@ -15,11 +15,49 @@ const caesarizeTests = [
   { name: 'fourth', args: ["heLLo worLd!", 1], expected: 'ifMMp xpsMe!' },
   { name: 'fifth', args: ["", 5], expected: '' },
   { name: 'sixth', args: ["mnOpQr", 26], expected: 'mnOpQr' },
-  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^L*(#' },
+  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
 function caesarize(str, shiftNum) {
+ 
+    var input=str;
+    
+    var str=input.split('');
+    
+    var code=input.split('');
+    
+    var ceasared=input.split('');
+      
+      for (var i = 0; i < str.length; i++) {
+            code[i] = str[i].charCodeAt();
+            if ((code[i]>=97)&&(code[i]<=122)){
+                code[i]+=shiftNum;
+                if (code[i]>122){
+                  code[i]=code[i]-26;
+                  }
+                  else if (code[i]<97){
+                  code[i]=code[i]+26;
+                  }
+                ceasared[i] = String.fromCharCode(code[i]);
+                }
+            else if ((code[i]>=65)&&(code[i]<=90)){
+                code[i]+=shiftNum;
+                 if (code[i]>90){
+                  code[i]=code[i]-26;
+                  }
+                   else if (code[i]<65){
+                  code[i]=code[i]+26;
+                  }
+                ceasared[i] = String.fromCharCode(code[i]);
+                }
+          
+      }
+      return ceasared.join('');
+    }
+    
+    // console.log(caesarize('aBcD',-3));	
+ 
   // write me!
-}
+
 evaluate(caesarize, caesarizeTests);
 
 
@@ -36,7 +74,7 @@ function caesarizeHandler() {
 
 
   // pass user input through core logic (this works!  no need to change it)
-  const caesarized = caesarize(strToCaesarize);
+  const caesarized = caesarize(strToCaesarize, shiftNumber);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('caesarize-output');
