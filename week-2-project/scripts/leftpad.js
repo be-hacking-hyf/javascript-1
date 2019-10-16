@@ -27,6 +27,21 @@ const leftpadTests = [
 ];
 function leftpad(str, len, pad) {
   // write me!
+}function leftpad(str, len, pad) {
+  // write me!
+  if (!pad) {
+    pad = '.';
+  }
+  
+  str = String(str);
+  if (pad.length !== 1) 
+  len = len - str.length;
+  strPad = '';
+  for (i = 0; i < len; ++i) {
+    strPad += pad;
+  }
+  
+  return (strPad + str);
 }
 evaluate(leftpad, leftpadTests);
 
@@ -58,7 +73,7 @@ function leftpadHandler() {
   console.log('leftpadded:', typeof leftpadded, ',', leftpadded);
 };
 const leftpadButton = document.getElementById('leftpad-button');
-leftpadButton.addedEventListener('click', leftpadHandler);
+leftpadButton.addEventListener('click', leftpadHandler);
 
 
 // https://www.npmjs.com/package/left-pad
