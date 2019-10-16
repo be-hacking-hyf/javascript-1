@@ -23,12 +23,12 @@
 // fix the test cases' expected values to pass the function
 const StringTests = [
   // string values remain unchanged
-  { name: 'str, any string', args: ['any string'], expected: null },
+  { name: 'str, any string', args: ['any string'], expected: 'any string' },
   // casting with String just puts quotes around a thing
-  { name: 'num, 3', args: [3], expected: null },
-  { name: 'boo, true', args: [true], expected: null },
-  { name: 'obj, null', args: [null], expected: null },
-  { name: 'und, undefined', args: [undefined], expected: null },
+  { name: 'num, 3', args: [3], expected: '3' },
+  { name: 'boo, true', args: [true], expected: 'true' },
+  { name: 'obj, null', args: [null], expected: 'null' },
+  { name: 'und, undefined', args: [undefined], expected: 'undefined' },
   // write at least 5 more test cases for the String function
 ];
 String.quizzing = true;
