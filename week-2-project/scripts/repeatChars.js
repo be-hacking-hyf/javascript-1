@@ -17,7 +17,20 @@ const repeatCharsTests = [
   { name: 'seventh', args: [' '], expected: '    ' },
 ];
 function repeatChars(str) {
-  // write this!
+  let count = str.split('').reduce(function(countMap, word) {
+    countMap[word] = ++countMap[word] || 1;
+    return countMap;
+  }, {});
+
+  //Get the letters that were found, and filter out any that only appear once.
+  let repeat = Object.keys(count)
+    //.filter(function (key) { return (count[key] > 1); })
+    // Then map it and create a string with the correct length, filled with that letter.
+   .map(function (key) {
+      return new Array(count[key] + 1).join(key);
+    });
+
+  return repeat;
 }
 evaluate(repeatChars, repeatCharsTests);
 
