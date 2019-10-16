@@ -482,12 +482,12 @@ evaluate(functionToTest3, writeTestCases3);
 
 
 const writeTestCases4 = [
-  { name: 'first', args: [/* what letters in what order will return "zyx"? */], expected: 'zyx' },
-  { name: 'second', args: [/* what letters in what order will return "yzx"? */], expected: 'yzx' },
-  { name: 'third', args: ['y', 'z', 'x'], expected: null }, // what return value do you expect?
-  { name: 'fourth', args: ['x', 'y', 'z'], expected: null }, // what return value do you expect?
-  { name: 'fifth', args: [], expected: null }, // create your own test case!
-  { name: 'sixth', args: [], expected: null }, // create your own test case!
+  { name: 'first', args: ['y','x','z'/* what letters in what order will return "zyx"? */], expected: 'zyx' },
+  { name: 'second', args: ['z','x','y'/* what letters in what order will return "yzx"? */], expected: 'yzx' },
+  { name: 'third', args: ['y', 'z', 'x'], expected: 'xyz' }, // what return value do you expect?
+  { name: 'fourth', args: ['x', 'y', 'z'], expected: 'zxy' }, // what return value do you expect?
+  { name: 'fifth', args: ['z','y','x'], expected: 'xzy' }, // create your own test case!
+  { name: 'sixth', args: ['x','z','y'], expected: 'yxz' }, // create your own test case!
   
 ];
 function functionToTest4(a, b, c) {
@@ -499,12 +499,12 @@ evaluate(functionToTest4, writeTestCases4);
 
 
 const writeTestCases5 = [
-  { name: 'first', args: [/* what letters in what order will return "zyx"? */], expected: 'zyx' },
-  { name: 'second', args: [/* what letters in what order will return "yzx"? */], expected: 'yzx' },
-  { name: 'third', args: ['y', 'z', 'x'], expected: null }, // what return value do you expect?
-  { name: 'fourth', args: ['x', 'y', 'z'], expected: null }, // what return value do you expect?
-  { name: 'fifth', args: [], expected: null }, // create your own test case!
-  { name: 'sixth', args: [], expected: null }, // create your own test case!
+  { name: 'first', args: ['x','z','y'/* what letters in what order will return "zyx"? */], expected: 'zyx' },
+  { name: 'second', args: ['x','y','z'/* what letters in what order will return "yzx"? */], expected: 'yzx' },
+  { name: 'third', args: ['y', 'z', 'x'], expected: 'zxy' }, // what return value do you expect?
+  { name: 'fourth', args: ['x', 'y', 'z'], expected: 'yzx' }, // what return value do you expect?
+  { name: 'fifth', args: ['z','y','x'], expected:'yxz'}, // create your own test case!
+  { name: 'sixth', args: ['z','x','y'], expected: 'xyz' }, // create your own test case!
 ];
 function functionToTest5(a, b, c) {
   const result = b + c + a;

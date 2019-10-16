@@ -98,8 +98,10 @@ const typeofReturnsAStringTests = [
   { name: 'num, 4', args: [4], expected: 'number' },
 ];
 function typeofReturnsAString(value) {
-  const typeofValue = typeof value;
-  return typeof typeofValue;
+   return typeof value;   
+   // const typeofValue = typeof value;
+   // return typeof typeofValue;
+ 
 }
 typeofReturnsAString.quizzing = true;
 evaluate(typeofReturnsAString, typeofReturnsAStringTests);
@@ -134,7 +136,7 @@ const strictEqualityTests = [
   { name: 'sixth', args: [1, 1.0], expected: true },
   { name: 'seventh', args: ['', ""], expected: true },
   { name: 'eighth', args: ["", ``], expected: true },
-  { name: 'ninth', args: [' ', ' '], expected: true },
+  { name: 'ninth', args: ['  ', ' '], expected: false },
 ];
 function strictEquality(a, b) {
   // if type OR value are not the same, returns false
@@ -156,7 +158,7 @@ const strictInequalityTests = [
   { name: 'sixth', args: [1, 1.0], expected: false },
   { name: 'seventh', args: ['', ""], expected: false },
   { name: 'eighth', args: ["", ``], expected: false },
-  { name: 'ninth', args: [' ', ' '], expected: false },
+  { name: 'ninth', args: ['  ', ' '], expected: true },
 ];
 function strictInequality(a, b) {
   // if type OR value are not the same, returns true
