@@ -19,6 +19,28 @@ const caesarizeTests = [
 ];
 function caesarize(str, shiftNum) {
   // write me!
+ 
+  let result = Array(str.length);
+  
+  for (let i = 0; i < str.length; i++) {
+    
+    let code = str.charCodeAt(i);
+    
+    let lower = "a".charCodeAt(0);
+    
+    if (code >= lower && code < lower + 26)
+    
+    code = (code - lower + shiftNum) % 26 + lower;
+  
+    let upper = "A".charCodeAt(0);
+    
+    if (code >= upper && code < upper + 26)
+    
+    code = (code - upper + shiftNum) % 26 + upper;
+  
+    result[i] = String.fromCharCode(code);
+	}
+	return result.join("");
 }
 evaluate(caesarize, caesarizeTests);
 
@@ -36,7 +58,7 @@ function caesarizeHandler() {
 
 
   // pass user input through core logic (this works!  no need to change it)
-  const caesarized = caesarize(strToCaesarize);
+  const caesarized = caesarize(strToCaesarize,shiftNumber);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('caesarize-output');
