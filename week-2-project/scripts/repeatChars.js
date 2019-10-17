@@ -18,7 +18,26 @@ const repeatCharsTests = [
 ];
 function repeatChars(str) {
   // write this!
+  var strArray = str.split('');
+  var strReturn="";
+  strArray.forEach(function(str) {
+  		var code=str.charCodeAt(); 
+      if ( (code<=90 && code>=65)||(code<=122 && code>=97) ){
+        str = str+str;
+      }else if (code<=57 && code>=48 ) {
+        str = str+str+str;
+      }else{
+      	str = str+str+str+str;
+      }
+      
+      strReturn=strReturn+str;
+      
+  });
+  
+  return strReturn;
+
 }
+
 evaluate(repeatChars, repeatCharsTests);
 
 
