@@ -36,7 +36,7 @@ function caesarizeHandler() {
 
 
   // pass user input through core logic (this works!  no need to change it)
-  const caesarized = caesarize(strToCaesarize);
+  const caesarized = caesarize(strToCaesarize, shiftNumber);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('caesarize-output');
