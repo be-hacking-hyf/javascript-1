@@ -6,6 +6,8 @@
 
   for example, caesarize("A", 3) will return : "D"
   because "D" is three letters past "A".
+
+  (yes, this is the same function you wrote last week)
 */
 
 const caesarizeTests = [

@@ -15,7 +15,7 @@ const caesarizeTests = [
   { name: 'fourth', args: ["heLLo worLd!", 1], expected: 'ifMMp xpsMe!' },
   { name: 'fifth', args: ["", 5], expected: '' },
   { name: 'sixth', args: ["mnOpQr", 26], expected: 'mnOpQr' },
-  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^L*(#' },
+  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
 function caesarize(str, shiftNum) {
   // write me!

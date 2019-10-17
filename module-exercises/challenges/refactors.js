@@ -17,16 +17,20 @@ try {
   */
 
   const firstTests = [
+    // both are numbers
     { name: 'first', args: [4, 4], expected: true },
     { name: 'second', args: [4, 5], expected: false },
     { name: 'third', args: [NaN, NaN], expected: false },
     { name: 'fourth', args: [1000, 1e3], expected: true },
+    // one is undefined
     { name: 'fifth', args: [undefined, 'd'], expected: undefined },
     { name: 'sixth', args: [undefined, false], expected: undefined },
     { name: 'seventh', args: [null, undefined], expected: undefined },
+    // both are boolean
     { name: 'eighth', args: [true, false], expected: false },
     { name: 'ninth', args: [false, false], expected: true },
     { name: 'tenth', args: [true, true], expected: true },
+    // different types, and not undefined
     { name: 'eleventh', args: ['4', 1], expected: '41' },
     { name: 'twelfth', args: ['4', '1'], expected: false },
     { name: 'thirteenth', args: [true, 1], expected: 2 },
@@ -46,11 +50,13 @@ try {
 
 
   const secondTests = [
+    // at least one falsey value
     { name: 'first', args: [[3, false, true]], expected: false },
     { name: 'second', args: [[3, '', true]], expected: false },
     { name: 'third', args: [[0, 'false', true]], expected: false },
     { name: 'fourth', args: [[10, 'false', true, null]], expected: false },
     { name: 'fifth', args: [[false, false]], expected: false },
+    // all truthy values
     { name: 'sixth', args: [[true, true]], expected: true },
     { name: 'seventh', args: [[1, true, 'false', 99]], expected: true },
     { name: 'eighth', args: [[1, "a word", "978", true]], expected: true },

@@ -10,8 +10,8 @@ function encryptHandler() {
   }
 
 
-  // pass user input through core logic (this works!  no need to change it)
-  const encrypted = caesarize(strToEncrypt);
+  // pass user input through core logic
+  const encrypted = 'write me!';
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('encrypted-string-output');
