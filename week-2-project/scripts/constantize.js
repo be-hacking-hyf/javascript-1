@@ -23,7 +23,30 @@ const constantizeTests = [
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
 ];
 function constantize(str) {
-  // write me!
+ 
+  let splittedArr = str.split("");
+  
+  let mapArr = splittedArr.map(function(char) {
+   
+    let charCode = char.charCodeAt(0);
+   
+    if ((65 > charCode || charCode > 90) && (97 > charCode || charCode > 122)) {char =
+        
+      char === " " || char === "_" ? " " : char.replace(char, "");
+    }
+    return char;
+  });
+  
+  let finalStr = mapArr.join("");
+  
+  finalStr = finalStr.replace(/\s{2,}/g, " "); 
+  
+  finalStr = finalStr.replace(/\ /g, "_");
+ 
+  finalStr = finalStr.toUpperCase();
+  
+ return finalStr;
+   
 }
 evaluate(constantize, constantizeTests);
 
