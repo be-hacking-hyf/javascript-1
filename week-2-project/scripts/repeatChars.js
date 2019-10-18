@@ -11,26 +11,36 @@ const repeatCharsTests = [
   { name: 'first', args: ['abc'], expected: 'aabbcc' },
   { name: 'second', args: ['123'], expected: '111222333' },
   { name: 'third', args: ['%-*>'], expected: '%%%%----****>>>>' },
-  { name: 'fourth', args: ['h3LL0 W@r!|)'], expected: 'hh333LLLL000 WW@@@@rr!!!!||||))))' },
+  { name: 'fourth', args: ['h3LL0 W@r!|)'], expected: 'hh333LLLL000    WW@@@@rr!!!!||||))))' },
   { name: 'fifth', args: ['{:-<*>-:}'], expected: '{{{{::::----<<<<****>>>>----::::}}}}' },
   { name: 'sixth', args: [''], expected: '' },
   { name: 'seventh', args: [' '], expected: '    ' },
 ];
 function repeatChars(str) {
-  let count = str.split('').reduce(function(countMap, word) {
-    countMap[word] = ++countMap[word] || 1;
-    return countMap;
-  }, {});
-
-  //Get the letters that were found, and filter out any that only appear once.
-  let repeat = Object.keys(count)
-    //.filter(function (key) { return (count[key] > 1); })
-    // Then map it and create a string with the correct length, filled with that letter.
-   .map(function (key) {
-      return new Array(count[key] + 1).join(key);
-    });
-
-  return repeat;
+  
+  let newString = '';
+  
+  const splittedStr = str.split('');
+  
+  splittedStr.forEach(element => {
+    
+    if (/[0-9]/.test(element)) {
+    //
+      newString = newString + element + element + element;
+   
+    } else {
+      
+      if (/[a-zA-Z]/.test(element)) {
+     
+        newString = newString + element + element;
+     
+      } else {
+      
+        newString = newString + element + element + element + element;
+      }
+    }
+  });
+  return newString;
 }
 evaluate(repeatChars, repeatCharsTests);
 
