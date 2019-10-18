@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap');
+
+body {
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+
+#header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#name_header {
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+/* repeatChars-container */
+#repeatChars-container {
+    background-color: rgba(12, 51, 182, 0.164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5%;
+    border-radius: 30%;
+}
+#repeatChars-input {
+    width: 185px;
+}
+#repeatChars-button {
+    width: 200px;
+}
+
+#repeatChars-output {
+    width: 200px;
+    text-align: center;
+}
+
+/* constantize container */
+
+#constantize-container {
+    background-color: rgba(24, 134, 10, 0.164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5%;
+    border-radius: 30%;
+}
+#constantize-input {
+    width: 185px;
+}
+#constantize-button {
+    width: 200px;
+}
+
+/* caesarize-container */
+
+#caesarize-container {
+    background-color: rgba(136, 134, 10, 0.164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5%;
+    border-radius: 30%;
+}
+#caesarize-input {
+    width: 185px;
+}
+#caesarize-number-input {
+    width: 185px;
+}
+#caesarize-button {
+    width: 200px;
+}
+
+/* leftpad-container */
+
+#leftpad-container {
+    background-color: rgba(134, 10, 62, 0.164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5%;
+    border-radius: 30%;
+}
+#leftpad-str-input {
+    width: 185px;
+}
+#leftpad-len-input {
+    width: 185px;
+}
+#leftpad-pad-input {
+    width: 185px;
+}
+
+#leftpad-button {
+    width: 200px;
+}
+
+p {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(2, 1, 54);
+    }
