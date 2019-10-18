@@ -33,10 +33,7 @@ const constantizeTests = [
   let finalStr = splittedStr.split('__').join('_');
   
   return finalStr;
-];
-function constantize(str) {
-  // write me!
-}
+  }
 evaluate(constantize, constantizeTests);
 
 
