@@ -15,12 +15,13 @@
 */
 
 const constantizeTests = [
-  { name: 'first', args: ['hello world!'], expected: 'HELLO_WORLD' },
-  { name: 'second', args: ['milk & cereal'], expected: 'MILK_CEREAL' },
-  { name: 'third', args: ['_ speed of light'], expected: '_SPEED_OF_LIGHT' },
-  { name: 'fourth', args: ['+ # ! &&'], expected: '_' },
-  { name: 'fifth', args: ['Mandy+Tom = <3'], expected: 'MANDYTOM_' },
-  { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
+  { name: 'first', args: ['hello world!'], expected: "HELLO_WORLD" },
+  { name: 'second', args: ['milk & cereal'], expected: "MILK__CEREAL" },
+  { name: 'third', args: ['_ speed of light'], expected: "_SPEED_OF_LIGHT" },
+  { name: 'fourth', args: ['+ # ! &&'], expected: "___"
+},
+  { name: 'fifth', args: ['Mandy+Tom = <3'], expected: "MANDYTOM__" },
+  { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: "ALREADYACONSTANT" },
 ];
 function constantize(str) {
   // write me!
