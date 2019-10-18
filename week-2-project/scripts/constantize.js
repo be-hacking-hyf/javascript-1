@@ -19,7 +19,6 @@ const constantizeTests = [
   { name: 'fourth', args: ['+ # ! &&'], expected: '_' },
   { name: 'fifth', args: ['Mandy+Tom = <3'], expected: 'MANDYTOM_' },
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
-<<<<<<< HEAD
 
   function constantize(str) {
  
@@ -34,11 +33,9 @@ const constantizeTests = [
   let finalStr = splittedStr.split('__').join('_');
   
   return finalStr;
-=======
 ];
 function constantize(str) {
   // write me!
->>>>>>> aef9da6f2e60807a44202b95dbc97a3d6881e1c2
 }
 evaluate(constantize, constantizeTests);
 
