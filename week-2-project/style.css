@@ -1,0 +1,107 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    
+}
+header{
+    text-align: center;
+    color: #ac0808;
+    
+}
+.container {
+    display: block;
+    overflow: hidden;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#repeatChars-input {
+    width: 200px;
+    padding: 0,5rem;
+}
+#repeatChars-button {
+    width: 200px;
+    padding: 0,5rem;
+    margin: 0.75rem;
+}
+
+#constantize-input {
+        width: 200px;
+        padding: 0,5rem;
+}
+#constantize-button {
+        width: 200px;
+        padding: 0,5rem;
+        margin: 0.75rem;
+}
+#caesarize-string-input{
+    width: 200px;
+    padding: 0,5rem;
+}
+#caesarize-number-input {
+    width: 200px;
+    padding: 0,5rem;
+}
+#caesarize-button {
+    width: 200px;
+    padding: 0,5rem;
+    margin: 0.75rem;
+}
+
+#leftpad-str-input{
+    width: 200px;
+    padding: 0,5rem;
+    margin: 0.5rem;
+}
+#leftpad-len-input{
+    width: 200px;
+    padding: 0,5rem;
+    margin: 0.5rem;
+}
+#leftpad-pad-input{
+    width: 200px;
+    padding: 0,5rem;
+    margin: 0.5rem;
+}
+#leftpad-button{
+    width: 200px;
+    padding: 0,5rem;
+    margin: 0.75rem;
+}
+  /*footer*/
+footer{
+    /*position: absolute;*/
+    bottom:0;
+    width:100%;
+    margin:0rem;
+    background:#053b57;
+    color:white;
+    text-align:center;
+    padding:0.5rem;
+  }
+  footer a{
+    color:yellow;
+    font-size:1.5
+  }
+
+  hr {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    
+    body {
+        font-size: 0.8em;
+        background-color: beige;
+
+      }
+    
+    .container {
+      max-width: 400px;
+      text-align: center;
+      margin: auto;
+      margin-top: 10px;
+      padding: 10px;
+    }
+}
