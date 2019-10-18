@@ -11,13 +11,40 @@ const repeatCharsTests = [
   { name: 'first', args: ['abc'], expected: 'aabbcc' },
   { name: 'second', args: ['123'], expected: '111222333' },
   { name: 'third', args: ['%-*>'], expected: '%%%%----****>>>>' },
-  { name: 'fourth', args: ['h3LL0 W@r!|)'], expected: 'hh333LLLL000 WW@@@@rr!!!!||||))))' },
+  { name: 'fourth', args: ['h3LL0 W@r!|)'], expected: 'hh333LLLL000    WW@@@@rr!!!!||||))))' },
   { name: 'fifth', args: ['{:-<*>-:}'], expected: '{{{{::::----<<<<****>>>>----::::}}}}' },
-  { name: 'sixth', args: [''], expected: '' },
   { name: 'seventh', args: [' '], expected: '    ' },
+  { name: 'sixth', args: [''], expected: '' },
+ 
 ];
-function repeatChars(str) {
-  // write this!
+function repeatChars(stringInput) {
+  
+var strArray = stringInput.split('');
+var codeArray = strArray.map(function(code){ 
+  code=code.charCodeAt();
+  return code;
+  });
+
+console.log(codeArray);
+var newArray = codeArray.map(function(num) {
+ if (num<=90 && num>=65){
+    num = String.fromCharCode(num)+String.fromCharCode(num);
+    return num;
+ }
+  else if (num<=122 && num>=97) {
+          num = String.fromCharCode(num)+String.fromCharCode(num);
+          return num;
+  } 
+  else if (num<=57 && num>=48 ) {
+           num = String.fromCharCode(num)+String.fromCharCode(num)+String.fromCharCode(num);
+           return num;
+          }
+   else {
+        num = String.fromCharCode(num)+String.fromCharCode(num)+String.fromCharCode(num)+String.fromCharCode(num);
+        return num;
+  }
+});
+return newArray.join('');
 }
 evaluate(repeatChars, repeatCharsTests);
 
