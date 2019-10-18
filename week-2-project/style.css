@@ -23,12 +23,11 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     padding: 5%;
     border-radius: 2%;
     color: #ffffff;
     width: 100%;
-    margin: 10px auto;
+    margin: auto;
     
 }
 #repeatChars-input {
@@ -46,6 +45,7 @@ text-align: center;
 #repeatChars-output{
     width: 200px;
     text-align: center;
+    background: brown;
 }
 /* repeatChars-input */
 #repeatChars-input {
@@ -67,27 +67,27 @@ text-align: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 10px;
     padding: 2%;
     border-radius: 2%;
     color: #ffffff;
-    width: 50%;
-    margin: 10px auto;
+    width: 100%;
+    margin: auto;
+    border: 2px solid blue;
 }
 
 /* repeatChars-container */
 
-#repeatChars-container {
+#repeatChars-container{
     background-color:lightseagreen;
     display: flex;
     flex-direction: column;
     text-align;: center;
-    margin-top: 10px;
     padding: 2%;
     border-radius: 2%;
     color: #ffffff;
-    width: 50%;
-    margin: 10px auto;
+    width: 100%;
+    margin: auto;
+    border: 2px solid blue;
 }
 
 #constantize-input {
@@ -107,12 +107,11 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     padding: 0%;
-    border-radius: 2%;
+    border: 2px solid blue;
     color: #ffffff;
-    width: 100%;
-    margin: 10px auto;
+    width: 90%;
+    margin: auto;
     text-align: center;
 }
 #caesarize-string-input{
@@ -123,9 +122,12 @@ text-align: center;
 }
 
 #caesarize-string-input{
-    width: 200px;
-   text-align: center;
-    border: navy 2px solid;
+    float: left;
+    width: 400px;
+    text-align: right;
+    margin-right: 0.5em;
+    border: navy 3px solid;
+    
 
 }
 
@@ -144,6 +146,7 @@ text-align: center;
 }
 
 #caesarize-output{
+    background: brown;
     width: 200px;
     text-align: center;
 }
