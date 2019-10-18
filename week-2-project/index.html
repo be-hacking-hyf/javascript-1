@@ -5,53 +5,69 @@
 <head>
   <meta charset="utf-8">
 
-  <title>week 2 project</title>
+  <title>AKBEL-week 2 project</title>
   <meta name="description" content="week 2 project">
-
+  <link rel="stylesheet" href="style.css" />
   <script src="../evaluate.js"></script>
 </head>
 
+<header>
+  <h2>HELLo from week two javascript project</h2>
+  
+</header>
 <body>
 
 
-  <div id='scramble-container'>
-    <textarea id='scramble-input' rows="15" cols="30"></textarea> <br>
-    <button id='scramble-button'>scramble it</button> <br>
-    <pre id='scramble-output'></pre>
-  </div>
-
-
-  <div id='repeatChars-container'>
+  
+  <div id='repeatChars-container' class="container">
     <input id='repeatChars-input' placeholder='characters to repeatChars' /> <br>
     <button id='repeatChars-button'>repeatChars it</button> <br>
     <pre id='repeatChars-output'></pre>
   </div>
+  <div> <p>The function should give you 2 times of the letters, 3 times of the numbers, 4 times of the symbols and the space.
+  </p></div>
 
-  <div id='constantize-container'>
+  <div id='constantize-container' class="container">
     <input id='constantize-input' placeholder='string to constantize' /> <br>
     <button id='constantize-button'>constantize it</button> <br>
     <pre id='constantize-output'></pre>
   </div>
+  <div>
+    <p>The function should make every letters capital and ignore the symbols. Also the space should be '_'</p>
+  </div>
 
-
-  <div id='caesarize-container'>
+  <div id='caesarize-container' class="container">
     <textarea id='caesarize-string-input' rows="15" cols="30"></textarea> <br>
     <input id='caesarize-number-input' placeholder='encryption key (number)' /> <br>
     <button id='caesarize-button'>caesarize it</button> <br>
     <pre id='caesarize-output'></pre>
   </div>
+<div>
+  <p>The function should shift the letters you typed according to the number you gave. </p>
+</div>
+
+  <div id='leftpad-container' class="container">
+    <input id='leftpad-str-input' placeholder='string to pad' />
+    <input id='leftpad-len-input' placeholder='target length' />
+    <input id='leftpad-pad-input' placeholder='pad string' />
+    <button id='leftpad-button'>leftpad it</button> <br>
+    <pre id='leftpad-output'></pre>
+  </div>
+
+  <div>
+    <p>Type a word, give a length (a number), choose a pattern or just leave it.<br>
+      The function should translate the word you typed according to the length that you wanted.</p>
+  </div>
+
+  <!-- get rid of these hr's, this type of thing should be done with CSS -->
+  
+  <!--so did I. but with CSS I still dont know how to do it.-->
 
 
-
-  <!-- get rid of these hr's, this scramble of thing should be done with CSS -->
-  <hr>
-  <hr>
-
-  <script src="scripts/scramble.js"></script>
   <script src="scripts/repeatChars.js"></script>
   <script src="scripts/constantize.js"></script>
   <script src="scripts/caesarize.js"></script>
-
+  <script src="scripts/leftpad.js" id="bottom"></script>
 
 </body>
 

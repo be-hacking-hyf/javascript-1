@@ -35,16 +35,16 @@ const plusTests = [
   { name: 'number, boolean', args: [1, true], expected: 2 },
   { name: 'number, null', args: [1, null], expected: 1 },
   { name: 'number, undefined', args: [1, undefined], expected: NaN },
-  { name: 'NaN, anything else', args: [NaN, 'anything else!'], expected: NaN },
+  { name: 'NaN, "anything else"', args: [NaN, "anything else"], expected: 'NaNanything else'}, //the test code was shown in orange color, that is why I had to change it
   // fill in the rest of these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: 'string,number', args: ['akbel',29], expected: 'akbel29' },
+  { name: 'string, NaN', args: ['name',NaN], expected: 'nameNaN' },
+  { name: 'number,boolean', args: [30,false], expected: 30},
+  { name: 'boolean,boolean', args: [true,false], expected: 1},
+  { name: 'null,boolean', args: [null,true], expected: 1},
+  { name: 'NaN,number', args: [NaN,20], expected: NaN },
+  { name: 'undefined,number', args: [undefined,20], expected: NaN },
+  { name: 'null,null', args: [null,null], expected: 0 },
 ];
 function plus(a, b) {
   return a + b;

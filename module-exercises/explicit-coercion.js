@@ -76,11 +76,11 @@ const BooleanTests = [
   { name: 'obj, null', args: [null], expected: false },
   { name: 'und, undefined', args: [undefined], expected: false },
   // anything but an empty string is cast to true
-  { name: 'str, undefined', args: ['undefined'], expected: false },
-  { name: 'str, false', args: ['false'], expected: false },
+  { name: 'str, undefined', args: ['undefined'], expected: true },
+  { name: 'str, false', args: ['false'], expected: true },
   { name: 'str, Infinity', args: ['Infinity'], expected: true },
   { name: 'str, three', args: ['three'], expected: true },
-  { name: 'str, ', args: [''], expected: true },
+  { name: 'str, ', args: [''], expected: false },
   { name: 'str, 3', args: ['3'], expected: true },
 ];
 Boolean.quizzing = true;

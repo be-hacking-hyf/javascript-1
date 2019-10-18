@@ -70,7 +70,7 @@ const typeofTests = [
   { name: 'str, anything with quotes!', args: ['anything with quotes!'], expected: 'string' },
   // numbers are a bit more strange and varied
   { name: 'num, 0.0', args: [0.0], expected: 'number' },
-  { name: 'num, NaN', args: [NaN], expected: 'number' },
+  { name: 'num, NaN', args: [NaN], expected: 'number'},
   { name: 'num, Infinity', args: [Infinity], expected: 'number' },
   { name: 'num, 4', args: [4], expected: 'number' },
   // write 6 more passing test cases with expected value 'number'
@@ -90,12 +90,12 @@ evaluate(allValuesHaveAType, typeofTests);
 
 // fix the test cases' expected values to pass the function
 const typeofReturnsAStringTests = [
-  { name: 'boo, true', args: [true], expected: 'boolean' },
-  { name: 'boo, false', args: [false], expected: 'boolean' },
-  { name: 'obj, true', args: [null], expected: 'object' },
-  { name: 'und, undefined', args: [undefined], expected: 'undefined' },
+  { name: 'boo, true', args: [true], expected: 'string' },
+  { name: 'boo, false', args: [false], expected: 'string' },
+  { name: 'obj, true', args: [null], expected: 'string' },
+  { name: 'und, undefined', args: [undefined], expected: 'string' },
   { name: 'str, anything with quotes!', args: ['anything with quotes!'], expected: 'string' },
-  { name: 'num, 4', args: [4], expected: 'number' },
+  { name: 'num, 4', args: [4], expected: 'string' },
 ];
 function typeofReturnsAString(value) {
   const typeofValue = typeof value;
@@ -103,7 +103,6 @@ function typeofReturnsAString(value) {
 }
 typeofReturnsAString.quizzing = true;
 evaluate(typeofReturnsAString, typeofReturnsAStringTests);
-
 
 
 function example_aBitAboutNaN() {

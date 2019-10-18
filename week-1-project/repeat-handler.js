@@ -23,12 +23,6 @@ function repeatHandler() {
   }
 
   // pass user input through core logic (write this! it doesn't work)
-
-  function toRepeat(strToRepeat, numOfRepetitions) {
-    if (numOfRepetitions < 0) return "";
-    if (numOfRepetitions === 1) return strToRepeat;
-    else return strToRepeat + toRepeat(strToRepeat, numOfRepetitions - 1);
-  }
   
 
   const repeated = strToRepeat.repeat(numOfRepetitions);

@@ -24,6 +24,59 @@ const constantizeTests = [
 ];
 function constantize(str) {
   // write me!
+
+/* I could not write a funtcion.
+I tried to understand the logic and the way a function builts
+by looking at stackowerflof,khanacademy exercises and what did my friends wrote in slack and homework sheet for constantize.
+I compared the codes, try to understand everything that is written and what are the differences,why and how.
+
+here are the ones I have looked.
+
+*** actually ibrahim used the same function that Luis sent by deleting only one () and adding an extra ;
+I did not understand how his worked. when I tried it it did not worked. ***
+
+//luisk
+
+function constantize(str) {
+    // write me!
+    const newStrArrNoSpacesCapitalized = str.toUpperCase().split(' ');
+    
+    const wordsFiltered = newStrArrNoSpacesCapitalized.map((word) => {
+      const wordArr = word.split('');
+      const wordArrFiltered = wordArr
+        .filter((c) => {
+          return c.charCodeAt() >= 65 && c.charCodeAt() <= 90;
+        });
+      const newWord = wordArrFiltered.join('');
+      return newWord;
+    });
+  
+    return wordsFiltered.join('_')
+  }
+
+// ibrahim hw constantize
+
+function constantize(str) {
+    // write me!
+  
+    const newStrArrNoSpacesCapitalized = str.toUpperCase().split(" ");
+  
+    const wordsFiltered = newStrArrNoSpacesCapitalized.map(word => {
+      const wordArr = word.split("");
+      const wordArrFiltered = wordArr.filter(c => {
+        return c.charCodeAt() >= 65 && c.charCodeAt() <= 90;
+      });
+      const newWord = wordArrFiltered.join("");
+      return newWord;
+    });
+  
+    return wordsFiltered.join("_");
+  }
+
+  
+
+*/
+
 }
 evaluate(constantize, constantizeTests);
 
