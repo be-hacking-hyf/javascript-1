@@ -7,31 +7,34 @@
 
   <title>week 2 project</title>
   <meta name="description" content="week 2 project">
-
+  <link rel="stylesheet" href="style.css" type="text/css">
   <script src="../evaluate.js"></script>
 </head>
 
 <body>
 
-
+  <header id='header'>
+    <h1>JavaScript Week-2 Project</h1>
+    <!-- <h3><span id='name_header'>Mert Demirok</span></h3>  -->
+  </header>
 
   <div id='repeatChars-container'>
     <input id='repeatChars-input' placeholder='characters to repeatChars' /> <br>
-    <button id='repeatChars-button'>repeatChars it</button> <br>
+    <button id='repeatChars-button'><strong>RepeatChars It</strong></button> <br>
     <pre id='repeatChars-output'></pre>
   </div>
 
   <div id='constantize-container'>
     <input id='constantize-input' placeholder='string to constantize' /> <br>
-    <button id='constantize-button'>constantize it</button> <br>
+    <button id='constantize-button'><strong>Constantize It</strong></button> <br>
     <pre id='constantize-output'></pre>
   </div>
 
 
   <div id='caesarize-container'>
-    <textarea id='caesarize-string-input' rows="15" cols="30"></textarea> <br>
+    <textarea id='caesarize-string-input' rows="5" cols="26"></textarea> <br>
     <input id='caesarize-number-input' placeholder='encryption key (number)' /> <br>
-    <button id='caesarize-button'>caesarize it</button> <br>
+    <button id='caesarize-button'><strong>Caesarize It</strong></button> <br>
     <pre id='caesarize-output'></pre>
   </div>
 
@@ -39,10 +42,14 @@
     <input id='leftpad-str-input' placeholder='string to pad' />
     <input id='leftpad-len-input' placeholder='target length' />
     <input id='leftpad-pad-input' placeholder='pad string' />
-    <button id='leftpad-button'>leftpad it</button> <br>
+    <button id='leftpad-button'><strong>Leftpad It</strong></button> <br>
     <pre id='leftpad-output'></pre>
   </div>
 
+  <footer> 
+    <p>Mert Demirok © 2019 | Hack your future Belgium | JS | Week 2</p>
+  
+  </footer>
 
   <!-- get rid of these hr's, this type of thing should be done with CSS -->
   <hr>
