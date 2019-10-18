@@ -14,12 +14,6 @@
 <body>
 
 
-  <div id='scramble-container'>
-    <textarea id='scramble-input' rows="15" cols="30"></textarea> <br>
-    <button id='scramble-button'>scramble it</button> <br>
-    <pre id='scramble-output'></pre>
-  </div>
-
 
   <div id='repeatChars-container'>
     <input id='repeatChars-input' placeholder='characters to repeatChars' /> <br>
@@ -41,17 +35,24 @@
     <pre id='caesarize-output'></pre>
   </div>
 
+  <div id='leftpad-container'>
+    <input id='leftpad-str-input' placeholder='string to pad' />
+    <input id='leftpad-len-input' placeholder='target length' />
+    <input id='leftpad-pad-input' placeholder='pad string' />
+    <button id='leftpad-button'>leftpad it</button> <br>
+    <pre id='leftpad-output'></pre>
+  </div>
 
 
-  <!-- get rid of these hr's, this scramble of thing should be done with CSS -->
+  <!-- get rid of these hr's, this type of thing should be done with CSS -->
   <hr>
   <hr>
 
-  <script src="scripts/scramble.js"></script>
+
   <script src="scripts/repeatChars.js"></script>
   <script src="scripts/constantize.js"></script>
   <script src="scripts/caesarize.js"></script>
-
+  <script src="scripts/leftpad.js"></script>
 
 </body>
 

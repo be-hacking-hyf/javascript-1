@@ -16,8 +16,22 @@ const repeatCharsTests = [
   { name: 'sixth', args: [''], expected: '' },
   { name: 'seventh', args: [' '], expected: '    ' },
 ];
-function repeatChars(str) {
-  // write this!
+function repeatChars(stringInput){
+  let repeated = ``;
+  let chCode;
+  let numOfRepeat;
+  for ( let i=0; i<stringInput.length; i++){
+    chCode = stringInput[i].charCodeAt();
+    numOfRepeat = (chCode==32 && stringInput.length >1) ? 1:
+    ((65 <= chCode && chCode<= 90)||(97 <= chCode && chCode<= 122)) ? 2:
+    (48 <= chCode && chCode<= 57) ? 3:
+    4;
+    
+    repeated += stringInput[i].repeat(numOfRepeat);
+  }
+  
+  return repeated;
+  
 }
 evaluate(repeatChars, repeatCharsTests);
 

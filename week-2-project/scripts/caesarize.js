@@ -17,9 +17,31 @@ const caesarizeTests = [
   { name: 'sixth', args: ["mnOpQr", 26], expected: 'mnOpQr' },
   { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^L*(#' },
 ];
-function caesarize(str, shiftNum) {
-  // write me!
+function caesarize(strToCaesarize, shiftNum) {
+ let checkChar;
+ let shiftedChCode;
+ let shiftedStr = ``;
+for (i=0; i<strToCaesarize; i++) {
+  let chCode = strToCaesarize.charCodeAt(i);
+  checkChar = (65<= chCode && chCode <= 90) ? `upLetter`:
+  (97 <= chCode && chCode <= 122) ? `lowLetter` :
+   `symbol`;
+  if (checkChar === `symbol`) {shiftedChCode = chCode;
+  }
+  let newChCode = shiftnum + chCode;
+  if (checkChar === `upLetter`) {shiftedChCode = (newChCode > 90) ? newChCode - 26:
+    newChCode < 65 ?  newChCode + 26 : newChCode;
+  } 
+  if (checkChar === `lowLetter`) {shiftedChCode = (newChCode > 122) ? newChCode - 26:
+  newChCode < 97 ?  newChCode + 26 : newChCode;
+  }
+  shiftedStr = shiftedStr + String.fromCharCode(shiftedChCode);
+  } 
+return shiftedStr;
 }
+
+
+
 evaluate(caesarize, caesarizeTests);
 
 
@@ -36,7 +58,7 @@ function caesarizeHandler() {
 
 
   // pass user input through core logic (this works!  no need to change it)
-  const caesarized = caesarize(strToCaesarize);
+  const caesarized = caesarize(strToCaesarize, shiftNumber);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('caesarize-output');

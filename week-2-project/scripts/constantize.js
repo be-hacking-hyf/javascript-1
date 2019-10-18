@@ -22,9 +22,40 @@ const constantizeTests = [
   { name: 'fifth', args: ['Mandy+Tom = <3'], expected: 'MANDYTOM_' },
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
 ];
-function constantize(str) {
-  // write me!
+
+function constantize(toConstantize) {
+  const inputArr = toConstantize.toUpperCase().split(``);
+  const filteredArr = inputArr.filter((num) => {
+    return ((65 <= num.charCodeAt() && num.charCodeAt() <=90) || num.charCodeAt()===32 || num.charCodeAt()===95
+  )});
+  const filteredArrNoSpaces = filteredArr.map((space) => space===` `? `_`: space);
+  let constant = filteredArrNoSpaces.join(``);
+  while (constant.includes(`__`)) {
+    constant = constant.replace(`__`, `_`);
+  }
+
+  return constant;
 }
+
+
+/*const upperCased = toConstantize.toUpperCase();
+  let result = ``;
+  for (let i=0; i<upperCased.length; i++) {
+    const cChar = upperCased[i].charCodeAt();
+    let newChar = (65<=cChar && cChar<=90) ? cChar :
+    95;
+    let b = String.fromCharCode(newChar);
+    result = result + b;
+  }
+  while (result.includes(`__`)) { return
+    result = result.replace(`__`, `_`);
+  }
+
+  return result;
+}   DOESN'T WORK CUZ IT ADDES `_` AT THE END OF THE WORD*/
+
+
+  
 evaluate(constantize, constantizeTests);
 
 
