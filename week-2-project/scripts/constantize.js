@@ -21,8 +21,8 @@ const constantizeTests = [
   { name: 'fourth', args: ['+ # ! &&'], expected: '_' },
   { name: 'fifth', args: ['Mandy+Tom = <3'], expected: 'MANDYTOM_' },
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
-];
-function constantize(str) {
+
+  function constantize(str) {
  
   let capStr = str.toUpperCase();
  
