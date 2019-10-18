@@ -24,7 +24,20 @@ const constantizeTests = [
 ];
 function constantize(str) {
   // write me!
-}
+      const newStrArrNoSpacesCapitalized = str.toUpperCase().split(' ');
+    
+    const wordsFiltered = newStrArrNoSpacesCapitalized.map((word) => {
+      const wordArr = word.split('');
+      const wordArrFiltered = wordArr
+        .filter((c) => {
+          return c.charCodeAt() >= 65 && c.charCodeAt() <= 90;
+        });
+      const newWord = wordArrFiltered.join('');
+      return newWord;
+    });
+  
+    return wordsFiltered.join('_')
+  }
 evaluate(constantize, constantizeTests);
 
 
