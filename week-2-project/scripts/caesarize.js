@@ -1,11 +1,8 @@
 /* Caesar Cipher
-
-  this is a simple encoding algorithm that replaces letters in a message with a new letter
-
-  the new letter is determined by shifting N spaces across the alphabet
-
-  for example, caesarize("A", 3) will return : "D"
-  because "D" is three letters past "A".
+  //this is a simple encoding algorithm that replaces letters in a message with a new letter
+ // the new letter is determined by shifting N spaces across the alphabet
+ // for example, caesarize("A", 3) will return : "D"
+ // because "D" is three letters past "A".
 */
 
 const caesarizeTests = [
@@ -15,11 +12,11 @@ const caesarizeTests = [
   { name: 'fourth', args: ["heLLo worLd!", 1], expected: 'ifMMp xpsMe!' },
   { name: 'fifth', args: ["", 5], expected: '' },
   { name: 'sixth', args: ["mnOpQr", 26], expected: 'mnOpQr' },
-  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^L*(#' },
+  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
 function caesarize(str, shiftNum) {
   // write me!
-
+  
 }
 evaluate(caesarize, caesarizeTests);
 
@@ -37,7 +34,7 @@ function caesarizeHandler() {
 
 
   // pass user input through core logic (this works!  no need to change it)
-  const caesarized = caesarize(strToCaesarize);
+  const caesarized = caesarize(strToCaesarize, shiftNumber);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('caesarize-output');
