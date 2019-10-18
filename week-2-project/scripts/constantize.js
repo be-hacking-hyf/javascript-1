@@ -24,29 +24,17 @@ const constantizeTests = [
 ];
 function constantize(str) {
  
-  let splittedArr = str.split("");
-  
-  let mapArr = splittedArr.map(function(char) {
-   
-    let charCode = char.charCodeAt(0);
-   
-    if ((65 > charCode || charCode > 90) && (97 > charCode || charCode > 122)) {char =
-        
-      char === " " || char === "_" ? " " : char.replace(char, "");
-    }
-    return char;
-  });
-  
-  let finalStr = mapArr.join("");
-  
-  finalStr = finalStr.replace(/\s{2,}/g, " "); 
-  
-  finalStr = finalStr.replace(/\ /g, "_");
+  let capStr = str.toUpperCase();
  
-  finalStr = finalStr.toUpperCase();
+  let newStr = capStr.replace(/[`~!@#$%^&*()3|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
   
- return finalStr;
-   
+  let repStr =newStr.replace(/\s/g, '_');
+  
+  let splittedStr =repStr.split('__').join('_');
+  
+  let finalStr = splittedStr.split('__').join('_');
+  
+  return finalStr;
 }
 evaluate(constantize, constantizeTests);
 
