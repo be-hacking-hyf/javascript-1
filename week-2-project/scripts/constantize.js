@@ -23,7 +23,20 @@ const constantizeTests = [
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
 ];
 function constantize(str) {
-  // write me!
+
+  var CapArray = str.toUpperCase().split(' ');
+  
+  var filteredArray = CapArray.map(function(element){ 
+      var arrayedElement=element.split('');
+      var filteredArrayedElement = arrayedElement.filter((c)=>{
+          return c.charCodeAt() >= 65 && c.charCodeAt() <= 90 || c.charCodeAt() === 95;
+          });
+        var newArray = filteredArrayedElement.join('');
+        return newArray;
+      });
+
+  var joinedArray = filteredArray.join('_').replace(/_+/g, '_');
+  return joinedArray;
 }
 evaluate(constantize, constantizeTests);
 
