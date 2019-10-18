@@ -15,31 +15,29 @@ const caesarizeTests = [
   { name: 'fourth', args: ["heLLo worLd!", 1], expected: 'ifMMp xpsMe!' },
   { name: 'fifth', args: ["", 5], expected: '' },
   { name: 'sixth', args: ["mnOpQr", 26], expected: 'mnOpQr' },
-  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^L*(#' },
+  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
-function caesarize(strToCaesarize, shiftNum) {
+function caesarize(strToCaesarize, shiftNumber) {
  let checkChar;
  let shiftedChCode;
  let shiftedStr = ``;
-for (i=0; i<strToCaesarize; i++) {
+for (i=0; i<strToCaesarize.length; i++) {
   let chCode = strToCaesarize.charCodeAt(i);
   checkChar = (65<= chCode && chCode <= 90) ? `upLetter`:
   (97 <= chCode && chCode <= 122) ? `lowLetter` :
    `symbol`;
+   let newChCode = shiftNumber + chCode;
   if (checkChar === `symbol`) {shiftedChCode = chCode;
-  }
-  let newChCode = shiftnum + chCode;
-  if (checkChar === `upLetter`) {shiftedChCode = (newChCode > 90) ? newChCode - 26:
+  } else if (checkChar === `upLetter`) {shiftedChCode = (newChCode > 90) ? newChCode - 26:
     newChCode < 65 ?  newChCode + 26 : newChCode;
-  } 
-  if (checkChar === `lowLetter`) {shiftedChCode = (newChCode > 122) ? newChCode - 26:
+  } else {shiftedChCode = (newChCode > 122) ? newChCode - 26:
   newChCode < 97 ?  newChCode + 26 : newChCode;
   }
   shiftedStr = shiftedStr + String.fromCharCode(shiftedChCode);
   } 
 return shiftedStr;
 }
-
+//if (checkChar === `lowLetter`) 
 
 
 evaluate(caesarize, caesarizeTests);
