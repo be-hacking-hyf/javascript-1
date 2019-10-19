@@ -45,8 +45,7 @@ function caesarize(str, shiftNum) {
                   code[i]=code[i]+26;
                   }
                 ceasared[i] = String.fromCharCode(code[i]);
-                }
-          
+                }    
       }
       return ceasared.join('');
     }

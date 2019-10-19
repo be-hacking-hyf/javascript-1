@@ -1,5 +1,5 @@
 body {
-background-color: rgb(228, 217, 238);
+background-color: lightseagreen;
 font-family: 'Roboto', sans-serif;
 width: 90%;
 text-align: center;
@@ -11,7 +11,7 @@ text-align: center;
 #header {
     background:rgb(8, 28, 71);
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     color: white;
     width: 100%;
     margin: auto;
@@ -63,29 +63,27 @@ text-align: center;
 /* constantize-container */
 
 #constantize-container {
-    background-color:lightseagreen;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 2%;
     border-radius: 2%;
     color: #ffffff;
-    width: 100%;
+    width: 50%;
     margin: auto;
-    border: 2px solid blue;
+    border: solid blue;
 }
 
 /* repeatChars-container */
 
 #repeatChars-container{
-    background-color:lightseagreen;
     display: flex;
     flex-direction: column;
     text-align;: center;
     padding: 2%;
     border-radius: 2%;
     color: #ffffff;
-    width: 100%;
+    width: 50%;
     margin: auto;
     border: 2px solid blue;
 }
@@ -103,21 +101,20 @@ text-align: center;
 }
 
 #caesarize-container{
-    background-color:lightseagreen;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0%;
-    border: 2px solid blue;
+    border: 2px coral blue;
     color: #ffffff;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: 10px 10px auto;
     text-align: center;
 }
 #caesarize-string-input{
     width: 200px;
     align-self: center;
-    border: navy 2px solid;
+    border: 10px coral blue;
     text-align: center;
 }
 

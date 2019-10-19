@@ -44,8 +44,6 @@ function leftpad(str, len, pad) {
     return strReturn;
 }
 evaluate(leftpad, leftpadTests);
-
-
 function leftpadHandler() {
 
   // read and process user input (this works, no need to change it!)
