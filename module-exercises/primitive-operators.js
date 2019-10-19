@@ -35,16 +35,16 @@ const plusTests = [
   { name: 'number, boolean', args: [1, true], expected: 2 },
   { name: 'number, null', args: [1, null], expected: 1 },
   { name: 'number, undefined', args: [1, undefined], expected: NaN },
-  { name: 'NaN, anything else', args: [NaN, 'anything else!'], expected: NaN },
+  { name: 'NaN, anything else', args: [NaN, 'anything else!'], expected: 'NaNanything else!' },
   // fill in the rest of these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: 'number, boolean', args: [1, false], expected: 1 },
+  { name: 'number, number', args: [1, -2], expected: -1 },
+  { name: 'number, string', args: [1, 'true'], expected: '1true' },
+  { name: 'number, undefined', args: [1, undefined], expected: NaN },
+  { name: 'number, null', args: [1, null], expected: 1 },
+  { name: 'number, string', args: [1, 'null'], expected: '1null' },
+  { name: 'NaN, null', args: [NaN, null], expected: NaN },
+  { name: 'number, string', args: [1, 'false'], expected: '1false' },
 ];
 function plus(a, b) {
   return a + b;
