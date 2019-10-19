@@ -36,7 +36,7 @@ text-align: center;
     text-align: center;
 }
 #repeatChars-button {
-  background-color: #4CAF50; /* Green */
+  background-color: saddlebrown; 
   border: red 2px solid;
   color: black;
   padding: 15px 32px;
@@ -51,19 +51,20 @@ text-align: center;
 
 #repeatChars-output{
     background: black;
-    width: 200px;
+    width: 300px;
     text-align: center;
+    color: white;
 }
 /* repeatChars-input */
 #repeatChars-input {
     width: 200px;
-    border: navy 3px solid;
+    border: brown 2px solid;
     text-align: center;
     display: flex;
 }
 
 #repeatChars-button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: red 2px solid;
   color: black;
   padding: 15px 32px;
@@ -161,7 +162,7 @@ text-align: center;
 
 #constantize-output{
     background: black;
-    width: 00px;
+    width: 300px;
     text-align: center;
     margin: auto;
     color: wheat;
@@ -182,8 +183,10 @@ text-align: center;
 
 #caesarize-output{
     background: black;
-    width: 200px;
+    width: 300px;
     text-align: center;
+    color: white;
+    margin: auto;
 }
 
 #leftpad-container{
@@ -210,9 +213,9 @@ text-align: center;
 }
 
 #leftpad-button{
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: red 2px solid;
-  color: black;
+  color: wheat;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -224,8 +227,9 @@ text-align: center;
 
 #leftpad-output{
     background: black;
-    width: 200px;
+    width: 300px;
     text-align: center;
+    color: white;
 }
 
 #repeat-paragraph{
