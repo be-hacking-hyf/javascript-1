@@ -26,7 +26,16 @@ const leftpadTests = [
     { name: 'twentieth', args: ['car', 12, '-=:=-'], expected: '=:=--=:=-car' },
   ];
   function leftpad(str, len, pad) {
-    // write me!
+    let resStr;
+    const addLen = len - str.length;
+    let padTailLen = 0;
+    let numOfRepeat = 0;
+    if (addLen > 0) {
+      padTailLen = addLen % pad.length; 
+      numOfRepeat = (addLen - padTailLen)/pad.length;
+    }
+    resStr = pad.slice(pad.length - padTailLen) + pad.repeat(numOfRepeat) + str.slice(0, len);
+    return resStr;
   }
   evaluate(leftpad, leftpadTests);
   

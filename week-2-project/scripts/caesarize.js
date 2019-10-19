@@ -37,8 +37,6 @@ for (i=0; i<strToCaesarize.length; i++) {
   } 
 return shiftedStr;
 }
-//if (checkChar === `lowLetter`) 
-
 
 evaluate(caesarize, caesarizeTests);
 
