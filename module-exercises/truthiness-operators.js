@@ -46,14 +46,14 @@ const andTests = [
   { name: '"true", NaN', args: ["true", NaN], expected: NaN },
   { name: 'NaN, NaN', args: [NaN, NaN], expected: NaN },
   // complete these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: 'NaN, 0', args: [NaN, 0], expected: NaN },
+  { name: 'NaN, undefined', args: [NaN, undefined], expected: NaN },
+  { name: 'Undefined, NaN', args: [undefined, NaN], expected: undefined},
+  { name: 'NaN, 0', args: [NaN, 0], expected: NaN },
+  { name: '0, NaN', args: [0, NaN], expected: 0 },
+  { name: 'NaN, null', args: [NaN, null], expected: NaN },
+  { name: 'null, NaN', args: [null, NaN], expected: null },
+  { name: 'NaN, "false"', args: [NaN, "true"], expected: NaN },
 ];
 function and(a, b) {
   return a && b;
@@ -69,14 +69,14 @@ const notTests = [
   { name: 'NaN', args: [NaN], expected: true },
   { name: '"hi!"', args: ['hi!'], expected: false },
   // complete these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: '2', args: [2], expected: false },
+  { name: '-4', args: [-4], expected: false },
+  { name: 'NaN', args: [NaN], expected: true },
+  { name: 'undefined', args: [undefined], expected: true },
+  { name: 'null', args: [null], expected: true },
+  { name: '0.3', args: [0.3], expected: false },
+  { name: '150', args: [150], expected: false },
+  { name: 'How?', args: ['How?'], expected: false },
 ];
 function not(a) {
   return !a;
@@ -92,14 +92,14 @@ const ternaryTests = [
   { name: '"hi!"', args: ['hi!', '?', ':'], expected: '?' },
   { name: '0', args: [0, 'truthy', 'falsey'], expected: 'falsey' },
   // complete these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: 'mert', args: [null, 'mert', 'asena'], expected: 'asena' },
+  { name: '?', args: [1, '?','!'], expected: '?' },
+  { name: 'minus', args: [-10, 'negative', 'positive' ], expected: 'negative' },
+  { name: '3.5', args: [-0, '3.5','null'], expected: 'null' },
+  { name: 'hi()', args: ['hi()', 'hello','bye'], expected: 'hello' },
+  { name: 'undefined', args: [undefined, 'yes','no'], expected: 'no' },
+  { name: '100', args: [100, 'hunderd','none'], expected: 'hunderd' },
+  { name: '-0', args: [-0,'zero','null'], expected: 'null' },
 ];
 function ternary(a, b, c) {
   return a ? b : c;
