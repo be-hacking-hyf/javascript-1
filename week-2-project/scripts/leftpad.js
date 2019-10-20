@@ -38,7 +38,7 @@ function leftpadHandler() {
 
   // read and process user input (this works, no need to change it!)
   const stringToPad = document.getElementById('leftpad-str-input').value;
-  const targetLengthStr = document.getElementById('leftpad-str-input').value;
+  const targetLengthStr = document.getElementById('leftpad-len-input').value;
   let targetLength;
   if (isNaN(targetLengthStr) || targetLengthStr === '') {
     throw new TypeError('length needs to be a number');
@@ -61,7 +61,7 @@ function leftpadHandler() {
   console.log('leftpadded:', typeof leftpadded, ',', leftpadded);
 };
 const leftpadButton = document.getElementById('leftpad-button');
-leftpadButton.addedEventListener('click', leftpadHandler);
+leftpadButton.addEventListener('click', leftpadHandler);
 
 
 // https://www.npmjs.com/package/left-pad
