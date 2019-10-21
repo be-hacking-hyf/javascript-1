@@ -1,5 +1,5 @@
 body{
-    background: rgb(1, 30, 31);
+    background: rgb(33, 78, 78);
     font-family: sans-serif;
     text-align: center;
     margin: auto;
@@ -9,9 +9,10 @@ body{
 #header{
     background: darkgrey;
     margin: auto;
-    width: 90%;
+    width: 50%;
     padding: 0.1%;
-    border: 1px rgb(0, 195, 255) solid;
+    border: 1.2px rgb(0, 195, 255) solid;
+    font-size: 10px;
 }
 
 #caesaring-container{ 
@@ -67,7 +68,8 @@ body{
 #footer{
     background: darkgrey;
     margin: auto;
-    width: 90%;
+    width:50%;
     padding: 0.1%;
     border: 1px rgb(0, 195, 255) solid;
+    font-size: 10px;
 }
