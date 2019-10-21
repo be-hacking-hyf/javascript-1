@@ -73,3 +73,8 @@ body{
     border: 1px rgb(0, 195, 255) solid;
     font-size: 10px;
 }
+#footer-logo{
+  margin: auto;
+  width: 40%;
+  padding: 0.1%;
+}
