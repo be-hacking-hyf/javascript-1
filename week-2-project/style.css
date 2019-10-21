@@ -7,11 +7,9 @@ text-align: center;
 }
 
 /*header*/
-
-#header {
+#header{
     background:rgb(8, 28, 71);
     text-align: center;
-    padding: 1%;
     color: white;
     width: 100%;
     margin: auto;

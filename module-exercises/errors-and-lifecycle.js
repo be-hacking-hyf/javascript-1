@@ -97,8 +97,7 @@ function missingBeforeformal() {
 evaluate(missingBeforeformal);
 
 function unEscapedLineBreak() {
-  const a = 'this is
-  two lines';
+  const a = 'this is\n two lines';
 }
 evaluate(unEscapedLineBreak);
 

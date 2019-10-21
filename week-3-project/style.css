@@ -1,0 +1,73 @@
+body{
+    background: rgb(1, 30, 31);
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+#header{
+    background: darkgrey;
+    margin: auto;
+    width: 90%;
+    padding: 0.1%;
+    border: 1px rgb(0, 195, 255) solid;
+}
+
+#caesaring-container{ 
+    margin: auto;
+    width: 50%;
+}
+
+#unencrypted-string-input{
+    margin: auto;
+    border: 1px rgb(0, 195, 255) solid;
+}
+
+#encrypt-button{
+  background: brown;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+#decrypt-button{
+  background: brown;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+#scramble-input{
+    margin: auto;
+    border: 1px rgb(0, 195, 255) solid;
+}
+#scramble-button{
+  background: brown;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+#footer{
+    background: darkgrey;
+    margin: auto;
+    width: 90%;
+    padding: 0.1%;
+    border: 1px rgb(0, 195, 255) solid;
+}

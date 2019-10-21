@@ -16,39 +16,39 @@ const caesarizeTests = [
 ];
 function caesarize(str, shiftNum) {
  //write me!
-    var input=str;
-    
-    var str=input.split('');
-    
-    var code=input.split('');
-    
-    var ceasared=input.split('');
-      
-      for (var i = 0; i < str.length; i++) {
-            code[i] = str[i].charCodeAt();
-            if ((code[i]>=97)&&(code[i]<=122)){
-                code[i]+=shiftNum;
-                if (code[i]>122){
-                  code[i]=code[i]-26;
-                  }
-                  else if (code[i]<97){
-                  code[i]=code[i]+26;
-                  }
-                ceasared[i] = String.fromCharCode(code[i]);
-                }
-            else if ((code[i]>=65)&&(code[i]<=90)){
-                code[i]+=shiftNum;
-                 if (code[i]>90){
-                  code[i]=code[i]-26;
-                  }
-                   else if (code[i]<65){
-                  code[i]=code[i]+26;
-                  }
-                ceasared[i] = String.fromCharCode(code[i]);
-                }    
-      }
-      return ceasared.join('');
+var input=str;
+
+var str=input.split('');
+
+var code=input.split('');
+
+var ceasared=input.split('');
+
+for (var i = 0; i < str.length; i++) {
+code[i] = str[i].charCodeAt();
+if ((code[i]>=97)&&(code[i]<=122)){
+  code[i]+=shiftNum;
+  if (code[i]>122){
+    code[i]=code[i]-26;
     }
+    else if (code[i]<97){
+    code[i]=code[i]+26;
+    }
+  ceasared[i] = String.fromCharCode(code[i]);
+  }
+else if ((code[i]>=65)&&(code[i]<=90)){
+  code[i]+=shiftNum;
+    if (code[i]>90){
+    code[i]=code[i]-26;
+    }
+      else if (code[i]<65){
+    code[i]=code[i]+26;
+    }
+  ceasared[i] = String.fromCharCode(code[i]);
+  }    
+}
+return ceasared.join('');
+}
     
     // console.log(caesarize('aBcD',-3));	
  

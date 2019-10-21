@@ -1,7 +1,5 @@
 /* sort characters
-
-  sort the words in a string, words are substrings separated by spaces
-
+  sort the characters in a word, words are substrings separated by spaces
 */
 
 const sortTests = [
