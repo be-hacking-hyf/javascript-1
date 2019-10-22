@@ -18,16 +18,11 @@ const caesarizeTests = [
   { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
 function caesarize(str, shiftNum) {
- 
     var input=str;
-    
     var str=input.split('');
-    
     var code=input.split('');
-    
     var ceasared=input.split('');
-      
-      for (var i = 0; i < str.length; i++) {
+        for (var i = 0; i < str.length; i++) {
             code[i] = str[i].charCodeAt();
             if ((code[i]>=97)&&(code[i]<=122)){
                 code[i]+=shiftNum;
@@ -49,7 +44,6 @@ function caesarize(str, shiftNum) {
                   }
                 ceasared[i] = String.fromCharCode(code[i]);
                 }
-          
       }
       return ceasared.join('');
     }

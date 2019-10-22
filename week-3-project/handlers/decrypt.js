@@ -11,7 +11,7 @@ function decryptHandler() {
 
 
   // pass user input through core logic (this works!  no need to change it)
-  const decrypted = caesarize(strToDecrypt);
+  const decrypted = caesarize(strToDecrypt,shiftNumber);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('decrypted-string-output');

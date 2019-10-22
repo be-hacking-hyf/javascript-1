@@ -74,7 +74,7 @@ function unexpectedToken3() {
 evaluate(unexpectedToken3);
 
 function unexpectedToken4() {
-  const str = "he told me "run!" the horse arrives!";
+  const str = "he told me \"run!\" the horse arrives!";
 }
 evaluate(unexpectedToken4);
 
@@ -84,12 +84,12 @@ function missingAfterElement1() {
 evaluate(missingAfterElement1)
 
 function missingAfterElement1() {
-  const myArray = [1, 2 3];
+  const myArray = [1, 2, 3];
 }
 evaluate(missingAfterElement1)
 
 function missingBeforeformal() {
-  function getNine {
+  function getNine (){
     const x = 6, y = 3;
     return x + y;
   }
@@ -97,8 +97,10 @@ function missingBeforeformal() {
 evaluate(missingBeforeformal);
 
 function unEscapedLineBreak() {
-  const a = 'this is
+  const a = 'this is\n
   two lines';
+  // const a = `this is
+  // two lines`;
 }
 evaluate(unEscapedLineBreak);
 
@@ -107,7 +109,7 @@ evaluate(unEscapedLineBreak);
 // these are detected at runtime and will throw an error after the page has loaded
 
 function invalidAssignment() {
-  const x = 1;
+  let x = 1;
   x++;
 }
 evaluate(invalidAssignment);
@@ -144,9 +146,9 @@ evaluate(xIsNull);
 
 function bracketIsUndefined() {
   const myArray = [
-    [1, 2, 3]
-    [4, 5, 6]
-    [7, 8, 9]
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
   ];
 }
 evaluate(bracketIsUndefined);

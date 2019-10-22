@@ -15,9 +15,35 @@ const caesarizeTests = [
   { name: 'fourth', args: ["heLLo worLd!", 1], expected: 'ifMMp xpsMe!' },
   { name: 'fifth', args: ["", 5], expected: '' },
   { name: 'sixth', args: ["mnOpQr", 26], expected: 'mnOpQr' },
-  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^L*(#' },
+  { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
 function caesarize(str, shiftNum) {
-  // write me!
-}
+  // var strArr=str.split('');
+  var code=str.split('');
+  var ceasared=str.split('');
+      for (var i = 0; i < str.length; i++) {
+          code[i] = str[i].charCodeAt();
+          if ((code[i]>=97)&&(code[i]<=122)){
+              code[i]+=shiftNum;
+              if (code[i]>122){
+                code[i]=code[i]-26;
+                }
+                else if (code[i]<97){
+                code[i]=code[i]+26;
+                }
+              ceasared[i] = String.fromCharCode(code[i]);
+              }
+          else if ((code[i]>=65)&&(code[i]<=90)){
+              code[i]+=shiftNum;
+               if (code[i]>90){
+                code[i]=code[i]-26;
+                }
+                 else if (code[i]<65){
+                code[i]=code[i]+26;
+                }
+              ceasared[i] = String.fromCharCode(code[i]);
+              }
+    }
+    return ceasared.join('');
+  }
 evaluate(caesarize, caesarizeTests);

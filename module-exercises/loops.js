@@ -103,11 +103,11 @@ function loopRefactor1() {
   while (i !== 8) {
     whileResult += i;
     i += 2;
-  }
+  } 
 
   // fix the three pieces of this for loop to pass the assert
   let forResult = 0;
-  for (null; null; null) {
+  for (let i = 0 ; i !== 8 ; i+=2) {
     forResult += i;
   }
 
