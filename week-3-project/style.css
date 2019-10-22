@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap');
+
+body {
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;}
+
+/*header*/
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: black 3px solid;  }
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px; }
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px; }
+
+header #brand {
+    float: left;  }
+
+
+ul {
+    margin: 0;
+    padding: 0; }
+
+header #brand h1 {
+        margin: 0;
+        padding-left: 10px; }
+
+header nav {
+       float: right;
+       margin-top: 10px; }
+
+header a:hover {
+        color: #cccccc;
+        font-weight: bold; }
+
+.mainbody {
+    /* background-color: darkgreen; */
+    margin-top: 0;}
+
+
+
+/* caesaring container */
+#caesaring-container {
+    background-color: rgba(182, 173, 12, 0.69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px;
+    margin-left: 20%;
+    margin-right: 20%; 
+    border-block-style: double;
+    border-block-color: currentColor;
+    border-block-width: thick;  
+    border-radius: 10%;
+    width: auto;}
+
+#unencrypted-string-input{
+    width: 200px;}
+
+#encryption-key-input {
+    width: 185px;}
+
+#encrypt-button, #decrypt-button {
+    width: 200px;}
+
+#encrypted-string-output {
+    width: 200px;
+    text-align: center;}
+
+#decryption-key-input {
+    width: 185px;}
+
+/* scramble container */
+
+#scramble-container {
+    background-color: rgba(182, 117, 12, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-block-style: double;
+    border-block-color: currentColor;
+    border-block-width: thick;
+    border-radius: 10%;
+    width: auto;}
+
+#scramble-input {
+    width: 200px;}
+
+#scramble-button {
+    width: 200px;}
+
+p {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(2, 1, 54);  }
+
+
+    @media (max-width: 768px) {
+        header #brand,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        .button_1 {
+          float: none;
+          text-align: center;
+          width: 100%;        }
+      
+        header li {
+          padding: 0 10px 0 10px;        }
+      
+        header {
+          padding-bottom: 20px; }
+    }
+
+

@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-
+  <link rel="stylesheet" href="style.css" type="text/css">
   <title>week 3 project</title>
   <meta name="description" content="week 3 project">
 
@@ -18,29 +18,44 @@
 </head>
 
 <body>
-
+  <header>
+    <div id="brand">
+      <h1>JavaScript Week-3 Project</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#caesarize-container">Encrypt&Decryption</a></li>
+        <li><a href="#scramble-container">Scrambling</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+<div class="mainbody"> 
 
   <div id='caesaring-container'>
-    <textarea id='unencrypted-string-input' rows="15" cols="30"></textarea> <br>
+    <textarea id='unencrypted-string-input' rows="15" cols="32"></textarea> <br>
     <input id='encryption-key-input' placeholder='encryption key (number)' /> <br>
-    <button id='encrypt-button'>encrypt it</button> <br>
+    <button id='encrypt-button'><strong>Encrypt it!</strong></button> <br>
     <pre id='encrypted-string-output'></pre>
     <input id='decryption-key-input' placeholder='decryption key (number)' /> <br>
-    <button id='decrypt-button'>decrypt it</button> <br>
+    <button id='decrypt-button'><strong>Decrypt it!</strong></button> <br>
     <pre id='decrypted-string-output'></pre>
   </div>
 
-
-  <!-- hr's are naughty, remove this when you begin styling the page -->
-  <hr>
-
-
-  <div id='scramble-container'>
+   <div id='scramble-container'>
     <textarea id='scramble-input' rows="15" cols="30"></textarea> <br>
-    <button id='scramble-button'>scramble it</button> <br>
+    <button id='scramble-button'><strong>Scramble it!</strong></button> <br>
     <pre id='scramble-output'></pre>
   </div>
+</div>
+  <footer> 
+    <p>Mert Demirok © 2019 | Hack Your Future Belgium | JS | Week 3</p>
+  
+  </footer>
 
+  <hr>
+  <hr>
 
   <script src="handlers/encrypt.js"></script>
   <script src="handlers/decrypt.js"></script>
