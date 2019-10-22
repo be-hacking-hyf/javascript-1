@@ -12,7 +12,7 @@
 
   <script src="logic/caesarize.js"></script>
   <script src="logic/chunk.js"></script>
-  <script src="logic/backward-sentence.js"></script>
+  <script src="logic/reverse-chunk.js"></script>
   <script src="logic/sort-words.js"></script>
   <script src="logic/scramble.js"></script>
 </head>
@@ -21,24 +21,22 @@
 
 
   <div id='caesaring-container'>
-    <textarea id='unencrypted-string-input' rows="15" cols="30"></textarea> <br>
-    <input id='encryption-key-input' placeholder='encryption key (number)' /> <br>
+    <textarea id='encrypted-text-area' rows="15" cols="30"></textarea> <br>
     <button id='encrypt-button'>encrypt it</button> <br>
-    <pre id='encrypted-string-output'></pre>
-    <input id='decryption-key-input' placeholder='decryption key (number)' /> <br>
+    <input id='encryption-key-input' placeholder='encryption key (number)' /> <br>
     <button id='decrypt-button'>decrypt it</button> <br>
-    <pre id='decrypted-string-output'></pre>
+    <textarea id='decrypted-text-area' rows="15" cols="30"></textarea> <br>
   </div>
 
 
-  <!-- hr's are naughty, remove this when you begin styling the page -->
+  <!-- hr's are bad form, how can you divide a page using CSS? -->
   <hr>
 
 
   <div id='scramble-container'>
     <textarea id='scramble-input' rows="15" cols="30"></textarea> <br>
     <button id='scramble-button'>scramble it</button> <br>
-    <pre id='scramble-output'></pre>
+    <textarea id='scramble-output' rows="15" cols="30"></textarea>
   </div>
 
 
