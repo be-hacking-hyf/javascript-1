@@ -18,11 +18,13 @@ body{
 #caesaring-container{ 
     margin: auto;
     width: 50%;
+    text-align: center;
 }
 
 #unencrypted-string-input{
     margin: auto;
     border: 1px rgb(0, 195, 255) solid;
+    text-align: center;
 }
 
 #encrypt-button{
@@ -52,6 +54,7 @@ body{
 #scramble-input{
     margin: auto;
     border: 1px rgb(0, 195, 255) solid;
+    text-align: center;
 }
 #scramble-button{
   background: brown;

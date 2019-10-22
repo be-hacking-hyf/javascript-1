@@ -1,10 +1,10 @@
 function decryptHandler() {
 
   // read and process user input (this works, no need to change it!)
-  const encryptedArea = document.getElementById('encrypted-text-area');
+  const encryptedArea = document.getElementById('decrypted-text-area');
   const strToDecrypt = encryptedArea.value;
 
-  const keyInput = document.getElementById('encryption-key-input');
+  const keyInput = document.getElementById('cryption-key-input');
   const rawNumInput = keyInput.value;
   const shiftNumber = Number(rawNumInput);
   if (isNaN(shiftNumber)) {
