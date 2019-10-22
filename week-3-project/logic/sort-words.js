@@ -1,6 +1,6 @@
 /* sort characters
 
-  sort the words in a string, words are substrings separated by spaces
+  sort the characters in a word, words are substrings separated by spaces
 
 */
 
@@ -15,7 +15,6 @@ function sort(str) {
   var tmp;
   for(var i = 0; i < arr.length; i++){
     for(var j = i + 1; j < arr.length; j++){
-      /* if ASCII code greater then swap the elements position*/
       if(arr[i] > arr[j]){
         tmp = arr[i];
         arr[i] = arr[j];
@@ -24,6 +23,7 @@ function sort(str) {
     }
   }
   return arr.join('');
+  
   
 }
 evaluate(sort, sortTests);
