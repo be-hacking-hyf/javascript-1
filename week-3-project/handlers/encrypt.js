@@ -13,7 +13,7 @@ function encryptHandler() {
 
 
   // pass user input through core logic
-  const encrypted = 'write me!';
+  const encrypted = caesarize(strToEncrypt,shiftNumber);
 
   // report result to user (this works, no need to change it!)
   keyInput.value = '';

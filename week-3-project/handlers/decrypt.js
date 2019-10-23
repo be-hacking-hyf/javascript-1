@@ -13,7 +13,7 @@ function decryptHandler() {
 
 
   // pass user input through core logic
-  const decrypted = 'write me!';
+  const decrypted = caesarize(strToDecrypt,shiftNumber);
 
   // report result to user (this works, no need to change it!)
   keyInput.value = '';
