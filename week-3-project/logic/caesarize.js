@@ -6,6 +6,8 @@
 
   for example, caesarize("A", 3) will return : "D"
   because "D" is three letters past "A".
+
+  (yes, this is the same function you wrote last week)
 */
 
 const caesarizeTests = [
@@ -18,32 +20,33 @@ const caesarizeTests = [
   { name: 'seventh', args: ["#@&&^F*(#", 7], expected: '#@&&^M*(#' },
 ];
 function caesarize(str, shiftNum) {
-  // var strArr=str.split('');
-  var code=str.split('');
-  var ceasared=str.split('');
-      for (var i = 0; i < str.length; i++) {
-          code[i] = str[i].charCodeAt();
-          if ((code[i]>=97)&&(code[i]<=122)){
-              code[i]+=shiftNum;
-              if (code[i]>122){
-                code[i]=code[i]-26;
+    // var strArr=str.split('');
+    var code=str.split('');
+    var ceasared=str.split('');
+        for (var i = 0; i < str.length; i++) {
+            code[i] = str[i].charCodeAt();
+            if ((code[i]>=97)&&(code[i]<=122)){
+                code[i]+=shiftNum;
+                if (code[i]>122){
+                  code[i]=code[i]-26;
+                  }
+                  else if (code[i]<97){
+                  code[i]=code[i]+26;
+                  }
+                ceasared[i] = String.fromCharCode(code[i]);
                 }
-                else if (code[i]<97){
-                code[i]=code[i]+26;
+            else if ((code[i]>=65)&&(code[i]<=90)){
+                code[i]+=shiftNum;
+                 if (code[i]>90){
+                  code[i]=code[i]-26;
+                  }
+                   else if (code[i]<65){
+                  code[i]=code[i]+26;
+                  }
+                ceasared[i] = String.fromCharCode(code[i]);
                 }
-              ceasared[i] = String.fromCharCode(code[i]);
-              }
-          else if ((code[i]>=65)&&(code[i]<=90)){
-              code[i]+=shiftNum;
-               if (code[i]>90){
-                code[i]=code[i]-26;
-                }
-                 else if (code[i]<65){
-                code[i]=code[i]+26;
-                }
-              ceasared[i] = String.fromCharCode(code[i]);
-              }
+      }
+      return ceasared.join('');
     }
-    return ceasared.join('');
-  }
+
 evaluate(caesarize, caesarizeTests);

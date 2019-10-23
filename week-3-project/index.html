@@ -12,7 +12,7 @@
 
   <script src="logic/caesarize.js"></script>
   <script src="logic/chunk.js"></script>
-  <script src="logic/backward-sentence.js"></script>
+  <script src="logic/reverse-chunk.js"></script>
   <script src="logic/sort-words.js"></script>
   <script src="logic/scramble.js"></script>
 </head>
@@ -29,34 +29,29 @@
       </ul>
     </nav>
   </header>
-  
-  
-<div class="mainbody"> 
 
   <div id='caesaring-container'>
-    <textarea id='unencrypted-string-input' rows="15" cols="32"></textarea> <br>
-    <input id='encryption-key-input' placeholder='encryption key (number)' /> <br>
+    <textarea id='encrypted-text-area' rows="15" cols="30"></textarea> <br>
     <button id='encrypt-button'><strong>Encrypt it!</strong></button> <br>
-    <pre id='encrypted-string-output'></pre>
-    <input id='decryption-key-input' placeholder='decryption key (number)' /> <br>
+    <input id='encryption-key-input' placeholder='encryption key (number)' /> <br>
     <button id='decrypt-button'><strong>Decrypt it!</strong></button> <br>
-    <pre id='decrypted-string-output'></pre>
+    <textarea id='decrypted-text-area' rows="15" cols="30"></textarea> <br>
   </div>
 
-   <div id='scramble-container'>
+
+  
+  <div id='scramble-container'>
     <textarea id='scramble-input' rows="15" cols="30"></textarea> <br>
     <button id='scramble-button'><strong>Scramble it!</strong></button> <br>
-    <pre id='scramble-output'></pre>
+    <textarea id='scramble-output' rows="15" cols="30"></textarea>
   </div>
-</div>
+
   <footer> 
     <p>Mert Demirok © 2019 | Hack Your Future Belgium | JS | Week 3</p>
-  
-  </footer>
+ </footer>
 
-  <hr>
-  <hr>
-
+ <hr>
+ <hr>
   <script src="handlers/encrypt.js"></script>
   <script src="handlers/decrypt.js"></script>
   <script src="handlers/scramble.js"></script>

@@ -40,7 +40,7 @@ const thirdExpected = [
 const chunkTests = [
   { name: 'first', args: ['const x = null;'], expected: ['const x ', '=', ' null', ';'] },
   { name: 'second', args: [secondArg], expected: secondExpected },
-  { name: 'third', args: [thirdArg], expected: thirdExpected },
+  { name: 'second', args: [thirdArg], expected: thirdExpected },
 ];
 function chunk(str) {
   // write me!
