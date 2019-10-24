@@ -1,16 +1,16 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <header id="header">
+    <h1>Akader Ibrahim <span style="color:rgb(83, 77, 78)">Week-3 JS1 Project</span></h1>
+    </header>
 
   <title>week 3 project</title>
   <meta name="description" content="week 3 project">
-  <link rel="stylesheet" href="style.css">
-
- <header id="header">
-  <h1>Akader Ibrahim <span style="color:rgb(83, 77, 78)">Week-3 JS1 Project</span></h1>
-  </header>
 
   <script src="../evaluate.js"></script>
 
@@ -25,24 +25,22 @@
 
 
   <div id='caesaring-container'>
-    <textarea id='unencrypted-string-input' rows="15" cols="30"></textarea> <br>
+    <textarea id='encrypted-text-area' rows="10" cols="40"></textarea> <br> <h3 id="encrypt-tag">This Encryption function translates data into another form</h3>
+    <button id='encrypt-button'>Encrypt it</button> <br> 
     <input id='encryption-key-input' placeholder='encryption key (number)' /> <br>
-    <button id='encrypt-button'>encrypt it</button> <br>
-    <pre id='encrypted-string-output'></pre>
-    <input id='decryption-key-input' placeholder='decryption key (number)' /> <br>
-    <button id='decrypt-button'>decrypt it</button> <br>
-    <pre id='decrypted-string-output'></pre>
+    <button id='decrypt-button'>Decrypt it</button> <br> 
+    <textarea id='decrypted-text-area' rows="10" cols="40"></textarea> <br> <h3 id="decrypt-tag">This Decryption function takes encrypted text and converting it back into text that you or the computer can read </h3>
   </div>
 
 
-  <!-- hr's are naughty, remove this when you begin styling the page -->
+  <!-- hr's are bad form, how can you divide a page using CSS? -->
   <hr>
 
 
   <div id='scramble-container'>
-    <textarea id='scramble-input' rows="15" cols="30"></textarea> <br>
-    <button id='scramble-button'>scramble it</button> <br>
-    <pre id='scramble-output'></pre>
+    <textarea id='scramble-input' rows="10" cols="40"></textarea> <br>
+    <button id='scramble-button'>Scramble it</button> <br>
+    <textarea id='scramble-output' rows="10" cols="40"></textarea>
   </div>
 
 
@@ -50,12 +48,15 @@
   <script src="handlers/decrypt.js"></script>
   <script src="handlers/scramble.js"></script>
 
-<footer id="footer">
-<div id="footer-logo">
-  <img src="https://hackyourfuture.be/img/time-white.png">
-  </div>
-  <h1>Akader Ibrahim, Copyright © 2019</h1>
-</footer>
+  <footer id="footer">
+    <div id="footer-logo">
+      <img src="https://hackyourfuture.be/img/time-white.png">
+      </div>
+      <h1>Akader Ibrahim, Copyright © 2019</h1>
+    </footer>
+
+
+
 </body>
 
 </html>

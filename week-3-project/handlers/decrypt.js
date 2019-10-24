@@ -1,10 +1,9 @@
 function decryptHandler() {
 
   // read and process user input (this works, no need to change it!)
-  const encryptedArea = document.getElementById('decrypted-text-area');
+  const encryptedArea = document.getElementById('encrypted-text-area');
   const strToDecrypt = encryptedArea.value;
-
-  const keyInput = document.getElementById('cryption-key-input');
+  const keyInput = document.getElementById('encryption-key-input');
   const rawNumInput = keyInput.value;
   const shiftNumber = Number(rawNumInput);
   if (isNaN(shiftNumber)) {
@@ -13,7 +12,7 @@ function decryptHandler() {
 
 
   // pass user input through core logic
-  const decrypted = 'write me!';
+  const decrypted = decaesarize(strToDecrypt,shiftNumber);
 
   // report result to user (this works, no need to change it!)
   keyInput.value = '';
