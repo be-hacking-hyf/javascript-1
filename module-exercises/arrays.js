@@ -101,20 +101,21 @@ evaluate(example_garbageCollectingArrays);
 
 
 function passTheAssertions1() {
-  ; // declare and assign a1
-  ; // declare and assign a2
+  let a1 = []; // declare and assign a1
+ let a2 = a1 ; // declare and assign a2
   console.assert(a1 === a2, 'a1 should strictly equal a2');
 
-  ; // declare and assign b1
-  ; // declare and assign b2
+ let  b1 = ["b"] ; // declare and assign b1
+  let b2 = ["b"]; // declare and assign b2
   console.assert(b1 !== b2, 'b1 should not strictly equal b2');
 
   // ---
 
-  ; // write one line to pass the assertions
+  a1[0] = "hi!" ; // write one line to pass the assertions
   console.assert(a1[0] === a2[0], 'a1[0] should strictly equal a2[0]');
   console.assert(a1[0] === 'hi!', 'a1.x should strictly equal "hi!"');
-
+  b1 = b2 = ['"bye!"', '"bye!"'];
+  b1[0] = "bye!";
   ; // write two lines to pass the assertions
   ;
   console.assert(b1[0] === b2[0], 'b1[0] should strictly equal b2[0]');
@@ -125,12 +126,12 @@ evaluate(passTheAssertions1);
 
 function passTheAssertions2() {
   const value1 = 5;
-  let reference1 = [];
 
+  
   ; // write this line
   console.assert(value2 === value1, "value1 should strictly equal value2");
 
-  ; // write this line
+  let reference2 = reference1;// write this line
   console.assert(reference2 === reference1, "reference1 should strictly equal reference2");
 
   value2 = value2 + 1; // write this line

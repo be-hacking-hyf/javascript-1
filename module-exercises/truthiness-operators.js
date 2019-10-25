@@ -20,14 +20,14 @@ const orTests = [
   { name: '"true", NaN', args: ["true", NaN], expected: "true" },
   { name: 'NaN, NaN', args: [NaN, NaN], expected: NaN },
   // complete these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: '0,1', args: [0,1], expected: 1 },
+  { name: 'null,null', args: [null,null], expected: null },
+  { name: 'true,null', args: [true,null], expected: true },
+  { name: 'null,true', args: [null,true], expected: true },
+  { name: 'true,false', args: [true,false], expected: true },
+  { name: 'false,true', args: [false,true], expected: true },
+  { name: 'false,false', args: [false,false], expected: false },
+  { name: 'NaN,false', args: [NaN,false], expected: false },
 ];
 function or(a, b) {
   return a || b;
@@ -46,14 +46,14 @@ const andTests = [
   { name: '"true", NaN', args: ["true", NaN], expected: NaN },
   { name: 'NaN, NaN', args: [NaN, NaN], expected: NaN },
   // complete these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: 'null,null', args: [null,null], expected: null },
+  { name: '-0,+0', args: [-0,+0], expected: 0 },
+  { name: '-1,1', args: [-1,1], expected: 1 },
+  { name: '1,-1', args: [1,-1], expected: -1 },
+  { name: 'false,false', args: [false,false], expected: false },
+  { name: 'true,false', args: [true,false], expected: false },
+  { name: 'false,true', args: [false,true], expected: false },
+  { name: 'null,true', args: [null,true], expected: null },
 ];
 function and(a, b) {
   return a && b;
@@ -69,7 +69,7 @@ const notTests = [
   { name: 'NaN', args: [NaN], expected: true },
   { name: '"hi!"', args: ['hi!'], expected: false },
   // complete these test cases
-  { name: null, args: null, expected: null },
+  { name: null, args: null, expected: false },
   { name: null, args: null, expected: null },
   { name: null, args: null, expected: null },
   { name: null, args: null, expected: null },
