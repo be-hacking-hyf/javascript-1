@@ -61,11 +61,11 @@ const sharedTests = [
   { name: 'fourth', args: [0, ""], expected: 'falsey' },
   { name: 'fifth', args: [" ", 1], expected: 'truthy' },
   // write a few more tests
-  { name: 'sixth', args: null, expected: null },
-  { name: 'seventh', args: null, expected: null },
-  { name: 'eighth', args: null, expected: null },
-  { name: 'ninth', args: null, expected: null },
-  { name: 'tenth', args: null, expected: null },
+  { name: 'sixth', args: [NaN, 1], expected: 'truthy' },
+  { name: 'seventh', args: [NaN, 0], expected: 'falsey' },
+  { name: 'eighth', args: [NaN, null], expected: 'falsey' },
+  { name: 'ninth', args: ['a', 'b'], expected: 'truthy'  },
+  { name: 'tenth', args: ['0', NaN], expected: 'truthy' },
 ];
 
 function ternaryExpression(a, b) {

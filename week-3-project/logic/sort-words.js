@@ -10,22 +10,22 @@ const sortTests = [
   { name: 'third', args: ['howdy doody time'], expected: 'dhowy ddooy eimt' },
 ];
 
-// let str='howdy doody time';
-
-let newArr=str.split(' ');
+// let newArr=str.split(' ');
 
 function sort(str){
- 
- let arrstr=str.split(''); 
- let sortedstr=arrstr.sort();
- return sortedstr.join('');
- if (typeof sortedstr[0]===integer){
-   sortedstr.sort(function(a, b){return a - b})
-   }
-}
 
-const mynewArr= newArr.map(sort);
-// console.log(mynewArr);
+  // let str='howdy doody time';
+  let newArr=str.split(' ');
+
+  function sortelement(element){
+    let arrstr=element.split(''); 
+    let sortedstr=arrstr.sort();
+    return sortedstr.join('');
+    }
+
+const mynewArr= newArr.map(sortelement);
+return mynewArr.join(' ');
+}
 
 evaluate(sort, sortTests);
 

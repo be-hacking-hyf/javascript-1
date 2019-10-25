@@ -95,7 +95,6 @@ evaluate(example_blockScopeInLoops);
   once you understand this, you can refactor any loop no matter how complicated the logic
 */
 
-
 function loopRefactor1() {
 
   let whileResult = 0;
@@ -107,30 +106,29 @@ function loopRefactor1() {
 
   // fix the three pieces of this for loop to pass the assert
   let forResult = 0;
-  for (let i = 0 ; i !== 8 ; i+=2) {
+  for (let i = 0 ; i !== 8 ; i += 2) {
     forResult += i;
   }
 
-  console.assert(forResult === whileResult, 'both loops should have the same behavior');
+  console.assert(forResult === whileResult,'both loops should have the same behavior');
 
 }
 evaluate(loopRefactor1);
 
 
-
 function loopRefactor2() {
 
   let forResult = 0;
-  for (i = 5; i > -2; i--) {
+  for (let i = 5; i > -2; i--) {
     forResult = forResult + i;
   }
 
   // fix the three pieces of this for loop to pass the assert
   let whileResult = 0;
-  null;
-  while (null) {
+  let i=5;
+  while (i > -2) {
     whileResult = whileResult + i;
-    null;
+    i--;
   }
 
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
@@ -150,7 +148,7 @@ function loopRefactor1() {
 
   // fix the three pieces of this for loop to pass the assert
   let forResult = 0;
-  for (null; null; null) {
+  for (let i = 0 ; i !== 8 ; i += 2) {
     forResult += i;
   }
 
@@ -170,7 +168,10 @@ function loopRefactor3() {
   };
 
   // refactor the while loop into a for loop
-  let forResult = null;
+  let forResult = .5;
+  for (x=9 ; x>2 ; x--){
+    forResult *= x;
+    }
 
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -188,8 +189,10 @@ function loopRefactor4() {
   };
 
   // refactor the while loop into a for loop
-  let forResult = null;
-
+  let forResult = -1;
+  for (x= -1 ; x<2 ; x++){
+    forResult = forResult && Boolean(x);
+    }
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
 }
@@ -205,6 +208,11 @@ function loopRefactor5() {
 
   // refactor the for loop into a while loop
   let whileResult = 0;
+  let i = -3;
+  while (i === 10 || i < 20){
+    whileResult = i;
+    i *= -1.5;
+  }
 
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -222,6 +230,13 @@ function loopRefactor6() {
 
   // refactor the for loop into a while loop
   let whileResult = 0;
+  let i = 0;
+  let j = 10;
+  while (i !== j){
+    whileResult = i;
+    i++;
+    j--;
+    }
 
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -239,15 +254,15 @@ evaluate(loopRefactor6);
 
 // replace the null's to pass these tests
 const loopTests1 = [
-  { name: 'first', args: [], expected: [0, 4, 16, 56] },
+  { name: 'first', args: [], expected: [0, 4, 16, 52] },
 ];
 
 function while1() {
   const result = [];
   let i = 0;
-  while (null) {
+  while (i<32) {
     result.push(i * 2);
-    null;
+    i = 3*i+2;
   }
   return result;
 }
@@ -255,7 +270,7 @@ evaluate(while1, loopTests1);
 
 function for1() {
   const result = [];
-  for (let i = 0; null; null) {
+  for (let i = 0; i<32; i=3*i+2) {
     result.push(i * 2);
   }
   return result;

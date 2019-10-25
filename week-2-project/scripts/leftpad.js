@@ -27,66 +27,28 @@ const leftpadTests = [
 ];
 
 function leftpad(str, len, pad) {
-  // I need to know the given word length
   const strLength = str.length;
-  // I need to know the given pad word length
   const padLength = pad.length;
-
-  // If the desired word length is zero
   if (len === 0) {
-    // Then I return an empty word (string). Here ends.
-    return '';
-  }
-
-  // If the given word length is equals to the desired word length
-  if (strLength === len) {
-    // Then I just return the word given. Here ends.
+      return '';
+  }if (strLength === len) {
     return str;
-  }
-  // otherwise, If desired word length is less than the given word length
-  else if (len < strLength) {
-    // Then I return part of the given word.
-    // With the method substring > Starting from the character zero to the desired word length
+  } else if (len < strLength) {
     return str.substring(0, len);
-  }
-
-  // Here I already know that the desired word length is greater than the given word length
-  // Then I need to build my left pad
-  // So I start with an empty string
-  let padStr = '';
-  // I calculate what length the left pad should be
-  const leftPadLength = len - strLength;
-
-  // So probably the pad given fits entirely one or more times in the length calculated before
-  // I need to know the integer number from the division of the left pad length between the
-  // pad given length. Math.floor method help me to do that
-  const howManyTimesPadFits = Math.floor(leftPadLength / padLength);
-
-  // Then I iterate the number of times the pad can fit and append it to the empty string
-  // I set before
-  for (let i = 1; i <= howManyTimesPadFits; i = i + 1) {
+  } let padStr = '';
+    const leftPadLength = len - strLength;
+    const howManyTimesPadFits = Math.floor(leftPadLength / padLength);
+    for (let i = 1; i <= howManyTimesPadFits; i = i + 1) {
     padStr = padStr + pad;
   }
-
-  // And probably there will be left some characters to complete my left pad length
-  // So I need to know the remainder from the division
-  // With module operator (%) I can do it
   const howManyCharFromPadNeededToComplete = leftPadLength % padLength;
 
-  // Know I need to get those characters from the pad word given, but I need to get them
-  // starting from the last.
-  // With the method substring > I can start from the last character doing the operation
-  // (word length - number characters to get) >
-  // https://stackoverflow.com/questions/5873810/how-can-i-get-last-characters-of-a-string
   const charsNeeded = pad.substring(padLength - howManyCharFromPadNeededToComplete);
 
-  // Almost done, now I prepend chars needed to complete to my left Pad string
   padStr = charsNeeded + padStr;
 
-  // Finally I prepend the left pad string to the word given
   const leftPaddedStr = padStr + str;
 
-  // And return the string built
   return leftPaddedStr;
 }
 
@@ -107,7 +69,7 @@ function leftpadHandler() {
   const padding = document.getElementById('leftpad-pad-input').value;
 
   // pass user input through core logic (this works! no need to change it)
-  const leftpadded = leftpad(stringToPad, targetLength, padding);
+  const leftpadded = leftpad(str, len, pad);
 
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('leftpad-output');

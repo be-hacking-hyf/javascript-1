@@ -42,7 +42,39 @@ const chunkTests = [
   { name: 'second', args: [secondArg], expected: secondExpected },
   { name: 'second', args: [thirdArg], expected: thirdExpected },
 ];
+
+
 function chunk(str) {
-  // write me!
+  function findGroup(a) {
+    let groupOfCharacter;
+    let nmr = a.charCodeAt(0);
+    65 <= nmr && nmr <= 90
+      ? (groupOfCharacter = "strGroup")
+      : 97 <= nmr && nmr <= 122
+      ? (groupOfCharacter = "strGroup")
+      : nmr == 32
+      ? (groupOfCharacter = "strGroup")
+      : 48 <= nmr && nmr <= 57
+      ? (groupOfCharacter = "strGroup")
+      : (groupOfCharacter = "nonstrGroup");
+    return groupOfCharacter;
+  }
+  let chunkArr = [];
+  let tmpArr = str.split("");
+  let strOfchunk = "";
+  let strArr = tmpArr.map(function(e, i, a) {
+    if (i === 0) {
+      strOfchunk = e;
+    } else if (findGroup(e) === findGroup(a[i - 1])) {
+      strOfchunk += e;
+    } else {
+      chunkArr.push(strOfchunk);
+      //console.log(chunkArr);
+      strOfchunk = e;
+    }
+  });
+  chunkArr.push(strOfchunk);
+  return chunkArr;
 }
+
 evaluate(chunk, chunkTests);

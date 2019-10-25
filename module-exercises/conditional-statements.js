@@ -85,15 +85,15 @@ evaluate(example_unreachableCode);
 // complete the args array to pass each test case
 const conditionalTestCases1 = [
   { name: 'if 1', args: ['5', 5], expected: 'if' },
-  { name: 'if 2', args: null, expected: 'if' },
-  { name: 'if 3', args: null, expected: 'if' },
-  { name: 'if 4', args: null, expected: 'if' },
-  { name: 'if 5', args: null, expected: 'if' },
-  { name: 'else 1', args: [true, 0], expected: 'else' },
-  { name: 'else 2', args: null, expected: 'else' },
-  { name: 'else 3', args: null, expected: 'else' },
-  { name: 'else 4', args: null, expected: 'else' },
-  { name: 'else 5', args: null, expected: 'else' },
+  { name: 'if 2', args: ['4', 4], expected: 'if' },
+  { name: 'if 3', args: ['3', 3], expected: 'if' },
+  { name: 'if 4', args: ['0', 0], expected: 'if' },
+  { name: 'if 5', args: ['-1', -1], expected: 'if' },
+  { name: 'else 1', args: ['true', 0], expected: 'else' },
+  { name: 'else 2', args: ['false', 0], expected: 'else' },
+  { name: 'else 3', args: ['NaN', 2], expected: 'else' },
+  { name: 'else 4', args: ['null', 0], expected: 'else' },
+  { name: 'else 5', args: ['undefined', 0], expected: 'else' },
 ];
 function conditionalToPass1(a, b) {
   if (Number(a) === b) {
@@ -108,20 +108,20 @@ evaluate(conditionalToPass1, conditionalTestCases1);
 // complete the args array to pass each test case
 const conditionalTestCases2 = [
   { name: 'if  1', args: ['happy', 'day'], expected: 'if' },
-  { name: 'if  2', args: null, expected: 'if' },
-  { name: 'if  3', args: null, expected: 'if' },
-  { name: 'if  4', args: null, expected: 'if' },
-  { name: 'if  5', args: null, expected: 'if' },
+  { name: 'if  2', args: [0, NaN], expected: 'if' },
+  { name: 'if  3', args: ['null', 'null'], expected: 'if' },
+  { name: 'if  4', args: ['undefined', 'null'], expected: 'if' },
+  { name: 'if  5', args: ['0', '-1'], expected: 'if' },
   { name: 'else if  1', args: [1, ''], expected: 'else if' },
-  { name: 'else if  2', args: null, expected: 'else if' },
-  { name: 'else if  3', args: null, expected: 'else if' },
-  { name: 'else if  4', args: null, expected: 'else if' },
-  { name: 'else if  5', args: null, expected: 'else if' },
+  { name: 'else if  2', args: [0, 'null'], expected: 'else if' },
+  { name: 'else if  3', args: [0, '[]'], expected: 'else if' },
+  { name: 'else if  4', args: [0, '[]'], expected: 'else if' },
+  { name: 'else if  5', args:[0, '1'], expected: 'else if' },
   { name: 'else  1', args: [true, 1], expected: 'else' },
-  { name: 'else  2', args: null, expected: 'else' },
-  { name: 'else  3', args: null, expected: 'else' },
-  { name: 'else  4', args: null, expected: 'else' },
-  { name: 'else  5', args: null, expected: 'else' },
+  { name: 'else  2', args: [0, null], expected: 'else' },
+  { name: 'else  3', args: [0, undefined], expected: 'else' },
+  { name: 'else  4', args: ["true", true], expected: 'else' },
+  { name: 'else  5', args: ["1", true], expected: 'else' },
 ];
 function conditionalToPass2(a, b) {
   if (typeof a === typeof b) {
@@ -151,11 +151,11 @@ const testsToPass1 = [
 ];
 // careful of unreachable blocks! are any of yours unreachable?
 function passTests1(a, b) {
-  // conditional an if/else conditional statement to pass these tests
-  // you can pass the tests using only
-  //  primitive values
-  //  Number, String, Boolean
-  //  typeof, ===, !==
+  if (Boolean(a) === Boolean(b)) {
+    return 'if';
+  } else {
+    return 'else';
+  }
 }
 passTests1.quizzing = true;
 evaluate(passTests1, testsToPass1);
@@ -172,7 +172,7 @@ const testsToPass2 = [
   { name: 'else if  3', args: [4, 5], expected: 'else if' },
   { name: 'else if  4', args: ['true', 'false'], expected: 'else if' },
   { name: 'else if  5', args: [NaN, NaN], expected: 'else if' },
-  { name: 'else  1', args: [5, '5'], expected: 'else' },
+  { name: 'else  1', args: [5, '5'], egxpected: 'else' },
   { name: 'else  2', args: ['1000', 1000], expected: 'else' },
   { name: 'else  3', args: ['0', 0], expected: 'else' },
   { name: 'else  4', args: [true, 1], expected: 'else' },
@@ -180,6 +180,15 @@ const testsToPass2 = [
 ];
 // careful of unreachable blocks! are any of yours unreachable?
 function passTests2(a, b) {
+  
+  if (typeof a === typeof b) {
+    return 'if';
+  } else if (typeof a !== typeof b) {
+    return 'else if';
+  } else {
+    return 'else';
+  }
+    
   // conditional an if/elseif/else conditional statement to pass these tests
   // you can pass the tests using only
   //  primitive values
@@ -219,7 +228,7 @@ evaluate(example_blockScopeInConditionals);
 
 const conditionalTests1 = [
   // write test cases to pass this function
-  { name: 'first', args: null, expected: null },
+  { name: 'first', args: ['1', '1'], expected: String },
   { name: 'second', args: null, expected: null },
   { name: 'third', args: null, expected: null },
   { name: 'fourth', args: null, expected: null },
