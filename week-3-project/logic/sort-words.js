@@ -24,6 +24,5 @@ function sort(str) {
   }
   return arr.join('');
   
-  
 }
 evaluate(sort, sortTests);

@@ -11,7 +11,7 @@ body{
     margin: auto;
     width: 50%;
     padding: 0.1%;
-    border: 1.2px rgb(0, 195, 255) solid;
+    border: 2px rgb(0, 195, 255) solid;
     font-size: 10px;
 }
 
@@ -23,7 +23,7 @@ body{
 
 #encrypted-text-area{
     margin: auto;
-    border: 1px rgb(0, 195, 255) solid;
+    border: 2px rgb(0, 195, 255) solid;
     text-align: center;
 }
 
@@ -43,6 +43,13 @@ body{
   
 }
 
+#encryption-key-input{
+margin: auto;
+border: 2px rgb(0, 195, 255) solid;
+text-align: center;
+width: 35%;
+}
+
 #decrypt-button{
   display: inline-block;
   border-radius: 4px;
@@ -58,9 +65,14 @@ body{
   margin: 5px;
 }
 
+#decrypted-text-area{
+  margin: auto;
+    border: 2px rgb(0, 195, 255) solid;
+    text-align: center;
+}
 #scramble-input{
     margin: auto;
-    border: 1px rgb(0, 195, 255) solid;
+    border: 2px rgb(0, 195, 255) solid;
     text-align: center;
 }
 #scramble-button{
@@ -78,12 +90,17 @@ body{
   margin: 5px;
 }
 
+#scramble-output{
+  margin: auto;
+  border: 2px rgb(0, 195, 255) solid;
+  text-align: center;
+}
 #footer{
     background: darkgrey;
     margin: auto;
     width:50%;
     padding: 0.1%;
-    border: 1px rgb(0, 195, 255) solid;
+    border: 2px rgb(0, 195, 255) solid;
     font-size: 10px;
 }
 
@@ -93,7 +110,13 @@ body{
 
 #decrypt-tag{
   background: rgb(99, 95, 95);
+
 }
+
+#scramble-tag{
+  background: rgb(99, 95, 95);
+  margin: auto;
+  width: 50%;
 }
 #footer-logo{
   margin: auto;

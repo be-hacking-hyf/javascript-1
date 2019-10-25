@@ -19,8 +19,6 @@ function reverseChunk(str) {
   // write me!
   var wordsArr = str.split(' ');
   var reversedWordsArr = [];
-  var reversedWordStr = '';
-  
   wordsArr.forEach(word => {
     var reversedWord = '';
     for(var i = word.length - 1; i >= 0; i--) {
