@@ -26,7 +26,7 @@ const thirdArg = `softly grows the grasses.
 it's really hard to say`;
 const thirdExpected = [
   'softly grows the grasses',
-  '\n\t',
+  '.\n\t',
   ' under ',
   '--',
   ' trees',
