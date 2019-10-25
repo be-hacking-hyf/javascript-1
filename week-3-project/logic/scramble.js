@@ -53,13 +53,15 @@ const scrambleTests = [
         strArr1[i] = '-'
       }else if(strSplit[i]==';'){
         strArr1[i] = ';'
+      }else if(strSplit[i]=="'"){
+        strArr1[i] = "'"
       }else if(strSplit[i]==':'){
         strArr1[i] = ':'
       }else if(strSplit[i]=='.'){
         strArr1[i] = '.'
-      }else if(strSplit[i]!==''||'-'||';'||':'||'.'){ // else copy original array into array2
+      }else { // else copy original array into array2
         strArr2[m] = strSplit[i]
-        strArr1[i] = 'a' // to check the index of " " assign a letter to array1
+        strArr1[i] = 'a' // to check the index of special character assign a letter to array1
         m = m + 1
     }
   }
