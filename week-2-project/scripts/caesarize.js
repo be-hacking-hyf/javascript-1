@@ -19,88 +19,45 @@ const caesarizeTests = [
 ];
 
 function caesarize(str, shiftNum) {
-  // write me!
+   
+  //my array to split
+  let array = a.split('');
+  
+  //my array for splitted strings 
+  let NEWarray = array.map(x =>{
 
-/* I could not write a funtcion.
-I tried to understand the logic and the way a function builts
-by looking at what the others wrote in slack and homework sheet for caesarize.
-I compared the codes, try to understand everything that is written and what are the differences,why and how.
+    let letternumber = x.charcodeAt();
+    
+    
+    //for the letters a-z
+    if (letternumber >= 97 && letternumber <= 122){
+      
+       letternumber += shiftNum;
+       if (letternumber > 122) {letternumber -= 26;}
+       else if (letternumber < 97) {letternumber += 26;}
+      
+       myCode = String.fromCharCode(letternumber);}
 
+    // for the letters A-Z
+    else if (letternumber <= 90 && letternumber >= 65){
+        
+       letternumber += shiftNum;
+       if (letternumber > 90) {letternumber -= 26}
+       else if (letternumber < 65) {letternumber += 26}
+      
+       myCode = String.fromCharCode(letternumber);}
+    
+    // for special characters and numbers
+    else {myCode = x;}
+    return myCode;
+    
+  });
 
-/*  here are the ones I have looked:
-
-//luis ceasirise
-
-const caesarized = caesarize(strToCaesarize, shiftNumber);
-
-//ceaseirize mert
-
-function caesarize(str, shiftNum) {
-  var input = str;
-
-  var str = input.split("");
-
-  var code = input.split("");
-
-  var ceasared = input.split("");
-
-  for (var i = 0; i < str.length; i++) {
-    code[i] = str[i].charCodeAt();
-    if (code[i] >= 97 && code[i] <= 122) {
-      code[i] += shiftNum;
-      if (code[i] > 122) {
-        code[i] = code[i] - 26;
-      } else if (code[i] < 97) {
-        code[i] = code[i] + 26;
-      }
-      ceasared[i] = String.fromCharCode(code[i]);
-    } else if (code[i] >= 65 && code[i] <= 90) {
-      code[i] += shiftNum;
-      if (code[i] > 90) {
-        code[i] = code[i] - 26;
-      } else if (code[i] < 65) {
-        code[i] = code[i] + 26;
-      }
-      ceasared[i] = String.fromCharCode(code[i]);
-    }
-  }
-  return ceasared.join("");
+  return NEWarray.join('');
 }
 
-//ceasirize mustafa in hw sheet
 
-function caesarize(str, shiftNum) {
-  // write me!
 
-  let result = Array(str.length);
-
-  for (let i = 0; i < str.length; i++) {
-    let code = str.charCodeAt(i);
-
-    let lower = "a".charCodeAt(0);
-
-    if (code >= lower && code < lower + 26)
-      code = ((code - lower + shiftNum) % 26) + lower;
-
-    let upper = "A".charCodeAt(0);
-
-    if (code >= upper && code < upper + 26)
-      code = ((code - upper + shiftNum) % 26) + upper;
-
-    result[i] = String.fromCharCode(code);
-  }
-  return result.join("");
-}
-
-//ibrahim hw ceasrz
-
-function caesarize(str, shiftNum) {
-  // write me!
-  var strCode = str.charCodeAt();
-  var newStrCode = strCode + shiftNum;
-  return String.fromCharCode(newStrCode);
-}
- */
 evaluate(caesarize, caesarizeTests);
 
 function caesarizeHandler() {
@@ -121,10 +78,10 @@ function caesarizeHandler() {
   const outputField = document.getElementById("caesarize-output");
   outputField.innerHTML = caesarized;
 
-  console.log("\n--- caesarizeHandler ---");
-  console.log("strToCaesarize:", typeof strToCaesarize, ",", strToCaesarize);
-  console.log("shiftNumber:", typeof shiftNumber, ",", shiftNumber);
-  console.log("caesarized:", typeof caesarized, ",", caesarized);
-}
-const caesarizeButton = document.getElementById("caesarize-button");
-caesarizeButton.addEventListener("click", caesarizeHandler);
+  console.log('\n--- caesarizeHandler ---');
+  console.log('strToCaesarize:', typeof strToCaesarize, ',', strToCaesarize);
+  console.log('shiftNumber:', typeof shiftNumber, ',', shiftNumber);
+  console.log('caesarized:', typeof caesarized, ',', caesarized);
+};
+const caesarizeButton = document.getElementById('caesarize-button');
+caesarizeButton.addEventListener('click', caesarizeHandler);

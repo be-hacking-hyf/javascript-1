@@ -25,6 +25,17 @@ const repeatCharsTests = [
   { name: "seventh", args: [" "], expected: "    " }
 ];
 function repeatChars(str) {
+
+const myLettersArray = ['a','b','c']
+const strArray = str.split('');
+
+const resultArray = strArray.map((element)=>{
+  if (myLettersArray.indexOf(element) >0){ return element + element;
+
+  }
+})
+
+
   // write this!
   
   

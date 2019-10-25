@@ -23,6 +23,8 @@ const constantizeTests = [
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
 ];
 function constantize(str) {
+
+  
   // write me!
 
 /* I could not write a funtcion.

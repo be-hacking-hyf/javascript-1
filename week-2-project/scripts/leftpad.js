@@ -25,68 +25,51 @@ const leftpadTests = [
     { name: 'nineteenth', args: ['car', 11, '-=:=-'], expected: ':=--=:=-car' },
     { name: 'twentieth', args: ['car', 12, '-=:=-'], expected: '=:=--=:=-car' },
   ];
-  function leftpad(str, len, pad) {
-    // write me!
-
-  /* I understand leftpad handler. ' https://github.com/left-pad/left-pad/blob/master/test.js ' this link gives good examples but simple ones.
-  I still could not write the function by myself.
-
-here are the ones I have looked and compared and try to understand how they constuct the function.
-
-//github leftpad
-
-https://github.com/left-pad/left-pad/blob/master/test.js
-
-//leftpad mozilla
-
-function leftFillNum(num, targetLength) {
-    return num.toString().padStart(targetLength, 0);
-}
-
-const num = 123;
-console.log(leftFillNum(num, 5));
-// expected output: "00123"
-
-
-//leftpad ibrahim
-
-function leftpad(str, len, pad) {
-    // write me!
-    var lenStr = str.length;
-    var strReturn = "";
-    if (lenStr == len) {
-      strReturn = str;
-    } else if (lenStr > len) {
-      strReturn = str.substring(0, len);
-    } else if (lenStr < len) {
-      var s = len - lenStr;
-      var padReturn = pad.repeat(s);
-      strReturn = padReturn + str;
-    }
-    return strReturn;
-  }
-
-//lefpad mustafa in hw sheet not a full one
-
-function leftpad(str, len, pad) {
-    // write me!
-    if (!pad) {
-      pad = ".";
-    }
   
-    str = String(str);
-    if (pad.length !== 1) len = len - str.length;
-    strPad = "";
-    for (i = 0; i < len; ++i) {
-      strPad += pad;
-    }
+  function leftpad(string, road, pattern) {
   
-    return strPad + str;
-  }
+    const stringLength = string.length;
+    const patternLength = pattern.length;
 
-*/
+    if (road === 0) {return '';}
+    if (stringLength === road) {return string;}
+    else if (road < stringLength) {return string.substring(0,road);}
+    
+    //if road will be longer then the string length, I have to arrange the pattern
+    
+    //desired patern
+    let patternString = '';
 
-  }
+    // how long will be the last pattern string
+    const LastPatternLength = road - stringLength;
+
+    // to follow Luis
+    // even after reading Luis's code I could not able to write correctly the rest of the function by myself
+    // I have looked for module operator %,
+    // understand what it means but I could not use it in another case (tried in KhanAcademy)
+    // i need more examples for module operators and math.floor
+
+    const howManyTimesPatternFits = Mat.floor(LastPatternLength / patternLength);
+
+    for (let i = 1; i<= howManyTimesPatternFits; i += 1){
+         patternString = patternString + pattern;
+    }
+    
+    // exp: string = 3 characters and  pattern = 3 characters, desired length is 10.
+    // then I need to type 2 times of my pattern and 1 charachter from pattern, then write the string.
+    // the problem is how to chose this 1 charachter (will it be the end letter of the patern or begining letter)
+    const theRestPattern = LastPatternLength % patternLength;
+
+    const karakterNeeded = pattern.substring(patternLength - theRestPattern);
+
+    patternString = karakterNeeded + patternString;
+
+    const LastPatternString = patternString + string;
+
+    return LastPatternString;
+
+
+  } 
   evaluate(leftpad, leftpadTests);
   
   
@@ -117,7 +100,7 @@ function leftpad(str, len, pad) {
     console.log('leftpadded:', typeof leftpadded, ',', leftpadded);
   };
   const leftpadButton = document.getElementById('leftpad-button');
-  leftpadButton.addedEventListener('click', leftpadHandler);
+  leftpadButton.addEventListener('click', leftpadHandler);
   
   
   // https://www.npmjs.com/package/left-pad

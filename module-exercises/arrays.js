@@ -145,7 +145,7 @@ function passTheAssertions2() {
 
   ; // write this line
 
-  value2 = value1; 
+  let value2 = value1; 
 
   console.assert(value2 === value1, "value1 should strictly equal value2");
 
@@ -155,14 +155,14 @@ function passTheAssertions2() {
 
   console.assert(reference2 === reference1, "reference1 should strictly equal reference2");
 
-  value2 = value2 + 1; // write this line
-  value1 = 6;
+  value2 = value2 + 1;  value1 = '___';
+  
 
   console.assert(value1 !== null, "value1 should strictly equal ___");
 
   ; // write this line
   referans1[0] = reference2[0];
-  reference1.push('hi!');
+  reference1 [0] = ['hi!'];
   console.log(reference2);
 
   console.assert(reference1[0] === reference2[0], "references[0] should be strictly equal");
@@ -174,11 +174,8 @@ function passTheAssertions2() {
   console.assert(reference1 === reference2, "references should be strictly equal");
 
   // remove the array from memory
-  ; // write this line
-  ; // write this line
-
-  reference1 = null;
-  reference2 = null;
+  ;  reference1 = null;
+  ;  reference2 = null;
 }
 evaluate(passTheAssertions2);
 
@@ -186,9 +183,12 @@ evaluate(passTheAssertions2);
 function passTheAssertions3() {
   ; // write this line
   ; // write this line
-
-  const arr1=[];
-  let arr2=[];
+arr1 = [];
+arr2 = [];
+arr1[1] = arr2[1];
+arr[1] = ['B']
+ 
+  
   console.assert(arr1 !== arr2, 'the variables should not be strictly equal');
   console.assert(arr1[1] === arr2[1], 'their first entries should be the same');
   console.assert(arr1[1] === 'B', 'arr1[1]] should be "B"');
@@ -199,10 +199,15 @@ function passTheAssertions3() {
 
   ; // write this line
   ; // write this line
+  arr1[arr2[2]] = ['B'];
+  arr1[arr2[2]] = arr2[arr1[2]];
+
   console.assert(arr1[arr2[2]] === 'B', 'arr2[2] should be "B"s index in arr1');
   console.assert(arr1[arr2[2]] === arr2[arr1[2]], 'some tricky nested thing should be true');
 
   ; // write this line
+  
+
   console.assert(arr1 !== arr2, 'arr1 should strictly equal arr2');
   console.assert(arr3 !== arr1, 'arr3 should not strictly equal arr`');
   console.assert(arr3 === arr2, 'arr3 should strictly equal arr2');
