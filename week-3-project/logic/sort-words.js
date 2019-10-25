@@ -11,5 +11,11 @@ const sortTests = [
 ];
 function sort(str) {
   // write me!
+
+  let word = str;
+  let wordSplit = word.split('');
+  let wordSort = wordSplit.sort(function (a,b) {return a-b});
+  let sortedWord = wordSort.join('');
+  return sortedWord;
 }
 evaluate(sort, sortTests);
