@@ -17,12 +17,12 @@ const thirdScrambleExpected = `diknrs fo ilst a:
   - acesu osy`;
 
 const scrambleTests = [
-  { name: 'first', args: ['the road works.'], expected: 'korsw ador eht.' },
-  { name: 'second', args: ["name: 'second'"], expected: "aemn: 'cednos'" },
+  { name: 'first', args: ['the road works.'], expected: 'eht ador korsw.' },
+  { name: 'second', args: ["name: 'second'"], expected: "aemn: 'cdenos'" },
   { name: 'third', args: [thirdScrambleArg], expected: thirdScrambleExpected },
-  { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cow cednos'" },
-  { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cow cednos, cba'" },
-];
+  { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cdenos cow'" },
+  { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cdenos cow, abc'" },
+];                                                                   
   
   function sort(str){ //this function sorts the given string taking into account the strings
 
@@ -57,6 +57,8 @@ const scrambleTests = [
         strArr1[i] = "'"
       }else if(strSplit[i]==':'){
         strArr1[i] = ':'
+      }else if(strSplit[i]==','){
+        strArr1[i] = ','
       }else if(strSplit[i]=='.'){
         strArr1[i] = '.'
       }else { // else copy original array into array2
@@ -65,7 +67,7 @@ const scrambleTests = [
         m = m + 1
     }
   }
-  strArr2.reverse() // reverse the array2 which does not include special characters (' ', ':', ';', '-', '.')
+  // strArr2.reverse() // reverse the array2 which does not include special characters (' ', ':', ';', '-', '.')
   // console.log(strArr2);
   let strArr3=strArr2.join(''); // in order to use sort function we should join the array into string
   // console.log(strArr3);
