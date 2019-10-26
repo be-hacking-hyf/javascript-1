@@ -11,7 +11,7 @@ const repeatCharsTests = [
   { name: 'first', args: ['abc'], expected: 'aabbcc' },
   { name: 'second', args: ['123'], expected: '111222333' },
   { name: 'third', args: ['%-*>'], expected: '%%%%----****>>>>' },
-  { name: 'fourth', args: ['h3LL0 W@r!|)'], expected: 'hh333LLLL000 WW@@@@rr!!!!||||))))' },
+  { name: 'fourth', args: ['h3LL0 W@r!|)'], expected: 'hh333LLLL000    WW@@@@rr!!!!||||))))' },
   { name: 'fifth', args: ['{:-<*>-:}'], expected: '{{{{::::----<<<<****>>>>----::::}}}}' },
   { name: 'sixth', args: [''], expected: '' },
   { name: 'seventh', args: [' '], expected: '    ' },

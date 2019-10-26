@@ -6,7 +6,6 @@ Write a function that does these things to a string:
 - preserve formatting (leave tabs and newlines in place);
 
 */
-
 const thirdScrambleArg = `a list of drinks:
   - milk
   - sugar free coke
@@ -15,18 +14,20 @@ const thirdScrambleExpected = `diknrs fo ilst a:
   - iklm
   - ceko eefr agrsu
   - acesu osy`;
-
 const scrambleTests = [
-  { name: 'first', args: ['the road works.'], expected: 'korsw ador eht.' },
-  { name: 'second', args: ["name: 'second'"], expected: "aemn: 'cednos'" },
+  { name: 'first', args: ['the road works.'], expected: 'eht ador korsw.' },
+  { name: 'second', args: ["name: 'second'"], expected: "aemn: 'cdenos'" },
   { name: 'third', args: [thirdScrambleArg], expected: thirdScrambleExpected },
-];
+  { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cdenos cow'" },
+  { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cdenos cow, abc'" },
+];    
+
 function scramble(str) {
   /*
-    write a new implementation of scramble, passing the same tests as last week
-    this time you will use the functions "backwards", "sort", and "chunk"
+    write this function using "chunk", "sortWords" and "reverseChunk"
     each of these functions is one step along the way to a scrambled string
-    this is a nice exercise in using smaller functions to solve larger problems
+    this is a an exercise to practice using breaking large problems into smaller ones
+    and then solving the smaller problems and combining the small solutions into a full solution
   */
 }
 evaluate(scramble, scrambleTests);

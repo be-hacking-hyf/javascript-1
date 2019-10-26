@@ -1,21 +1,23 @@
 function encryptHandler() {
 
   // read and process user input (this works, no need to change it!)
-  const strToEncrypt = document.getElementById('unencrypted-string-input').value;
+  const encryptArea = document.getElementById('encrypted-text-area')
+  const strToEncrypt = encryptArea.value;
 
-  const rawNumInput = document.getElementById('encryption-key-input').value;
+  const keyInput = document.getElementById('encryption-key-input');
+  const rawNumInput = keyInput.value;
   const shiftNumber = Number(rawNumInput);
   if (isNaN(shiftNumber)) {
     throw new TypeError('encryption key must be a number');
   }
 
 
-  // pass user input through core logic (this works!  no need to change it)
-  const encrypted = caesarize(strToEncrypt);
+  // pass user input through core logic
+  const encrypted = 'write me!';
 
   // report result to user (this works, no need to change it!)
-  const outputField = document.getElementById('encrypted-string-output');
-  outputField.innerHTML = encrypted;
+  keyInput.value = '';
+  encryptArea.value = encrypted;
 
   console.log('\n--- encryptHandler ---');
   console.log('strToEncrypt:', typeof strToEncrypt, ',', strToEncrypt);

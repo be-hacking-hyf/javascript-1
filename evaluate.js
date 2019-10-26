@@ -1,3 +1,5 @@
+// hardcoded for Prism.  eventually todo: abstract the higlighting library
+
 const evaluate = (() => {
   function evaluate(func, cases) {
 
@@ -23,6 +25,7 @@ const evaluate = (() => {
     evaluationLog.isBehavior = isBehavior;
     evaluationLog.isNative = isNative;
     evaluationLog.coordinates = evaluate.fileLineColumn();
+    evaluationLog.testCases = cases;
 
     evaluate.renderEvaluation(func, evaluationLog, isBehavior);
 
@@ -417,16 +420,22 @@ const evaluate = (() => {
   evaluate.renderTestLog = (func, entry) => {
 
     for (let i in entry.args) {
-      const argType = (typeof entry.args[i]).substring(0, 3);
+      const argType = evaluate.abbreviatedType(entry.args[i]);
       console.log('%cargs[' + i + ']: ', 'font-weight: bold; color:blue', argType + ',', entry.args[i]);
     }
 
     evaluate.renderImplementation(func, entry);
 
-    const expectedType = (typeof entry.expected).substring(0, 3);
+    const expectedType = evaluate.abbreviatedType(entry.expected);
     console.log("%cexpected: ", 'font-weight: bold; color:blue', expectedType + ",", entry.expected);
 
   }
+
+  evaluate.abbreviatedType = (thing) => {
+    return thing !== null && typeof thing === 'object'
+      ? (thing.constructor.name).substring(0, 3)
+      : (typeof thing).substring(0, 3);
+  };
 
   evaluate.renderImplementation = (func, log) => {
 
@@ -453,7 +462,7 @@ const evaluate = (() => {
             : "falsey:"
 
           const assertion = entry.assertion,
-            assType = (typeof assertion).substring(0, 3),
+            assType = evaluate.abbreviatedType(assertion),
             messages = entry.messages;
           console.log('%c' + msg, 'color:' + color, '( ' + assType + ',', assertion, '), ', ...messages);
         });
@@ -469,7 +478,6 @@ const evaluate = (() => {
 
     if (log.err) {
       console.log(`%c${log.err.name}:`, 'font-weight: bold; color: red', log.err.message);
-      // evaluate.renderError({ err: log.err, name: func.name }, log.isNative)
     } else if (func.quizzing && log.pass === false) {
       console.log("%creturned: ", 'font-weight: bold; color:' + returnedColor, '--hidden--')
     } else {
@@ -505,25 +513,119 @@ const evaluate = (() => {
       ? evaluate.duckDuckSearchComponent(func, log)
       : evaluate.studyLinkComponent(func, log);
 
-    document.body.appendChild(a);
+    const container = document.createElement('section');
+    container.id = func.name;
+
+    container.appendChild(
+      func.display
+        ? evaluate.renderSource(a, func, log)
+        : a
+    );
 
     if (log.isBehavior && log.testLogs) {
       for (let entry of log.testLogs) {
         if (entry.err) {
-          document.body.appendChild(
+          container.appendChild(
             evaluate.errorSearchComponent(entry.name, entry.err)
           )
         }
       }
     } else {
       if (log.err) {
-        document.body.appendChild(
+        container.appendChild(
           evaluate.errorSearchComponent(null, log.err)
         )
       }
     }
 
+    document.body.appendChild(container);
     document.body.appendChild(document.createElement("hr"));
+  }
+
+  evaluate.renderSource = (aEl, func, log) => {
+    const container = document.createElement('section');
+
+    const details = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.appendChild(aEl);
+    details.appendChild(summary);
+
+    let finalCode;
+    try {
+      prettier.exists;
+      const messyCode = log.testCases !== undefined
+        // ? `const ${func.name}Tests = ` + log.testCases.toSource() + ';\n' + func.toString()
+        ? func.toString()
+        : func.toString();
+      finalCode = prettier.format(
+        messyCode,
+        {
+          parser: "babylon",
+          plugins: prettierPlugins
+        }
+      )
+    } catch (err) {
+      try {
+        finalCode = func.toString();
+      } catch (err) { };
+    };
+
+    try {
+      Prism.exists;
+      details.appendChild(
+        evaluate.renderPrettyCode(
+          finalCode
+        )
+      );
+    } catch (err) {
+      details.appendChild(
+        evaluate.renderBoringCode(
+          finalCode
+        )
+      );
+    };
+    container.appendChild(details);
+
+
+    return container;
+  }
+
+  evaluate.prettify = (code) => {
+    if (prettier !== undefined) {
+      try {
+        return prettier.format(
+          appToString,
+          {
+            parser: "babylon",
+            plugins: prettierPlugins
+          }
+        );
+      } catch (err) {
+        return code
+      }
+    } else {
+      return code;
+    }
+  }
+
+  evaluate.renderBoringCode = (code) => {
+    const codeEl = document.createElement('code');
+    codeEl.innerHTML = code;
+    const pre = document.createElement('pre');
+    pre.appendChild(codeEl);
+    // pre.style = 'font-size:80%';
+    return pre;
+  }
+
+  evaluate.renderPrettyCode = (code) => {
+    const codeEl = document.createElement('code');
+    codeEl.innerHTML = code;
+    codeEl.className = "language-js";
+    Prism.highlightAllUnder(codeEl);
+    const pre = document.createElement('pre');
+    pre.appendChild(codeEl);
+    pre.style = 'font-size:80%';
+    return pre;
   }
 
   evaluate.duckDuckSearchComponent = (func, log) => {
@@ -552,33 +654,15 @@ const evaluate = (() => {
 
   evaluate.studyLinkComponent = (func, log) => {
 
-    const snippet = log.isBehavior
-      ? func
-      : evaluate.commentTopBottom(func)
-
-    const encoded = encodeURIComponent(snippet);
-    const sanitized = encoded.replace(/\(/g, '%28').replace(/\)/g, '%29');
-    const deTabbed = sanitized.replace(/%09/g, '%20%20');
-
-    const url = log.isBehavior
-      ? "http://janke-learning.github.io/parsonizer/?snippet=" + deTabbed
-      : "http://www.pythontutor.com/live.html#code=" + deTabbed + "&cumulative=false&curInstr=2&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false";
-
-    const a = document.createElement('a');
+    const text = document.createElement('text');
 
     const nativity = log.isNative
       ? ' (native)'
       : ''
 
-    const viztool = log.isBehavior
-      ? 'Parsonizer'
-      : 'JS Tutor'
+    text.innerHTML = '<strong>' + func.name + nativity + '</strong>:';
 
-    a.innerHTML = '<strong>' + func.name + nativity + '</strong>:  <i>' + viztool + '</i>';
-
-    a.href = url;
-    a.target = '_blank';
-    a.style.color = log.status === 0
+    text.style.color = log.status === 0
       ? "red"
       : log.status === 1
         ? "black"
@@ -588,13 +672,58 @@ const evaluate = (() => {
             ? "orange"
             : "purple"
 
-    return a
 
-  }
+    const parsonsSnippet = func.toString();
 
-  evaluate.commentTopBottom = (func) => {
-    const funcString = func.toString();
-    const linesArray = funcString.split("\n");
+    const jsTutorSnippet = evaluate.commentTopBottom(parsonsSnippet);
+    const encodedJST = encodeURIComponent(jsTutorSnippet);
+    const sanitizedJST = encodedJST
+      .replace(/\(/g, '%28').replace(/\)/g, '%29')
+      .replace(/%09/g, '%20%20');
+    const jsTutorURL = "http://www.pythontutor.com/live.html#code=" + sanitizedJST + "&cumulative=false&curInstr=2&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false";
+    // unuse live edit links to emphasize source vs. runtime?
+    // "http://www.pythontutor.com/javascript.html#code=" + sanitizedJST + "&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D";
+
+    const jsTutorLink = document.createElement('a');
+    jsTutorLink.innerHTML = 'JS Tutor';
+    jsTutorLink.href = jsTutorURL;
+    jsTutorLink.target = '_blank';
+
+
+    text.appendChild(evaluate.renderText('  '));
+    text.appendChild(jsTutorLink);
+
+    if (log.isBehavior) {
+      const encodedPS = encodeURIComponent(parsonsSnippet);
+      const sanitizedPS = encodedPS
+        .replace(/\(/g, '%28').replace(/\)/g, '%29')
+        .replace(/%09/g, '%20%20');
+      const parsonsURL = "http://janke-learning.github.io/parsonizer/?snippet=" + sanitizedPS;
+      const parsonsLink = document.createElement('a');
+      parsonsLink.innerHTML = 'Parsonizer';
+      parsonsLink.href = parsonsURL;
+      parsonsLink.target = '_blank';
+
+      text.appendChild(evaluate.renderText(',  '));
+      text.appendChild(parsonsLink);
+    }
+
+    return text;
+
+  };
+
+  evaluate.renderText = (string) => {
+    const htmled = string
+      .replace(/\s/g, '&#x000A0;')
+      .replace(/\t/g, '&#x00009;')
+      .replace(/\n/g, '&#x0000A;');
+    const text = document.createElement('text');
+    text.innerHTML = htmled;
+    return text;
+  };
+
+  evaluate.commentTopBottom = (str) => {
+    const linesArray = str.split("\n");
     linesArray[0] = '// ' + linesArray[0];
     linesArray[linesArray.length - 1] = '// ' + linesArray[linesArray.length - 1];
     return linesArray.join("\n");
