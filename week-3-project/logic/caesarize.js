@@ -21,5 +21,36 @@ const caesarizeTests = [
 ];
 function caesarize(str, shiftNum) {
   // write me!
-}
+
+  var input = str;
+  var str=input.split('');
+  
+       
+    for (var i = 0; i < str.length; i++) {
+      str[i] = str[i].charCodeAt();
+          if ((str[i]>=97)&&(str[i]<=122)){
+            str[i]+=shiftNum;
+              if (str[i]>122){
+                str[i]=str[i]-26;
+                }
+                else if(str[i]<97){
+                  str[i]=str[i]+26;
+                }
+                str[i] = String.fromCharCode(str[i]);
+              }
+          else if((str[i]>=65)&&(str[i]<=90)){
+            str[i]+=shiftNum;
+               if (str[i]>90){
+                str[i]=str[i]-26;
+                }
+                 else if (str[i]<65){
+                  str[i]=str[i]+26;
+                }
+                str[i] = String.fromCharCode(str[i]);
+              }
+        
+    }
+    return str.join('');
+  }
+
 evaluate(caesarize, caesarizeTests);
