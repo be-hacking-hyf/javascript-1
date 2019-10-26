@@ -1,10 +1,7 @@
 /* chunk a string
-
   break a string into an array of strings according to punctuation and tabs/newlines
-
   any continuous series of numbers, letters and spaces will stay together
   and any continuous series of punctuation or tabs/newlines will stay together
-
 */
 
 
@@ -43,6 +40,22 @@ const chunkTests = [
   { name: 'second', args: [thirdArg], expected: thirdExpected },
 ];
 function chunk(str) {
+  let word = '';
+  let symbols = '';
+  let arr = [];
+  for (i=0; i<str.length; i++) {
+    let chCode = str[i].charCodeAt()
+   let checkChar = (chCode >65 && chCode<90)|| (chCode >97 && chCode<122)||chCode===32 ? 'letter': 'symbol';
+    if (checkChar ==='letter') {word = word + str[i];
+    } else { arr.push(word);
+       word = '';
+        }
+    if (checkChar ==='symbol') {symbols = symbols + str[i];
+     } { arr.push(symbols);
+      symbols = ''; 
+    }
+  }
+
   // write me!
 }
 evaluate(chunk, chunkTests);
