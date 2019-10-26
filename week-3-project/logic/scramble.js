@@ -6,7 +6,6 @@ Write a function that does these things to a string:
 - preserve formatting (leave tabs and newlines in place);
 
 */
-
 const thirdScrambleArg = `a list of drinks:
   - milk
   - sugar free coke
@@ -15,14 +14,14 @@ const thirdScrambleExpected = `diknrs fo ilst a:
   - iklm
   - ceko eefr agrsu
   - acesu osy`;
-
 const scrambleTests = [
-  { name: 'first', args: ['the road works.'], expected: 'korsw ador eht.' },
-  { name: 'second', args: ["name: 'second'"], expected: "aemn: 'cednos'" },
+  { name: 'first', args: ['the road works.'], expected: 'eht ador korsw.' },
+  { name: 'second', args: ["name: 'second'"], expected: "aemn: 'cdenos'" },
   { name: 'third', args: [thirdScrambleArg], expected: thirdScrambleExpected },
-  { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cow cednos'" },
-  { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cow cednos, cba'" },
-];
+  { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cdenos cow'" },
+  { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cdenos cow, abc'" },
+];    
+
 function scramble(str) {
   /*
     write this function using "chunk", "sortWords" and "reverseChunk"
