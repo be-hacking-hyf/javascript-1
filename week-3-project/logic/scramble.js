@@ -22,6 +22,14 @@ const scrambleTests = [
   { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cow cednos, cba'" },
 ];
 function scramble(str) {
+  let sortedStr = sort(str);
+  let arrOfStrigs = chunk(sortedStr);
+  let arrayOfWords = arrOfStrigs.map(e => reverseChunk(e));
+  return str = arrayOfWords.join('');
+  
+
+
+  
   /*
     write this function using "chunk", "sortWords" and "reverseChunk"
     each of these functions is one step along the way to a scrambled string

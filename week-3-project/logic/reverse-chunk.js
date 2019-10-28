@@ -24,7 +24,13 @@ const reverseChunkTests = [
       arrOfWords.push(arrFromStr[i]);                   // and the word itself goes to array of value
     }
     }
-  arrOfKeys.reverse();                                  // reverses array of keys 
+  arrOfKeys.reverse();
+  // form sort-words
+  arrOfWords = arrOfWords.map(word => {let letters = word.split(``);       // array of letters
+  letters.sort().sort( function(a, b) {return a-b}); //sorts array
+  word = letters.join(``); 
+  return word;        });                                  // reverses array of keys 
+  // end of sort-words
   
   for (let j=0; j<arrOfKeys.length; j++) {             // makes an object of reversed keys and values
     obj[arrOfKeys[j]] = arrOfWords[j] }
