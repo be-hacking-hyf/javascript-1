@@ -47,7 +47,7 @@ this way you can come back later to study the errors and solutions
 // --- syntax errors ---
 // these are detected at creation phase and will stop the page from loading
 
-function missingVariableName() {
+/*function missingVariableName() {
   const = null;
 }
 evaluate(missingVariableName);
@@ -102,7 +102,7 @@ function unEscapedLineBreak() {
 }
 evaluate(unEscapedLineBreak);
 
-
+*/
 // --- semantic errors ---
 // these are detected at runtime and will throw an error after the page has loaded
 

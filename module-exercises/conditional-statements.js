@@ -1,5 +1,3 @@
-// https://www.youtube.com/watch?v=9O-PCTfT6Rs&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=3
-
 {
   const pageTitle = 'conditional statements';
   const header = document.createElement("h2");

@@ -292,6 +292,7 @@ function chainedAssignments1() {
   let temp = '';
 
   // can be done in 3 lines or less
+  temp=a1=a2,  a1=a2=b,  b=temp;
 
   console.assert(a1 === "a", 'a1 should store "a"');
   console.assert(a1 === a2, 'a1 should store the same value as a2');
@@ -309,7 +310,7 @@ function chainedAssignments2() {
 
   // can be done in 4 lines or less
 
-
+  temp=a, a=b1=b2, b1=b2=c1, c1=c2=c3=temp;
 
   console.assert(a === "a", 'a should store "a"');
   console.assert(b1 === "b", 'b1 should store "b"');
