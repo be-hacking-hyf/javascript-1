@@ -81,7 +81,10 @@ try {
     let temp = '';
 
     // can be done in 4 lines
-
+    temp = a;
+    a = b;
+    b = c;
+    c = temp;
 
     console.assert(a === 1, "a should store 1");
     console.assert(b === 2, "b should store 2");
@@ -95,8 +98,11 @@ try {
     let temp = '';
 
     // can be done in 4 lines
-
-
+    temp = a;
+    a = c;
+    c = b;
+    b = temp;
+    
     console.assert(a === 1, "a should store 1");
     console.assert(b === 2, "b should store 2");
     console.assert(c === 3, "c should store 3");
@@ -109,7 +115,11 @@ try {
     let temp = '';
 
     // can be done in 5 lines
-
+    temp = a;
+    a = b;
+    b = c;
+    c = d;
+    d = temp;
 
     console.assert(a === 1, "a should store 1");
     console.assert(b === 2, "b should store 2");
@@ -124,7 +134,12 @@ try {
     let temp = '';
 
     // can be done in 6 lines
-
+    temp = a;
+    a = d;
+    d = temp;
+    temp = b;
+    b = c;
+    c = temp;
 
     console.assert(a === "w", "a should store 'w'");
     console.assert(b === "x", "b should store 'x'");
@@ -139,7 +154,12 @@ try {
     let temp = ' ';
 
     // can be done in 6 lines
-
+    temp = a;
+    a = e;
+    e = temp;
+    temp = b;
+    b = d;
+    d = temp;
 
     console.assert(a === "v", "a should store 'v'");
     console.assert(b === "w", "b should store 'w'");
@@ -189,7 +209,7 @@ try {
 
     // can be done in 1 line
 
-
+    temp = a, a = b, b = c, c = temp;
     console.assert(a === 1, "a should store 1");
     console.assert(b === 2, "b should store 2");
     console.assert(c === 3, "c should store 3");
@@ -202,7 +222,7 @@ try {
     let temp = '';
 
     // can be done in 1 line
-
+    temp = a, a = c, c = b, b = temp;
 
     console.assert(a === 1, "a should store 1");
     console.assert(b === 2, "b should store 2");
@@ -217,6 +237,7 @@ try {
 
     // can be done in 1 line
 
+    temp = a, a = b, b = c, c = d, d = temp;
 
     console.assert(a === 1, "a should store 1");
     console.assert(b === 2, "b should store 2");
@@ -232,6 +253,7 @@ try {
 
     // can be done in 1 line
 
+    temp = a, a = d, d = temp, temp = b, b = c, c = temp;
 
     console.assert(a === "w", "a should store 'w'");
     console.assert(b === "x", "b should store 'x'");
@@ -268,6 +290,9 @@ try {
     let temp = '';
 
     // can be done in 3 lines or less
+    temp = a1;
+    a1 = a2 = b;
+    b = temp;
 
     console.assert(a1 === 1, 'a1 should store 1');
     console.assert(a1 === a2, 'a1 should store the same value as a2');
@@ -284,7 +309,10 @@ try {
     let temp = '';
 
     // can be done in 4 lines or less
-
+    temp = a;
+    a = b1;
+    b1 = b2 = c1;
+    c1 = c2 = c3 = temp;
 
 
     console.assert(a === 1, 'a should store 1');
