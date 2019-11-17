@@ -113,34 +113,34 @@ try {
 
 
   function passTheAssertions1() {
-    ; // declare and assign a1
-    ; // declare and assign a2
+    const a1 = {} ; // declare and assign a1
+    let a2 = a1; // declare and assign a2
     console.assert(a1 === a2, 'a1 should strictly equal a2');
 
-    ; // declare and assign b1
-    ; // declare and assign b2
+    const b1 = {}; // declare and assign b1
+    let b2 = {}; // declare and assign b2
     console.assert(b1 !== b2, 'b1 should not strictly equal b2');
 
     // ---
 
-    ; // write one line to pass the assertions
+    a1.x = 'hi!'; // write one line to pass the assertions
     console.assert(a1.x === a2.x, 'a1.x should strictly equal a2.x');
     console.assert(a1.x === 'hi!', 'a1.x should strictly equal "hi!"');
 
-    ; // write two lines to pass the assertions
-    ;
+    b1.x = 'bye!'; // write two lines to pass the assertions
+    b2.x = b1.x;
     console.assert(b1.x === b2.x, 'b1.x should strictly equal b2.x');
     console.assert(b1.x === 'bye!', 'b1.x should strictly equal "bye!"');
 
     // --
     const index = 'y';
 
-    ; // write one line to pass the assertions
+    a1.y = 'roof!'; // write one line to pass the assertions
     console.assert(a1[index] === a2[index], 'a1[index] should strictly equal a2[index]');
     console.assert(a1[index] === 'roof!', 'a1[index] should strictly equal "roof!"');
 
-    ; // write two lines to pass the assertions
-    ;
+    b1.y = 'floor!'; // write two lines to pass the assertions
+    b2.y = b1.y;
     console.assert(b1[index] === b2[index], 'b1[index] should strictly equal b2[index]');
     console.assert(b1[index] === 'floor!', 'b1[index] should strictly equal "floor!"');
 
@@ -153,16 +153,16 @@ try {
     const value1 = 5;
     let reference1 = {};
 
-    ; // write this line
+    let value2 = value1; // write this line
     console.assert(value2 === value1, "value1 should strictly equal value2");
 
-    ; // write this line
+    let reference2 = reference1; // write this line
     console.assert(reference2 === reference1, "reference1 should strictly equal reference2");
 
     value2 = value2 + 1; // write this line
     console.assert(value1 !== null, "value1 should strictly equal ___");
 
-    ; // write this line
+    reference1.x = 'hi!'; // write this line
     console.assert(reference1.x === reference2.x, "references.x should be strictly equal");
     console.assert(reference1.x === 'hi!', "references.x should strictly equal 'hi!'");
 
@@ -178,8 +178,8 @@ try {
 
 
   function passTheAssertions3() {
-    ; // write this line
-    ; // write this line
+    let obj1 = {x: 'A', y: 'B'}; // write this line
+    let obj2 = {x: 'A', y: 'B'}; // write this line
     console.assert(obj1 !== obj2, 'the variables should not be strictly equal');
     console.assert(obj1.y === obj2.y, 'their first entries should be the same');
     console.assert(obj1.y === 'B', 'obj1.y should be "B"');
@@ -188,18 +188,18 @@ try {
     console.assert(obj1[index] === obj2[index], 'obj1[index] should strictly equal obj2[index]');
     console.assert(obj1[index] === 'A', 'obj1[index] should be "A"');
 
-    ; // write this line
-    ; // write this line
+    obj1[obj2.z] = 'B'; // write this line
+    obj2[obj1.z]= obj1[obj2.z]; // write this line
     console.assert(obj1[obj2.z] === 'B', 'obj2.z should be "B"s index in obj1');
     console.assert(obj1[obj2.z] === obj2[obj1.z], 'some tricky nested thing should be true');
 
-    ; // write this line
+    let obj3 = obj2; // write this line
     console.assert(obj1 !== obj2, 'obj1 should strictly equal obj2');
     console.assert(obj3 !== obj1, 'obj3 should not strictly equal obj`');
     console.assert(obj3 === obj2, 'obj3 should strictly equal obj2');
     console.assert(obj3[index] === obj1.x, 'obj3[index] should strictly equal obj1.x');
 
-    ; // write this line
+    obj3.z = obj2[index]; // write this line
     console.assert(obj3.z === obj2[index], 'obj3.z should strictly equal obj2[index]');
   }
   evaluate(passTheAssertions3);
