@@ -87,15 +87,15 @@ try {
   // complete the args array to pass each test case
   const conditionalTestCases1 = [
     { name: 'if 1', args: ['5', 5], expected: 'if' },
-    { name: 'if 2', args: null, expected: 'if' },
-    { name: 'if 3', args: null, expected: 'if' },
-    { name: 'if 4', args: null, expected: 'if' },
-    { name: 'if 5', args: null, expected: 'if' },
+    { name: 'if 2', args: ['0',0], expected: 'if' },
+    { name: 'if 3', args: ['',0], expected: 'if' },
+    { name: 'if 4', args: [5, 5], expected: 'if' },
+    { name: 'if 5', args: ['2', 2], expected: 'if' },
     { name: 'else 1', args: [true, 0], expected: 'else' },
-    { name: 'else 2', args: null, expected: 'else' },
-    { name: 'else 3', args: null, expected: 'else' },
-    { name: 'else 4', args: null, expected: 'else' },
-    { name: 'else 5', args: null, expected: 'else' },
+    { name: 'else 2', args: [1, 0], expected: 'else' },
+    { name: 'else 3', args: ['9','ll'], expected: 'else' },
+    { name: 'else 4', args: ['9',0], expected: 'else' },
+    { name: 'else 5', args: [9, 7], expected: 'else' },
   ];
   function conditionalToPass1(a, b) {
     if (Number(a) === b) {
@@ -110,20 +110,20 @@ try {
   // complete the args array to pass each test case
   const conditionalTestCases2 = [
     { name: 'if  1', args: ['happy', 'day'], expected: 'if' },
-    { name: 'if  2', args: null, expected: 'if' },
-    { name: 'if  3', args: null, expected: 'if' },
-    { name: 'if  4', args: null, expected: 'if' },
-    { name: 'if  5', args: null, expected: 'if' },
+    { name: 'if  2', args: ['true','false'], expected: 'if' },
+    { name: 'if  3', args: [false, true], expected: 'if' },
+    { name: 'if  4', args: [null,null], expected: 'if' },
+    { name: 'if  5', args: [0,1], expected: 'if' },
     { name: 'else if  1', args: [1, ''], expected: 'else if' },
-    { name: 'else if  2', args: null, expected: 'else if' },
-    { name: 'else if  3', args: null, expected: 'else if' },
-    { name: 'else if  4', args: null, expected: 'else if' },
-    { name: 'else if  5', args: null, expected: 'else if' },
+    { name: 'else if  2', args: [false, 1], expected: 'else if' },
+    { name: 'else if  3', args: ['true',false], expected: 'else if' },
+    { name: 'else if  4', args: ["1",0], expected: 'else if' },
+    { name: 'else if  5', args: [true,0], expected: 'else if' },
     { name: 'else  1', args: [true, 1], expected: 'else' },
-    { name: 'else  2', args: null, expected: 'else' },
-    { name: 'else  3', args: null, expected: 'else' },
-    { name: 'else  4', args: null, expected: 'else' },
-    { name: 'else  5', args: null, expected: 'else' },
+    { name: 'else  2', args: [null,0], expected: 'else' },
+    { name: 'else  3', args: ["1",1], expected: 'else' },
+    { name: 'else  4', args: ['',NaN], expected: 'else' },
+    { name: 'else  5', args: [false,0], expected: 'else' },
   ];
   function conditionalToPass2(a, b) {
     if (typeof a === typeof b) {
@@ -153,7 +153,11 @@ try {
   ];
   // careful of unreachable blocks! are any of yours unreachable?
   function passTests1(a, b) {
-    // conditional an if/else conditional statement to pass these tests
+    if (Boolean(a) === Boolean(b)) {
+      return 'if';
+    }else {
+      return 'else';
+    }// conditional an if/else conditional statement to pass these tests
     // you can pass the tests using only
     //  primitive values
     //  Number, String, Boolean
@@ -182,7 +186,13 @@ try {
   ];
   // careful of unreachable blocks! are any of yours unreachable?
   function passTests2(a, b) {
-    // conditional an if/elseif/else conditional statement to pass these tests
+    if ( a === b ) {
+      return 'if';
+    } else if ( Number(a) !== Number(b)){
+      return 'else if';
+    } else {
+      return 'else';
+    }// conditional an if/elseif/else conditional statement to pass these tests
     // you can pass the tests using only
     //  primitive values
     //  Number, String, Boolean
@@ -221,16 +231,16 @@ try {
 
   const conditionalTests1 = [
     // write test cases to pass this function
-    { name: 'first', args: null, expected: null },
-    { name: 'second', args: null, expected: null },
-    { name: 'third', args: null, expected: null },
-    { name: 'fourth', args: null, expected: null },
-    { name: 'fifth', args: null, expected: null },
-    { name: 'sixth', args: null, expected: null },
-    { name: 'seventh', args: null, expected: null },
-    { name: 'eighth', args: null, expected: null },
-    { name: 'ninth', args: null, expected: null },
-    { name: 'tenth', args: null, expected: null },
+    { name: 'first', args: [true,true], expected: true },
+    { name: 'second', args: [1,1], expected: true },
+    { name: 'third', args: ["2",1], expected: false },
+    { name: 'fourth', args: [true,0], expected: true  },
+    { name: 'fifth', args: [NaN,NaN], expected: false },
+    { name: 'sixth', args: ["1", 1], expected: false },
+    { name: 'seventh', args: ["",""], expected: false },
+    { name: 'eighth', args: [false, true], expected: true },
+    { name: 'ninth', args: [1, 2], expected: true },
+    { name: 'tenth', args: ["r", true], expected: false },
   ];
   function conditionalFunction1(a, b) {
     let result = null;
@@ -249,16 +259,16 @@ try {
 
   const conditionalTests2 = [
     // write test cases to pass this function
-    { name: 'first', args: null, expected: null },
-    { name: 'second', args: null, expected: null },
-    { name: 'third', args: null, expected: null },
-    { name: 'fourth', args: null, expected: null },
-    { name: 'fifth', args: null, expected: null },
-    { name: 'sixth', args: null, expected: null },
-    { name: 'seventh', args: null, expected: null },
-    { name: 'eighth', args: null, expected: null },
-    { name: 'ninth', args: null, expected: null },
-    { name: 'tenth', args: null, expected: null },
+    { name: 'first', args: [1,1], expected: 1 },
+    { name: 'second', args: [true,false], expected: true },
+    { name: 'third', args: [true, 1], expected: false },
+    { name: 'fourth', args: [true, 0], expected: false },
+    { name: 'fifth', args: [2, 1], expected: 1 },
+    { name: 'sixth', args: [false,true], expected: true },
+    { name: 'seventh', args: [1, true], expected: false },
+    { name: 'eighth', args: ["otur","kalk"], expected: "kalk"},
+    { name: 'ninth', args: ["oreo","peanut"], expected: "peanut" },
+    { name: 'tenth', args: ["str", 1], expected: null },
   ];
   function conditionalFunction2(a, b) {
     let result = null;
