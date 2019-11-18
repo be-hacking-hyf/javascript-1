@@ -108,7 +108,7 @@ try {
 
     // fix the three pieces of this for loop to pass the assert
     let forResult = 0;
-    for (null; null; null) {
+    for (let i = 0; i !== 8; i += 2) {
       forResult += i;
     }
 
@@ -122,16 +122,16 @@ try {
   function loopRefactor2() {
 
     let forResult = 0;
-    for (i = 5; i > -2; i--) {
+    for (let i = 5; i > -2; i--) {
       forResult = forResult + i;
     }
 
     // fix the three pieces of this for loop to pass the assert
     let whileResult = 0;
-    null;
-    while (null) {
+    let i = 5;
+    while (i > -2) {
       whileResult = whileResult + i;
-      null;
+      i--;
     }
 
     console.assert(forResult === whileResult, 'both loops should have the same behavior');
@@ -151,7 +151,7 @@ try {
 
     // fix the three pieces of this for loop to pass the assert
     let forResult = 0;
-    for (null; null; null) {
+    for (let i = 0; i !== 8; i += 2) {
       forResult += i;
     }
 
@@ -171,7 +171,10 @@ try {
     };
 
     // refactor the while loop into a for loop
-    let forResult = null;
+    let forResult = .5;
+    for(let x =9; x > 2 ; x--){
+      forResult *= x;
+    }
 
     console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -189,7 +192,10 @@ try {
     };
 
     // refactor the while loop into a for loop
-    let forResult = null;
+    let forResult = true;
+    for(let x = -1; x < 2; x++){
+      forResult = forResult && Boolean(x);
+    }
 
     console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -206,6 +212,11 @@ try {
 
     // refactor the for loop into a while loop
     let whileResult = 0;
+    let i = -3;
+    while (i === 10 || i < 20){
+      whileResult = i;
+      i *= -1.5;
+    }
 
     console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -223,6 +234,13 @@ try {
 
     // refactor the for loop into a while loop
     let whileResult = 0;
+    let i = 0;
+    let j = 10;
+    while (i !== j){
+      whileResult = i;
+      i++;
+      j--;
+    }
 
     console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -246,9 +264,9 @@ try {
   function while1() {
     const result = [];
     let i = 0;
-    while (null) {
+    while (1 < 26) {
       result.push(i * 2);
-      null;
+      i = i * 3 + 2;
     }
     return result;
   }
@@ -256,7 +274,7 @@ try {
 
   function for1() {
     const result = [];
-    for (let i = 0; null; null) {
+    for (let i = 0; i < 26; i = i * 3 + 2) {
       result.push(i * 2);
     }
     return result;
@@ -307,10 +325,10 @@ try {
 
   function while3(input) {
     const result = [];
-    let i = null;
+    let i = input * 3;
     while (i > input) {
       result.push(i);
-      null;
+      i -= 2;
     }
     return result;
   }
@@ -318,7 +336,7 @@ try {
 
   function for3(input) {
     const result = [];
-    for (let i = null; i > input; null) {
+    for (let i = input * 3; i > input; i -= 2) {
       result.push(i);
     }
     return result;
