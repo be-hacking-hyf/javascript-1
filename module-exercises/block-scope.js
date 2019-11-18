@@ -41,6 +41,7 @@ try {
       const aString = 'inner value';
       console.assert(aString === 'inner value', 'aString should be "inner value"');
     }
+    
     console.assert(aString === 'outer value', 'aString should be "outer value"');
 
   }
@@ -48,10 +49,10 @@ try {
 
 
   function blockScopeExercise1() {
-    ; // write this line
+    const a = 'hi!'; // write this line
     console.assert(a === 'hi!', 'a should be "hi!"');
     {
-      ; // write this line
+      const a = 'hola!'; // write this line
       console.assert(a === 'hola!', 'a should be "hola!"');
     }
     console.assert(a === 'hi!', 'a should be "hi!"');
@@ -59,10 +60,10 @@ try {
   evaluate(blockScopeExercise1);
 
   function blockScopeExercise2() {
-    ; // write this line
+    const a = 'hi!'; // write this line
     console.assert(a === 'hi!', 'a should be "hi!"');
     {
-      ; // write this line
+      let b = 'hola!'; // write this line
       console.assert(b === 'hola!', 'b should be "hola!"');
       console.assert(a === 'hi!', 'a should be "hi!"');
     }
@@ -71,26 +72,26 @@ try {
   evaluate(blockScopeExercise2);
 
   function blockScopeExercise3() {
-    ; // write this line
+    const a = 'hi!'; // write this line
     console.assert(a === 'hi!', 'a should be "hi!"');
     {
-      ; // write this line
+      let b = 'hola!'; // write this line
       console.assert(b === 'hola!', 'b should be "hola!"');
       console.assert(a === 'hi!', 'a should be "hi!"');
     }
-    ; // write this line
+    let b = 'hola!'; // write this line
     console.assert(b === 'hola!', 'b should be "hola!"');
     console.assert(a === 'hi!', 'a should be "hi!"');
   }
   evaluate(blockScopeExercise3);
 
   function blockScopeExercise4() {
-    ; // write this line
+    let x = 'null'; // write this line
     console.assert(x === 'null', 'x should be "null!"');
     {
       const a = 5;
       const b = 4;
-      ; // write this line
+      x = a * b ; // write this line
       console.assert(x === 20, 'x should be 20');
     }
     console.assert(x === 20, 'x should be 20');
@@ -98,12 +99,12 @@ try {
   evaluate(blockScopeExercise4);
 
   function blockScopeExercise5() {
-    ; // write this line
+    let x = 'null'; // write this line
     console.assert(x === 'null', 'x should be "null!"');
     {
       const a = false;
       const b = true;
-      ; // write this line
+        if (x = b ){ x = 20; } // write this line
       console.assert(x === 20, 'x should be true');
     }
     console.assert(x === 20, 'x should be true');
