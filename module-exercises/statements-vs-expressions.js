@@ -61,11 +61,11 @@ try {
     { name: 'fourth', args: [0, ""], expected: 'falsey' },
     { name: 'fifth', args: [" ", 1], expected: 'truthy' },
     // write a few more tests
-    { name: 'sixth', args: null, expected: null },
-    { name: 'seventh', args: null, expected: null },
-    { name: 'eighth', args: null, expected: null },
-    { name: 'ninth', args: null, expected: null },
-    { name: 'tenth', args: null, expected: null },
+    { name: 'sixth', args: [NaN, true], expected: "truthy" },
+    { name: 'seventh', args: [1,0], expected: "truthy" },
+    { name: 'eighth', args: [NaN,NaN], expected: "falsey" },
+    { name: 'ninth', args: ["",''], expected: "falsey" },
+    { name: 'tenth', args: [false,false], expected:"falsey" },
   ];
 
   function ternaryExpression(a, b) {
